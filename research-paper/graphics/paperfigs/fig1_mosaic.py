@@ -35,18 +35,24 @@ ROWS = (5, 5, 4)
 UNSCORED_MARK = "†"
 
 
+def _record(item_id: str) -> dict | None:
+    try:
+        return data.item_record(item_id)[1]
+    except FileNotFoundError:
+        return None
+
+
 def panels() -> list[dict]:
     out = []
     with open(data.MEDIA_MANIFEST, encoding="utf-8") as f:
         for r in csv.DictReader(f):
-            _, rec = data.item_record(r["item_id"])
-            book = data.rights()[rec["source"]["book_id"]]
+            rec = _record(r["item_id"])
             img = Image.open(data.PAPER / "media" / r["file"])
             out.append({
                 "id": r["item_id"], "img": np.asarray(img.convert("RGB")), "w": img.width, "h": img.height,
-                "year": book["publication_year"],
-                "type": TYPE_NAMES[rec["automatic_metadata"]["diagram_type"]["label"]],
-                "title": SHORT_TITLE[r["item_id"]], "scored": data.is_scored(r["item_id"]),
+                "year": int(r["year"]),
+                "type": TYPE_NAMES[rec["automatic_metadata"]["diagram_type"]["label"] if rec else r["diagram_type"]],
+                "title": SHORT_TITLE[r["item_id"]], "scored": rec is not None and data.is_scored(r["item_id"]),
             })
     return sorted(out, key=lambda p: p["year"])
 
