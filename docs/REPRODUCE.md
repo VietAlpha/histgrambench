@@ -42,12 +42,9 @@ for f in r1_common_valid r1_fixed_den; do      # these two write into the curren
 # 3. generated tables and figures
 .venv/bin/python research-paper/graphics/make_figures.py fig1 fig3 fig4 fig5 fig5_recall fig6 figS1 tables
 git diff --stat research-paper/graphics/*.tex research-paper/graphics/*.md
-# 4. exclusion table (Table S1) inputs
-.venv/bin/python -m hmb --root $HMB_ROOT funnel-report
-.venv/bin/python scripts/compare_outputs.py frozen/reports/funnel_report.json $HMB_ROOT/reports/funnel_report.json
 ```
 
-Step 5 (Table 3, hand-typed in the manuscript): the shares of the 114,403 key facts by predicate group come from
+Step 4 (Table 3, hand-typed in the manuscript): the shares of the 114,403 key facts by predicate group come from
 `answer_key_facts` filtered on `in_key` (expected 38.5, 1.35, 39.0, 5.0, 0.06, 0.3 and 15.7 percent).
 
 Tolerance: the score report and the analysis outputs must agree exactly apart from creation timestamps and execution

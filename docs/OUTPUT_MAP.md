@@ -40,7 +40,7 @@ current directory instead, so compare their output with `scripts/compare_outputs
 | Output | Script | Reads |
 |---|---|---|
 | `frozen/reports/scores_test_histmathbench-1.0.0.json` | `python -m hmb --root ROOT score-report --models <6> --track A --track B --split test` | scores, submissions, items, answer keys, verdicts |
-| `frozen/reports/funnel_report.json` | `python -m hmb --root ROOT funnel-report` | funnel rows and pages, item records (needs the exclusion-evidence records) |
+| `frozen/reports/funnel_report.json` | `python -m hmb --root ROOT funnel-report` | stored only: the candidate and page logs it reads are not released |
 | `research-paper/analysis/revision_numbers.json` | `research-paper/analysis/compute_revision_numbers.py` | score report, item records, answer keys, scores, verdicts |
 | `research-paper/analysis/outline_numbers.json` | `research-paper/analysis/compute_outline_numbers.py` | the same |
 | `research-paper/review_20261003/*.json` | `research-paper/review_20261003/<name>.py` (two write to the current directory) | the same |

@@ -24,8 +24,7 @@ from pathlib import Path
 import yaml
 
 EXPECT = {"test_items": 2507, "test_works": 95, "test_groups": 87, "test_key_facts": 114403, "models": 6,
-          "tracks": 2, "test_answers": 30084, "development_items": 150, "development_works": 5,
-          "test_unscored_items": 493}
+          "tracks": 2, "test_answers": 30084, "development_items": 150, "development_works": 5}
 
 
 def sha(b: bytes | str) -> str:
@@ -110,9 +109,7 @@ def main() -> int:
     test = set(by["test"])
     R.check("test items = 2,507", len(test) == EXPECT["test_items"], len(test))
     R.check("development items = 150", len(by["development"]) == EXPECT["development_items"], len(by["development"]))
-    R.check("unscored test pool = 493", len(by["test_unscored"]) == EXPECT["test_unscored_items"], len(by["test_unscored"]))
-    R.check("unscored development pool = 19 (169 carded - 150)", len(by["development_unscored"]) == 19,
-            len(by["development_unscored"]))
+    R.check("only test and development items", set(by) <= {"test", "development"}, sorted(by))
     R.check("test works = 95", len({items[i]["book_id"] for i in test}) == EXPECT["test_works"])
     R.check("test source groups = 87", len({items[i]["split_group"] for i in test}) == EXPECT["test_groups"])
     R.check("development works = 5", len({items[i]["book_id"] for i in by["development"]}) == EXPECT["development_works"])
@@ -129,8 +126,7 @@ def main() -> int:
     R.check("works rights basis agrees with items", all(works[r["book_id"]]["rights_basis"] == r["rights_basis"] for r in items.values()))
     groups = {r["split_group"]: r for r in ds["split_groups"]["records"]}
     R.check("every item's split group is in split_groups", all(r["split_group"] in groups for r in items.values()))
-    side = {"test": "test", "test_unscored": "test", "development": "development",
-            "development_unscored": "development"}
+    side = {"test": "test", "development": "development"}
     R.check("item split equals its group's split", all(groups[r["split_group"]]["split"] == side[r["split"]]
                                                        for r in items.values()))
     for key in ("book_id", "work_id", "split_group"):

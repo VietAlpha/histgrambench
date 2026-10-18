@@ -83,8 +83,7 @@ def main() -> int:
             d = json.loads(line)
             w.put(d["path"], d["content"], d["sha256"])
 
-    split_dir = {"test": "test", "test_unscored": "test", "development": "development",
-                 "development_unscored": "development"}
+    split_dir = {"test": "test", "development": "development"}
     for r in batches(a.dataset, "items", ["item_id", "split", "item_record_json", "item_record_sha256", "image",
                                           "original_crop", "page_text", "page_text_sha256"]):
         rec = json.loads(r["item_record_json"])
@@ -117,14 +116,6 @@ def main() -> int:
         base = f"{r['model_dir']}/{r['track']}/{r['item_id']}"
         w.put(f"verdicts/{base}.json", r["verdict_json"], r["verdict_sha256"])
         w.put(f"adjudication/alignment/{base}.json", r["alignment_json"], r["alignment_sha256"])
-
-    # exclusion evidence: candidate records and the funnel row/page logs (`hmb funnel-report` reads them); the logs
-    # are rebuilt line by line in their original order.
-    for r in batches(a.dataset, "exclusion_evidence_candidates", None):
-        w.put(f"data/candidates/{r['item_id']}.json", r["record_json"], r["record_sha256"])
-    for name in ("funnel_rows", "funnel_pages"):
-        lines = [r["record_json"] + "\n" for r in batches(a.dataset, f"exclusion_evidence_{name}", ["record_json"])]
-        w.put(f"manifests/{name}.jsonl", "".join(lines), None)
 
     if "cgx" not in a.skip:
         for r in batches(a.dataset, "cgx", None):
