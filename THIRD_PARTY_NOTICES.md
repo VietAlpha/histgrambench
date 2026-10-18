@@ -8,8 +8,8 @@ depends on the third-party material below. Nothing in this list is bundled unles
 | Component | Where | Licence |
 |---|---|---|
 | Source Sans 3 (Adobe) | `research-paper/graphics/fonts/` | SIL Open Font License 1.1 (`research-paper/graphics/fonts/LICENSE.md`) |
-| Figure crops and page text from the source works: two figures of one work (Ramus, *The Way to Geometry*, Project Gutenberg) for the example, and the fourteen sample crops of Figure 1 | `examples/sample_root/images/`, `research-paper/media/*.png` | reproductions of the source works; cite each work as listed in the dataset `works` table (see the dataset `LICENSE.md`) |
-| Model outputs (answers, geometry, verdicts, scores) of the six contestants and three judges | `examples/sample_root/`, `results/` | generated through Amazon Bedrock under the providers' terms; see the dataset `LICENSE.md` |
+| Figure crops and page text from the source works: two figures of one work (Ramus, *The Way to Geometry*, Project Gutenberg) for the example, and the fourteen sample crops of Figure 1 | `examples/sample_root/images/`, `research-paper/media/*.png` | reproductions of the source works; cite each work as listed in the dataset `works` table |
+| Model outputs (answers, geometry, verdicts, scores) of the six contestants and three judges | `examples/sample_root/`, `results/` | generated through Amazon Bedrock under the providers' terms (recorded per answer as `provider_terms_version`) |
 
 ## Python dependencies (installed from `requirements.lock`, not included)
 

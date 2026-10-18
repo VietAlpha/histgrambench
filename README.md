@@ -111,9 +111,7 @@ has been assigned yet.
 
 ## Licence
 
-Code, schemas and prompts: Apache-2.0 ([LICENSE](LICENSE)). Answer keys, item records and metadata: Apache-2.0.
-Figure images and page text are in the dataset (except the sample crops listed in THIRD_PARTY_NOTICES.md); cite the
-source work of each figure (dataset `works` and `LICENSE.md`).
+Code and dataset: Apache-2.0 ([LICENSE](LICENSE)). When reusing a figure, cite its source work (dataset `works`).
 Third-party components: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## Limitations
