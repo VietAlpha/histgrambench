@@ -11,7 +11,7 @@ prepared.
 uv venv --python 3.12 .venv && uv pip install --python .venv -r requirements.lock
 uv venv --python 3.12 .venv-release && uv pip install --python .venv-release -r scripts/requirements-release.txt
 .venv/bin/python scripts/check_hashes.py          # code_hash, form_freeze_sha256, harness_version, release_hash
-hf auth login                                     # the dataset is private
+hf auth login                                     # the dataset is gated: request access first
 hf download VietAlphaLabs/HistGramBench --repo-type dataset --local-dir ../HistGramBench
 .venv-release/bin/python scripts/verify_release.py --dataset ../HistGramBench      # integrity, joins, splits, mirrors
 .venv-release/bin/python scripts/materialize_root.py --dataset ../HistGramBench --out ../hgb_root --without-stored-reports

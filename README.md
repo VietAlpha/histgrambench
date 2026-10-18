@@ -26,10 +26,10 @@ found present; the benchmark score averages within and then across 87 source gro
 | | GitHub (this repository) | Hugging Face dataset |
 |---|---|---|
 | Holds | evaluation code, sandbox recipe, frozen configuration and prompts, tests, item-level scores (canonical), run reports, paper analysis scripts, tables and figures | figures and metadata, answer keys and their construction records, contestant answers, compiled drawings, geometry, verdicts, source catalogue, split groups, exclusion evidence |
-| Planned id | `VietAlpha/histgrambench` (private) | `VietAlphaLabs/HistGramBench` (private, dataset) |
+| Id | `VietAlpha/histgrambench` | `VietAlphaLabs/HistGramBench` (dataset; gated, access on request) |
 
 Each file has one canonical home. The dataset's `scores` table and its `metadata/` files are mirrors generated from
-this repository and checked for equality (`scripts/verify_release.py`). Both ids are planned and not yet created.
+this repository and checked for equality (`scripts/verify_release.py`).
 
 ## Installation
 
@@ -55,7 +55,7 @@ conversion. `python scripts/check_hashes.py` recomputes the hashes and compares 
 ## Quick start (offline, no model calls)
 
 ```bash
-# get the dataset (private: `hf auth login` first)
+# get the dataset (gated: request access on the Hub, then `hf auth login`)
 hf download VietAlphaLabs/HistGramBench --repo-type dataset --local-dir ../HistGramBench
 
 # rebuild the run's directory layout from the released records (checks every sha256)
