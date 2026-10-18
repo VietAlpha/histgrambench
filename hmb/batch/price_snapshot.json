@@ -1,0 +1,317 @@
+{
+ "version": "price-snapshot-1",
+ "retrieved_utc": "2026-09-26",
+ "units": "USD per 1M tokens (Standard tier, short context); image tokens are inside reported input tokens",
+ "s3": {
+  "put_per_1k": 0.005,
+  "get_per_1k": 0.0004,
+  "storage_gb_month": 0.023,
+  "source": "AWS Price List API AmazonS3 us-east-1 (Requests-Tier1, Requests-Tier2, TimedStorage-ByteHrs first 50 TB), retrieved 2026-09-26"
+ },
+ "kms": "not used (SSE-S3); EventBridge not used (status polling via GetModelInvocationJob, no charge); intra-Region S3 transfer to Bedrock not charged",
+ "models": [
+  {
+   "model_id": "global.openai.gpt-6-luna",
+   "route": "bedrock-runtime Converse, Global CRIS",
+   "on_demand": {
+    "in": 0.1,
+    "out": 0.5
+   },
+   "batch": null,
+   "batch_basis": "none published (model card lists Standard tier only; batch rejected live)",
+   "batch_api_available": false,
+   "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-luna.html \u00a7Pricing (Global CRIS, short context)",
+   "sku": "model card table",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "openai.gpt-6-luna",
+   "route": "bedrock-mantle Chat Completions, in-Region (retired 2026-09-26)",
+   "on_demand": {
+    "in": 0.11,
+    "out": 0.55
+   },
+   "batch": null,
+   "batch_basis": "none published",
+   "batch_api_available": false,
+   "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-luna.html \u00a7Pricing (Mantle in-Region, includes 10% premium)",
+   "sku": "model card table",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "us.openai.gpt-6-luna",
+   "route": "bedrock-runtime, US Geo CRIS (not used)",
+   "on_demand": {
+    "in": 0.11,
+    "out": 0.55
+   },
+   "batch": null,
+   "batch_basis": "none published",
+   "batch_api_available": false,
+   "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-luna.html \u00a7Pricing (US Geo CRIS)",
+   "sku": "model card table",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "global.openai.gpt-6-sol",
+   "route": "bedrock-runtime Converse, Global CRIS",
+   "on_demand": {
+    "in": 2.0,
+    "out": 10.0
+   },
+   "batch": null,
+   "batch_basis": "none published (batch rejected live)",
+   "batch_api_available": false,
+   "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-sol.html \u00a7Pricing (Global CRIS, short context)",
+   "sku": "model card table",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "openai.gpt-6-sol",
+   "route": "bedrock-mantle Chat Completions, in-Region (retired 2026-09-26)",
+   "on_demand": {
+    "in": 2.2,
+    "out": 11.0
+   },
+   "batch": null,
+   "batch_basis": "none published",
+   "batch_api_available": false,
+   "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-sol.html \u00a7Pricing (Mantle in-Region, includes 10% premium)",
+   "sku": "model card table",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "us.anthropic.claude-opus-5-5",
+   "route": "bedrock-runtime Converse, US Geo CRIS",
+   "on_demand": {
+    "in": 4.4,
+    "out": 22.0
+   },
+   "batch": null,
+   "batch_basis": "no batch SKU in the Price List API; batch rejected live",
+   "batch_api_available": false,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-MP:USE1_input_tokens_standard / USE1_output_tokens_standard (Claude Opus 5.5 (Amazon Bedrock Edition))",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "qwen.qwen3-vl-235b-a22b-instruct",
+   "route": "bedrock-mantle Chat Completions /v1",
+   "on_demand": {
+    "in": 0.53,
+    "out": 2.66
+   },
+   "batch": {
+    "in": 0.26,
+    "out": 1.33
+   },
+   "batch_basis": "explicit SKU (Mantle lane); no batch API on bedrock-mantle (live 404, quotas-mantle.html)",
+   "batch_api_available": false,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-qwen.qwen3-vl-235b-a22b-instruct-mantle-{input,output}-tokens-{standard,batch}",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "google.gemma-4-31b",
+   "route": "bedrock-mantle Chat Completions /openai/v1",
+   "on_demand": {
+    "in": 0.14,
+    "out": 0.4
+   },
+   "batch": {
+    "in": 0.07,
+    "out": 0.2
+   },
+   "batch_basis": "explicit SKU (Mantle lane); no batch API on bedrock-mantle",
+   "batch_api_available": false,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-google.gemma-4-31b-mantle-{input,output}-tokens-{standard,batch}",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "mistral.mistral-large-3-675b-instruct",
+   "route": "bedrock-mantle Chat Completions /v1",
+   "on_demand": {
+    "in": 0.5,
+    "out": 1.5
+   },
+   "batch": {
+    "in": 0.25,
+    "out": 0.75
+   },
+   "batch_basis": "explicit SKU; batch API only on the runtime route (not the locked grader route)",
+   "batch_api_available": false,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-mistral.mistral-large-3-675b-instruct-mantle-{input,output}-tokens-{standard,batch}",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+   "route": "bedrock-runtime Converse, US Geo CRIS",
+   "on_demand": {
+    "in": 0.24,
+    "out": 0.97
+   },
+   "batch": {
+    "in": 0.12,
+    "out": 0.485
+   },
+   "batch_basis": "explicit SKU (feature=Batch Inference); batch live-completed",
+   "batch_api_available": true,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-Llama4-Maverick-17B-{input,output}-tokens[-batch]",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "moonshotai.kimi-k2.5",
+   "route": "bedrock-runtime Converse, in-Region (answer-key writer since 2026-09-26)",
+   "on_demand": {
+    "in": 0.6,
+    "out": 3.0
+   },
+   "batch": {
+    "in": 0.3,
+    "out": 1.5
+   },
+   "batch_basis": "explicit SKU; batch live-completed",
+   "batch_api_available": true,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-moonshotai.kimi-k2.5-{input,output}-tokens[-batch]",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "nvidia.nemotron-nano-12b-v2",
+   "route": "bedrock-runtime Converse, in-Region",
+   "on_demand": {
+    "in": 0.2,
+    "out": 0.6
+   },
+   "batch": {
+    "in": 0.1,
+    "out": 0.3
+   },
+   "batch_basis": "explicit SKU (feature=Batch Inference); batch completed with 15% record errors -> kept synchronous",
+   "batch_api_available": true,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-Nemotron-Nano-12B-V2-VL-BF16-{input,output}-tokens[-batch]",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "mistral.ministral-3-14b-instruct",
+   "route": "bedrock-runtime Converse, in-Region",
+   "on_demand": {
+    "in": 0.2,
+    "out": 0.2
+   },
+   "batch": {
+    "in": 0.1,
+    "out": 0.1
+   },
+   "batch_basis": "explicit SKU (feature=Batch Inference); batch live-completed",
+   "batch_api_available": true,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-Ministral-3-14b-Instruct-{input,output}-tokens[-batch]",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "google.gemma-4-26b-a4b",
+   "route": "bedrock-mantle Chat Completions /openai/v1",
+   "on_demand": {
+    "in": 0.13,
+    "out": 0.4
+   },
+   "batch": {
+    "in": 0.065,
+    "out": 0.2
+   },
+   "batch_basis": "explicit SKU (Mantle lane); no batch API on bedrock-mantle",
+   "batch_api_available": false,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-google.gemma-4-26b-a4b-mantle-{input,output}-tokens-{standard,batch}",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "google.gemma-4-e2b",
+   "route": "bedrock-mantle Chat Completions /openai/v1",
+   "on_demand": {
+    "in": 0.04,
+    "out": 0.08
+   },
+   "batch": {
+    "in": 0.02,
+    "out": 0.04
+   },
+   "batch_basis": "explicit SKU (Mantle lane); no batch API on bedrock-mantle",
+   "batch_api_available": false,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-google.gemma-4-e2b-mantle-{input,output}-tokens-{standard,batch}",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "deepseek.v3.1",
+   "route": "bedrock-mantle Chat Completions /v1 (text only)",
+   "on_demand": {
+    "in": 0.58,
+    "out": 1.68
+   },
+   "batch": {
+    "in": 0.29,
+    "out": 0.84
+   },
+   "batch_basis": "explicit SKU (Mantle lane); no batch API on bedrock-mantle",
+   "batch_api_available": false,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-deepseek.v3.1-mantle-{input,output}-tokens-{standard,batch}",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "qwen.qwen3-vl-235b-a22b",
+   "route": "bedrock-runtime Converse, in-Region (evidence only; not a roster route)",
+   "on_demand": {
+    "in": 0.53,
+    "out": 2.66
+   },
+   "batch": {
+    "in": 0.26,
+    "out": 1.33
+   },
+   "batch_basis": "explicit SKU (feature=Batch Inference); batch live-completed",
+   "batch_api_available": true,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-Qwen3-VL-235B-A22B-{input,output}-tokens[-batch]",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  },
+  {
+   "model_id": "us.anthropic.claude-sonnet-5",
+   "route": "bedrock-runtime Converse, US Geo CRIS",
+   "on_demand": {
+    "in": 2.2,
+    "out": 11.0
+   },
+   "batch": null,
+   "batch_basis": "no batch SKU in the Price List API; absent from the batch table; not probed",
+   "batch_api_available": false,
+   "source": "https://pricing.us-east-1.amazonaws.com (AWS Price List API, service AmazonBedrock / AmazonBedrockFoundationModels, us-east-1, publication 2026-09-25T09:39:35Z)",
+   "sku": "USE1-MP:USE1_input_tokens_standard / USE1_output_tokens_standard (Claude Sonnet 5 (Amazon Bedrock Edition))",
+   "retrieved_utc": "2026-09-26",
+   "region": "us-east-1"
+  }
+ ]
+}

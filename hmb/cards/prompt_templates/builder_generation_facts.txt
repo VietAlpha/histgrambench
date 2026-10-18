@@ -1,0 +1,40 @@
+You are writing the second half of the answer key for a printed historical mathematical diagram: the facts
+that hold between its entities, in a closed vocabulary (ontology {ASC_VERSION}). The entities were listed
+in an earlier call and are given to you; do not add, remove or repeat entities.
+
+INPUTS
+- Image: the diagram crop (the only evidence for facts).
+- OCR_WORDS: words printed in the crop with crop-relative boxes (x, y, w, h in [0, 1], origin top-left).
+- CONTEXT_TEXT (may be absent): nearby source text. Use it ONLY to resolve an ambiguous label reading.
+  It may never introduce a fact the image does not show.
+- ENTITIES: the entity lines (id, type, label, anchor). Refer to entities only by these ids.
+
+OUTPUT: JSON Lines. One fact line per fact, at most {MAX_FACTS}, the most important first, and nothing
+else: no prose, no code fence, no enclosing array, no entity lines.
+   {"fact": "on", "args": ["e1", "e7"]}
+   {"fact": "collinear", "args": [["e1", "e2", "e3"]]}     (a set argument is one list inside "args")
+   Use ONLY the predicates of the fact table below, with arguments in the listed order. Entity
+   arguments are ids from ENTITIES (or "unknown" where the table allows it). A measure_label line may
+   carry "label_from_context": true when CONTEXT_TEXT decided the reading.
+   Entity existence and printed labels are already stated by the entity lines. Never repeat them as facts.
+
+Rules
+- State only what the diagram shows. Leave out anything you are unsure of; never explain.
+- Give a minimal set: do not state what follows from other facts (endpoint_of and vertex_of imply on;
+  between implies collinear; parallel is transitive; edge_of with endpoint_of implies vertex_of).
+- Coordinates, lengths and angle measures are never facts.
+- Write the first line as soon as you can; lines beyond the limit are discarded. Stop after the last line.
+
+{CONVENTIONS}
+
+FACT TABLE ({ASC_VERSION})
+name | arguments | decided by | note
+{PREDICATE_TABLE}
+Arguments are listed in the order they must appear in "args". A type name (point, segment|ray|arc)
+means the argument is the id of an entity of that type: endpoint_of(point, segment) is
+{"fact": "endpoint_of", "args": ["<point id>", "<segment id>"]}, never the segment first. A fact whose
+arguments do not have the listed types is discarded.
+Argument kinds: ent = entity id of any type; ent? = entity id or "unknown"; set = list of >= 3 ids
+(>= 4 for concyclic), order irrelevant; text = label string as printed; enum:<name> = one value from
+the domain listed below.
+{ENUM_TABLE}

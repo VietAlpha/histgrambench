@@ -1,0 +1,22 @@
+\documentclass[tikz,border=2mm]{standalone}
+\usepackage{amsmath,amssymb}
+%<FONTBLOCK>
+\usepackage{fontspec}
+\directlua{luaotfload.add_fallback("hmbfallback",{"Noto Serif CJK TC:mode=node;","Noto Serif CJK JP:mode=node;","Noto Serif CJK SC:mode=node;"})}
+\setmainfont{Noto Serif}[RawFeature={fallback=hmbfallback}]
+\setsansfont{Noto Sans}[RawFeature={fallback=hmbfallback}]
+\setmonofont{Noto Sans Mono}[RawFeature={fallback=hmbfallback}]
+\tracinglostchars=3
+\directlua{
+local hmblog = function(n, p) texio.write_nl("log", "HMB-SANDBOX-VIOLATION " .. n .. " " .. tostring(p)) end
+local hmbin = function(p) return type(p) == "string" and (string.sub(p, 1, 5) == "/job/" or (not (string.sub(p, 1, 1) == "/") and not string.find(p, "..", 1, true))) end
+local hmbblock = function(t, n) if t and t[n] then t[n] = function(...) hmblog(n, (...)); return nil, "blocked" end end end
+local hmbpath = function(t, n) if t and t[n] then local f = t[n]; t[n] = function(p, ...) if not hmbin(p) then hmblog(n, p) end; return f(p, ...) end end end
+hmbblock(os, "execute"); hmbblock(os, "exec"); hmbblock(os, "spawn"); hmbblock(io, "popen")
+hmbpath(os, "remove"); hmbpath(os, "rename"); hmbpath(lfs, "mkdir"); hmbpath(lfs, "rmdir"); hmbpath(lfs, "touch"); hmbpath(lfs, "link"); hmbpath(lfs, "chdir")
+local hmbopen = io.open
+io.open = function(p, m, ...) if type(m) == "string" and string.find(m, "[wa+]") and not hmbin(p) then hmblog("io.open-write", p) end; return hmbopen(p, m, ...) end
+}
+%</FONTBLOCK>
+\usetikzlibrary{calc,intersections,angles,quotes,positioning,arrows.meta,decorations.markings,decorations.pathmorphing,patterns,through,shapes.geometric,shapes.misc,3d,perspective,math,fit,backgrounds,babel}
+%<CONTESTANT_PREAMBLE>

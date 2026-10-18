@@ -1,0 +1,7 @@
+# Release tooling (scripts/materialize_root.py, scripts/verify_release.py, dataset loading); tested 2026-10-17.
+# The evaluation code itself runs on ../requirements.lock.
+datasets==5.1.0
+pyarrow==26.0.0
+huggingface-hub==2.2.0
+pillow==13.0.0
+pyyaml==6.0.3

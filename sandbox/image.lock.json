@@ -1,0 +1,30 @@
+{
+ "built_utc": "2026-09-22T20:23:22Z",
+ "context_files_sha256": {
+  "Dockerfile": "7b0f05494075713140347029d944b9646d7985af5ab67c752f82d8fc7b7c464d",
+  "luaotfload.conf": "23e5160cad0f1a17ce30afe4757575069acc8487987015cb66598b405a4581b7",
+  "run-job.sh": "a257c17c174034c692e6d368de4addb9c56d4c23031449ebe5ebff87fe6fffe0",
+  "selftest.sh": "96326c0b2975189b9f3fe4e1807bb4d69097adf6dae8327eaba8946df23634dc",
+  "texmf.cnf.hmb": "90d6e4c998d56883e4ff7a5242781ea2e992d96cad4a2f3f243a29f0af8181ff",
+  "warmup.tex": "a31ebe04600d1216d6227c25e7b5f89e67a5ee5579414b4fd1e16d434ecf237d",
+  "write-manifest.sh": "919922f4853b20df1a974ce25f599dc63e9f6e61d3abfe82d85ad0c74008a4aa"
+ },
+ "engine_line": "lualatex --nosocket --no-shell-escape --interaction=nonstopmode --halt-on-error --output-directory=/job/out --jobname=cand /job/cand.tex",
+ "image_id": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "manifest": {
+  "arch": "x86_64",
+  "base_image": "texlive/texlive:TL2025-historic@sha256:f25ee2dcd00f58198f918064f4a1c8562410b33e84155bd55b02b419d73d9391",
+  "debian_snapshot": "20260824T000000Z",
+  "dpkg_manifest_sha256": "025242935f0c4fd99b9fbd3a91206300d3dcbf033dac18b4562c75566bbda66f",
+  "engine": "This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)",
+  "font_cache_sha256": "401d6ea7101b70256089190b27af48f797b572f6e0c8e757880a64c57be241d8",
+  "fonts_manifest_sha256": "802e76f69d93e84af2dde4a9b7620ab071707c6ca367533d4dd9e25ec92d777d",
+  "openout_any": "p",
+  "rasterizer": "pdftoppm version 26.07.0",
+  "shell_escape": "f",
+  "texlive_release": "2025",
+  "texlive_tlpdb_path": "/usr/local/texlive/2025/tlpkg/texlive.tlpdb",
+  "texlive_tlpdb_sha256": "58628e984b172571c9eaa0c86961e720068bc03a1968064ef87bd011b10c2b41"
+ },
+ "tag": "hmb-sandbox:v1"
+}

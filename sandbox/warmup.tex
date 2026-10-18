@@ -1,0 +1,19 @@
+% Font-cache warm-up: loads every face of the wrapper_v1 font block once at image build.
+\documentclass[tikz,border=2mm]{standalone}
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\directlua{luaotfload.add_fallback("hmbfallback",{"Noto Serif CJK TC:mode=node;","Noto Serif CJK JP:mode=node;","Noto Serif CJK SC:mode=node;"})}
+\setmainfont{Noto Serif}[RawFeature={fallback=hmbfallback}]
+\setsansfont{Noto Sans}[RawFeature={fallback=hmbfallback}]
+\setmonofont{Noto Sans Mono}[RawFeature={fallback=hmbfallback}]
+\tracinglostchars=3
+\begin{document}
+\begin{tikzpicture}
+\node at (0,0) {A Ă ệ α Ж 中 國 か カ 学};
+\node at (0,-1) {\bfseries A ệ α Ж 中 國 か};
+\node at (0,-2) {\itshape A ệ α Ж \bfseries B};
+\node at (0,-3) {\sffamily A ệ α Ж 中 \bfseries B \itshape C};
+\node at (0,-4) {\ttfamily A ệ α Ж 中};
+\node at (0,-5) {$A_1 \alpha \angle ABC$};
+\end{tikzpicture}
+\end{document}

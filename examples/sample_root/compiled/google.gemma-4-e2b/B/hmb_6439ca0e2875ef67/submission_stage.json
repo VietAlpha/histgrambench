@@ -1,0 +1,58 @@
+{
+ "access_date": "2026-10-01",
+ "attempts": [
+  {
+   "index": 1,
+   "transport_error": null,
+   "utc": "2026-10-01T16:56:50.124+00:00"
+  }
+ ],
+ "body_sha256": "10e86b9000252e2c6519fa48439b0fd70f21ccd1cff6eec6d0d08833de9bf13a",
+ "cgx_record": null,
+ "cgx_sha256": null,
+ "cpu_seconds": 2.31,
+ "dataset_version": "v1.0",
+ "decoding_params": {
+  "effort": null,
+  "max_tokens": 8192,
+  "seed": null,
+  "temperature": 0.0,
+  "top_p": 1.0
+ },
+ "extraction_path": "fenced",
+ "harness_version": "93e9e015e087dd9cc959471d85fc156303da275f6d605f60e6f5f4dfa26c66f1",
+ "image_encoding": {
+  "crop_sha256": "07355242119205f778a34b27587bb44c23effd1a8e6fdd0873a8a0dca0c8962a",
+  "format": "png",
+  "height": 1024,
+  "width": 1024
+ },
+ "ink_fraction": 0.04138947,
+ "item_id": "hmb_6439ca0e2875ef67",
+ "judge_config_id": null,
+ "model_family": "google",
+ "model_id": "google.gemma-4-e2b",
+ "model_version_string": "google.gemma-4-e2b",
+ "n_blocks": 1,
+ "normalized_tex": "submissions/google.gemma-4-e2b/B/hmb_6439ca0e2875ef67.tex",
+ "normalized_tex_sha256": "6d115c0d95b8009710d4c0a9caf1517fc4f12318afb456992f1e77bcf661cab9",
+ "outcome_code": "OK",
+ "output_release": "public",
+ "page_count": 1,
+ "pdf_sha256": "feec303dc58a8285646c1f2e7015eb31a888c2078058aeb30b7a129bb1c7ce65",
+ "prompt_id": "reconstruction-B-v2",
+ "prompt_sha256": "1313949262639d9253466e7be19a71297b53032b9d8fdaaea49c11794439b641",
+ "provider_terms_version": "aws-bedrock-service-terms-2026-09-30",
+ "raw_output": "submissions/google.gemma-4-e2b/B/hmb_6439ca0e2875ef67.txt",
+ "raw_output_sha256": "c69ffea7ad2ae8ecc6ba378b35c8f29ca3d968d12fc407cfc685375008d84942",
+ "release_hash": "sha256:a1bfbd4f1938236aa657dc10fc4e3f51f168b4324197d59d128087021e20283e",
+ "render_sha256": "83601e747b47f2fe7887c974879815c1b9d424b74c3bca7d4aca4eefc70cfad1",
+ "sandbox_image_digest": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "scores": null,
+ "scores_sha256": null,
+ "stop_reason": "stop",
+ "track": "B",
+ "verdicts": null,
+ "verdicts_sha256": null,
+ "wrapper_class": "D"
+}

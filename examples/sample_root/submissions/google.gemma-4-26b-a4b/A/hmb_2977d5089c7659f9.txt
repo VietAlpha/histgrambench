@@ -1,0 +1,23 @@
+```latex
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+    % Define the vertices of an equilateral triangle
+    \coordinate (A) at (90:3);
+    \coordinate (B) at (210:3);
+    \coordinate (C) at (330:3);
+
+    % Draw the triangle
+    \draw[thick] (A) -- (B) -- (C) -- cycle;
+
+    % Place the label 'a' in the center
+    % Using a slightly offset position to match the visual center of the provided image
+    \node at (0, -0.5) {$a$};
+
+\end{tikzpicture}
+\end{document}
+```

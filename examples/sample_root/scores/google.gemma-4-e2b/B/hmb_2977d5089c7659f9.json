@@ -1,0 +1,50 @@
+{
+ "S": 0.16666666666666666,
+ "evaluator_failure": null,
+ "item_id": "hmb_2977d5089c7659f9",
+ "metric_hash": "e60d6873cdecd6620dda6ea11fa4b2ed7bc804e0abfbf6575ed15ada19983d81",
+ "model_id": "google.gemma-4-e2b",
+ "outcome_code": "OK",
+ "per_class": {
+  "E": {
+   "R": 0.18181818181818182,
+   "n": 11,
+   "n_absent": 9,
+   "n_contradicted": 0,
+   "n_exempt": 0,
+   "n_indeterminate": 0,
+   "n_present": 2,
+   "n_star": 11,
+   "reportable": true
+  },
+  "L": {
+   "R": 1.0,
+   "label_errors": {
+    "attachment": 0,
+    "missing": 0,
+    "transcription": 0
+   },
+   "n": 1,
+   "n_absent": 0,
+   "n_contradicted": 0,
+   "n_exempt": 0,
+   "n_indeterminate": 0,
+   "n_present": 1,
+   "n_star": 1,
+   "reportable": true
+  },
+  "R": {
+   "R": 0.0,
+   "n": 18,
+   "n_absent": 6,
+   "n_contradicted": 0,
+   "n_exempt": 12,
+   "n_indeterminate": 0,
+   "n_present": 0,
+   "n_star": 6,
+   "reportable": true
+  }
+ },
+ "profile": "production",
+ "track": "B"
+}

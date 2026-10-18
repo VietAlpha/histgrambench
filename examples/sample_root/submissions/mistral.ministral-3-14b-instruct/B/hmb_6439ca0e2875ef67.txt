@@ -1,0 +1,11 @@
+```latex
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+
+\begin{document}
+\begin{tikzpicture}
+    \node[draw, diamond, minimum size=3cm, thick, inner sep=0pt] {};
+\end{tikzpicture}
+\end{document}
+```

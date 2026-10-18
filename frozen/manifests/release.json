@@ -1,0 +1,36 @@
+{
+ "benchmark_version": "histmathbench-1.0.0",
+ "cardset_hash": "2fcb30733924ff679f30dba961d7a594ec9eaf8106d130cdac76063a96985dbf",
+ "counts": {
+  "books": 100,
+  "facts_eligible": 121013,
+  "items_eligible": 2657,
+  "split_groups": 188
+ },
+ "created": "2026-09-30T23:21:28+00:00",
+ "data_licence": {
+  "L4_cards_and_metadata": "Apache-2.0",
+  "L5_code_schemas_prompts": "Apache-2.0",
+  "scans_and_crops": "per book: intersection of L1-L3 in sources/rights_manifest.yaml"
+ },
+ "funnel": "manifests/funnel_1.0.0.json",
+ "harness": {
+  "canvas": "1024x1024",
+  "container_digest": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+  "dpi": 300,
+  "eval_commit": "cc0315875196dfdc31fd3149c5e474100eb192473d0c3cda80d863d3627bb87f",
+  "extraction_rules_version": "extract-9.2-v2",
+  "rasterizer": "pdftoppm version 26.07.0|canon-9.7-v1|pillow=12.0.0",
+  "submission_harness_version_equal": true,
+  "wrapper_version": "wrapper_v1:f30a8e0aca2520c57544a922f120ed5d8d19e5f430cea9c51e9e54ad4b647ff0"
+ },
+ "judge_config_hash": "00156fb31a64ec8c3a8bb44d41ae10ad48164e2514a31c7eb581cad57d3daf69",
+ "metric_hash": "e60d6873cdecd6620dda6ea11fa4b2ed7bc804e0abfbf6575ed15ada19983d81",
+ "profile": "production",
+ "releasable": true,
+ "release_hash": "sha256:a1bfbd4f1938236aa657dc10fc4e3f51f168b4324197d59d128087021e20283e",
+ "split_hash": "13b5912c89798e621d97d3c20530a0ba27a7a147a99fe84cf2ea6dc0c09bd46b",
+ "thresholds_frozen_at": "2026-09-28T02:53:34+00:00",
+ "thresholds_hash": "56633f2e32abb791e498f1b6dade601bf60f2f553fba13616c2fa1d7dcf9f88a",
+ "tombstones": "manifests/tombstones.json"
+}

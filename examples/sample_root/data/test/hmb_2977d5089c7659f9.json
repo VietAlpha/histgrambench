@@ -1,0 +1,142 @@
+{
+ "assets": {
+  "context_text": "context/hmb_2977d5089c7659f9.txt",
+  "context_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "crop_canonical_image": "crops_canonical/hmb_2977d5089c7659f9.png",
+  "crop_canonical_sha256": "9763f26aaaf0ff71603575e81193a161af365a46ceb3f00ed358e500a7e6c744",
+  "crop_image": "crops/hmb_2977d5089c7659f9.png",
+  "crop_image_sha256": "b9971c1c8e8d0c08d0aee191de6451dff35cc21995db34cc5b9f939110981699",
+  "page_image": "pages/bk_7a63cf76aa43/0026.png",
+  "page_image_sha256": "184da53dfe3fc4cfb38de66e540dfa18dcb1fed2b416b771cb4abc14f0fe9f61"
+ },
+ "automatic_metadata": {
+  "crop_border": {
+   "border_ink": [
+    0.008715,
+    0.006803,
+    0.005447,
+    0.037415
+   ],
+   "growth_steps": 0,
+   "touching_cc": true
+  },
+  "diagram_type": {
+   "gate_version": "g8b-4",
+   "label": "geometry",
+   "labeler_effort": "high",
+   "labeler_model_id": "global.openai.gpt-6-luna",
+   "prompt": "g8b_gatekeeper.txt",
+   "prompt_sha256": "7aba12bd346b1824edae9050a3d2ea912c6023aa68b80f74d82d53d9da7ada16",
+   "status": "predicted"
+  },
+  "figure_only_page": true,
+  "image_stats": {
+   "blur_norm": null,
+   "contrast_rms": null,
+   "eff_res_xheight_px": null,
+   "endpoint_density": 0.006983240223463687,
+   "frag_index": 0.0,
+   "ink_frac": 0.05415499533146592,
+   "label_contact_cc": null,
+   "measured_on": "paddle_crop",
+   "midtone_frac": null,
+   "skew_deg": 0.6,
+   "speckle_mad": null,
+   "stats_version": "imgstat-2",
+   "stroke_w_cv": 0.23075409020105328,
+   "stroke_w_mean": 7.151618176165906
+  },
+  "ocr_words": [],
+  "ocr_words_level": "block"
+ },
+ "dataset_version": "v1.0",
+ "display_id": null,
+ "extraction": {
+  "caption_stripped": false,
+  "color_mode": "gray8",
+  "context_bbox": [
+   30,
+   71,
+   471,
+   530
+  ],
+  "context_block_count": 0,
+  "context_char_count": 0,
+  "context_window_rule": "ctxwin-1",
+  "crop_bbox": [
+   30,
+   71,
+   471,
+   530
+  ],
+  "ocr_engine_version": "none (pre-cropped source)",
+  "ocr_status": "unavailable",
+  "panel_of": "prop_69ddd1f421bf6192",
+  "pipeline_version": "extract-1.0.0",
+  "proposal_id": "prop_8e1f8c99bba37b27",
+  "render_dpi": 0,
+  "renderer_version": "precropped@1",
+  "source_crop": {
+   "block_bbox": [
+    0,
+    0,
+    1714,
+    604
+   ],
+   "file": "imgs/052b.png",
+   "file_sha256": "86b39c806e1b95fce4e5c4a5a6045ec60f9c7cc0cef5b09900565626c508298e",
+   "frame": "precropped_image",
+   "frame_wh": [
+    1714,
+    604
+   ],
+   "modifications": [
+    "cropped_by_collector"
+   ],
+   "precropped_origin": "html_image",
+   "regenerable_from_master": true,
+   "rotation_deg": null,
+   "snapshot_id": "snap_cd8df292a2f94bfe",
+   "source": "precropped@1",
+   "source_page": null
+  }
+ },
+ "id": "hmb_2977d5089c7659f9",
+ "quality": {
+  "eligible": true,
+  "exclusion_reasons": [],
+  "funnel_exit_stage": null,
+  "is_cluster_representative": true,
+  "phash_cluster_id": "singleton"
+ },
+ "semantic_card": {
+  "abstained_count": 0,
+  "ambiguous_entity_count": 0,
+  "asc_version": "asc-2.0.0+1a2109cf8efd5691",
+  "card_uid": "card_1c66694beb50fba1",
+  "context_assisted_fact_count": 0,
+  "contradiction_rate": 0.0,
+  "eligible_geometric_count": 29,
+  "eligible_mgs_count": {
+   "E": 11,
+   "L": 1,
+   "R": 18
+  },
+  "eligible_model_count": 1,
+  "facts": "semantic_cards/hmb_2977d5089c7659f9.json",
+  "facts_sha256": "4b2c6eb6f9d95cbc29d33cbc44253e85aad6f9d72125b95c2d66942fc14f7509",
+  "generation_manifest": "manifests/cards/card_1c66694beb50fba1/hmb_2977d5089c7659f9.json",
+  "generation_manifest_sha256": "aabead6b06b13e5270387ea8db1eef03f5196e330218ae11b2c3ed263348bc48",
+  "union_mgs_count": 32
+ },
+ "source": {
+  "book_id": "bk_7a63cf76aa43",
+  "page_index": 26,
+  "printed_page_label": null,
+  "rights_manifest_sha256": "edb3cc93dde5c9f355be1bfda9c9fca5355da4358b9723fa1ac7075fe2351584",
+  "rights_manifest_version": "rights-1",
+  "work_id": "wk_ramus_way_to_geometry"
+ },
+ "split": "test",
+ "split_group": "sg_c3804aedff"
+}

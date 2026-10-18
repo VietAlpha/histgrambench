@@ -1,0 +1,15 @@
+
+% ---- HistMathBench v2 sandbox overrides (plan §9.6); asserted by /opt/hmb/selftest.sh ----
+shell_escape = f
+openout_any = p
+% paranoid writes are confined to TEXMFOUTPUT (also applies to Lua io.open in LuaTeX)
+TEXMFOUTPUT = /job/out
+% one-line log messages (no wrapping at 79 columns) so outcome signatures parse reliably
+max_print_line = 100000
+error_line = 254
+half_error_line = 238
+TEXMFVAR = /opt/hmb/texmf-var
+% luaotfload needs a writable cache: a per-job one inside the tmpfs (seeded by run-job.sh with the
+% prebuilt names database), then the read-only prebuilt cache for processed fonts.
+TEXMFCACHE = /job/out/.hmbcache:/opt/hmb/texmf-var
+TEXMFHOME = /opt/hmb/texmf-home

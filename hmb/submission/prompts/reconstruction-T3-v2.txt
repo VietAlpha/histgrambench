@@ -1,0 +1,26 @@
+You are given no image. You are given only text from a page of a historical printed book; the page contains a mathematical diagram that you cannot see.
+
+1. Task.
+Reconstruct the mathematical figure the original author intended; do not reproduce scan damage, paper texture, or print defects.
+
+2. Output contract.
+Exactly one fenced block tagged ```latex, containing exactly one tikzpicture (optionally inside a standalone document). Any reasoning goes outside the block. Nothing after the block.
+
+3. Allowlist.
+Packages (PKG_ALLOW): tikz, pgfplots, amsmath, amssymb, xcolor, tikz-3dplot.
+TikZ libraries (LIB_ALLOW): calc, intersections, angles, quotes, positioning, arrows.meta, decorations.markings, decorations.pathmorphing, patterns, through, shapes.geometric, shapes.misc, 3d, perspective, math, fit, backgrounds, babel.
+pgfplots libraries: fillbetween, polar, groupplots, colormaps, colorbrewer, statistics, ternary, smithchart, patchplots, units, dateplot, decorations.softclip.
+Lines before the tikzpicture may only be: \usepackage[opts]{X} with X in PKG_ALLOW; \usetikzlibrary{L,...} with each L in LIB_ALLOW; \usepgfplotslibrary{...} from the pgfplots libraries above; \pgfplotsset{...}; \tikzset{...}; \definecolor{...}; \newcommand, \renewcommand, \def, \let; \pgfdeclare*. Anything else is rejected.
+Explicitly not allowed: external, gnuplot-backed plotting, datavisualization, anything requiring shell escape, any font package.
+
+4. Prohibitions.
+Shell escape, \write18, \directlua, \input, \include, \openin, \openout, filecontents, \includegraphics, \pdfximage, \special, font-selection macros, external files, network access.
+
+5. Not judged.
+Absolute coordinates, scale, line width, font, colour, small label offsets. The benchmark treats these as allowed variation: global translation; uniform scaling; line width; font family; colour; label offset within tolerance; canvas padding; DPI; source refactoring that yields the same render.
+
+6. Script.
+Labels may be written literally in their original script (Chinese, Japanese, Vietnamese, Cyrillic, Greek, Latin); the compiler supplies covering fonts.
+
+Context.
+The text below is surrounding text from the same page and may contain the figure's caption.

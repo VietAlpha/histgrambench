@@ -1,0 +1,46 @@
+{
+ "canon": {
+  "H": 577,
+  "W": 659,
+  "canon_version": "canon-9.7-v1",
+  "canvas": 1024,
+  "h": 897,
+  "offset": [
+   0,
+   63
+  ],
+  "pillow": "12.0.0",
+  "png_compress_level": 9,
+  "render_sha256": "3ac6376fa151b786f6d732b3a49f57dce7ffab4487df829457fd514bacf5b53b",
+  "resample": "LANCZOS",
+  "s": 1.5538694992412747,
+  "w": 1024
+ },
+ "cpu_seconds": 3.28,
+ "exit_code": 0,
+ "image_id": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "image_xobjects": 0,
+ "ink_fraction": 0.03027821,
+ "log_bytes": 34482,
+ "log_path": "compiled/google.gemma-4-26b-a4b/A/hmb_2977d5089c7659f9/cand.log",
+ "log_sha256": "91b42ceb0b2d3aeb2a6763c9a1d5e5c7d3e5bbc41cc8bca4fba23a6ba1da6e69",
+ "log_truncated": false,
+ "max_rss_kb": 721400,
+ "missing_glyphs": [],
+ "notes": [],
+ "outcome": "OK",
+ "page_count": 1,
+ "page_size_cm": [
+  5.5757,
+  4.8796
+ ],
+ "path_op_count": 3,
+ "pdf_path": "compiled/google.gemma-4-26b-a4b/A/hmb_2977d5089c7659f9/cand.pdf",
+ "pdf_sha256": "86c383cdc7333d2a129f16589d01697f9b449b92b7f3f0c6daeda4d3e6a7a620",
+ "render_path": "compiled/google.gemma-4-26b-a4b/A/hmb_2977d5089c7659f9/render.png",
+ "render_sha256": "3ac6376fa151b786f6d732b3a49f57dce7ffab4487df829457fd514bacf5b53b",
+ "signal": null,
+ "violations": [],
+ "wall_seconds": 4.037,
+ "wallclock_reruns": 0
+}

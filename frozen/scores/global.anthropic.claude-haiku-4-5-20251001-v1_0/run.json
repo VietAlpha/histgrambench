@@ -1,0 +1,72 @@
+{
+ "drift_probe": {
+  "close_agreement": 0.8666666666666667,
+  "engineering_valid": true,
+  "kappa_min": 0.8,
+  "open_agreement": 0.8666666666666667,
+  "pass": true,
+  "profile": "production"
+ },
+ "funnel_eligibility_rate": null,
+ "model": {
+  "access_date": [
+   "2026-10-02"
+  ],
+  "attempts": {
+   "cells": 5014,
+   "max_attempts": 1
+  },
+  "decoding": {
+   "effort": null,
+   "max_tokens": 8192,
+   "seed": null,
+   "temperature": 0.0,
+   "top_p": 1.0
+  },
+  "effective_inference": {
+   "sent": {
+    "maxTokens": 8192,
+    "temperature": 0.0
+   },
+   "service_tier": "default",
+   "transport": "bedrock-runtime Converse",
+   "unsupported_not_sent": []
+  },
+  "effort": null,
+  "family": "anthropic",
+  "input_mode": "vision",
+  "model_id": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "prompts": {
+   "A": "e7cb418068c4f1d860325273a3125ca584107dac6e7db8b108c2b3ac3501cea7",
+   "B": "1313949262639d9253466e7be19a71297b53032b9d8fdaaea49c11794439b641"
+  },
+  "provider_version": [
+   "global.anthropic.claude-haiku-4-5-20251001-v1:0"
+  ],
+  "route": {
+   "direct_figure_eligible": true,
+   "endpoint": "bedrock-runtime.us-east-1",
+   "image_input": true,
+   "inference_scope": "global_cris",
+   "locked": true,
+   "logical_name": "Claude Haiku 4.5",
+   "model_id": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+   "region": "us-east-1",
+   "service_tier": "default",
+   "snapshot": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+   "transport": "bedrock-runtime Converse"
+  },
+  "snapshot": "global.anthropic.claude-haiku-4-5-20251001-v1:0"
+ },
+ "model_hash": "d69c29536ac9d0eff88d047f4d75f6055b512fd74c21dd0999423a1f8951281e",
+ "output_release": "public",
+ "profile": "production",
+ "prompt_sha256": "f0d7f3a58678b1c1d4ff1f28c1d0fcbf2d89ab0b43a1b7290e026c5d4899befa",
+ "release_hash": "sha256:a1bfbd4f1938236aa657dc10fc4e3f51f168b4324197d59d128087021e20283e",
+ "scoring_window": {
+  "close": "2026-10-02T19:06:02+00:00",
+  "open": "2026-10-02T14:56:47+00:00",
+  "source": "drift-probe record times"
+ },
+ "verdicts_hash": "33d8c5f2967859356dc0288358803c825c9853edab5ab659ad2482e91cde0a5a"
+}

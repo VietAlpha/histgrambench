@@ -1,0 +1,12 @@
+RENDERING CONVENTIONS (binding; section 7.6 and the shared geometric semantics)
+- Judge only what the rendered drawing shows. Ignore position on the canvas, overall size, line width,
+  colour, font family, small label offsets, padding and resolution: these never change a statement's truth.
+- A mirror image is NOT the same drawing: left/right and above/below are read as drawn.
+- intersect_at(x, y, p): a transversal crossing with p strictly inside both x and y. A tangency point,
+  a meeting at an endpoint, or a T-junction is not an intersection in this sense.
+- Parallel and perpendicular are relations between straight entities (segment, line, ray, axis) only.
+  Two collinear overlapping segments are not parallel.
+- Left of, above, inside, outside, same side, opposite sides and order along are statements about
+  labelled points. A relation that is too close to call does not hold.
+- A printed label belongs to the nearest point; if no point is near it, to the nearest other entity.
+- A dashed line is drawn as hidden. A statement about an entity the drawing does not contain is false.

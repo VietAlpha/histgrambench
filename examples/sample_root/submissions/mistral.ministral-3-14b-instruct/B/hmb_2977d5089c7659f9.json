@@ -1,0 +1,58 @@
+{
+ "access_date": "2026-10-01",
+ "attempts": [
+  {
+   "index": 1,
+   "transport_error": null,
+   "utc": "2026-10-01T16:35:14+00:00"
+  }
+ ],
+ "body_sha256": "77e245a042cba62a3c9c5c786147545117179cd9664dd75acc18fa8a46edc32e",
+ "cgx_record": "cgx/mistral.ministral-3-14b-instruct/B/hmb_2977d5089c7659f9.json",
+ "cgx_sha256": "d1914cbbb6b2656c9e6147f0d38e7419d8ba287d2deef51ed44ff66f084d4161",
+ "cpu_seconds": 3.08,
+ "dataset_version": "v1.0",
+ "decoding_params": {
+  "effort": null,
+  "max_tokens": 8192,
+  "seed": null,
+  "temperature": 0.0,
+  "top_p": 1.0
+ },
+ "extraction_path": "fenced",
+ "harness_version": "93e9e015e087dd9cc959471d85fc156303da275f6d605f60e6f5f4dfa26c66f1",
+ "image_encoding": {
+  "crop_sha256": "9763f26aaaf0ff71603575e81193a161af365a46ceb3f00ed358e500a7e6c744",
+  "format": "png",
+  "height": 1024,
+  "width": 1024
+ },
+ "ink_fraction": 0.05403233,
+ "item_id": "hmb_2977d5089c7659f9",
+ "judge_config_id": "c06fd35a645b1a3d2b635bbd8860fd80826c015c86daff55039074b3f8cd4ea9",
+ "model_family": "mistral",
+ "model_id": "mistral.ministral-3-14b-instruct",
+ "model_version_string": "mistral.ministral-3-14b-instruct",
+ "n_blocks": 1,
+ "normalized_tex": "submissions/mistral.ministral-3-14b-instruct/B/hmb_2977d5089c7659f9.tex",
+ "normalized_tex_sha256": "7ba4275b4c90705244b154b8359c8c066571e4273d924c1cf3f95f3f60d678ac",
+ "outcome_code": "OK",
+ "output_release": "public",
+ "page_count": 1,
+ "pdf_sha256": "18a35d0b250ca04274917467b54edd3556005df0c04fc6f1ceba8a5fd1d12759",
+ "prompt_id": "reconstruction-B-v2",
+ "prompt_sha256": "1313949262639d9253466e7be19a71297b53032b9d8fdaaea49c11794439b641",
+ "provider_terms_version": "aws-bedrock-service-terms-2026-09-30",
+ "raw_output": "submissions/mistral.ministral-3-14b-instruct/B/hmb_2977d5089c7659f9.txt",
+ "raw_output_sha256": "f9e7c6ea7e63f3f6743ad4ff7cc6d40cbf91f3c8860ce6a97a704b7647a66223",
+ "release_hash": "sha256:a1bfbd4f1938236aa657dc10fc4e3f51f168b4324197d59d128087021e20283e",
+ "render_sha256": "519bbd98cd3b7eb554239715b919c105efedb85630cdb7a08ca76941a9bfae2b",
+ "sandbox_image_digest": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "scores": "scores/mistral.ministral-3-14b-instruct/B/hmb_2977d5089c7659f9.json",
+ "scores_sha256": "91c0568eda1c18e05990271eba674494d1886e8e068c86c78179a8ea0e40dc44",
+ "stop_reason": "end_turn",
+ "track": "B",
+ "verdicts": "verdicts/mistral.ministral-3-14b-instruct/B/hmb_2977d5089c7659f9.json",
+ "verdicts_sha256": "01c851d14f656c145a2dde1e31d294757198ed95fae1895ecf7d69f57ac3041a",
+ "wrapper_class": "D"
+}

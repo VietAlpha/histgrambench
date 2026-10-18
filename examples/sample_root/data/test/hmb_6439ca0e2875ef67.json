@@ -1,0 +1,142 @@
+{
+ "assets": {
+  "context_text": "context/hmb_6439ca0e2875ef67.txt",
+  "context_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "crop_canonical_image": "crops_canonical/hmb_6439ca0e2875ef67.png",
+  "crop_canonical_sha256": "07355242119205f778a34b27587bb44c23effd1a8e6fdd0873a8a0dca0c8962a",
+  "crop_image": "crops/hmb_6439ca0e2875ef67.png",
+  "crop_image_sha256": "c64cb3e39a4a1e63d9a1bac7ff6b82f21f0a9517c960eb247236e7756e9a3254",
+  "page_image": "pages/bk_7a63cf76aa43/0200.png",
+  "page_image_sha256": "c2786bcda8732dec927cde4c648d8db0386798f138757dd0666bcf09bc32ede2"
+ },
+ "automatic_metadata": {
+  "crop_border": {
+   "border_ink": [
+    0.018868,
+    0.022059,
+    0.024259,
+    0.012868
+   ],
+   "growth_steps": 0,
+   "touching_cc": true
+  },
+  "diagram_type": {
+   "gate_version": "g8b-4",
+   "label": "geometry",
+   "labeler_effort": "high",
+   "labeler_model_id": "global.openai.gpt-6-luna",
+   "prompt": "g8b_gatekeeper.txt",
+   "prompt_sha256": "7aba12bd346b1824edae9050a3d2ea912c6023aa68b80f74d82d53d9da7ada16",
+   "status": "predicted"
+  },
+  "figure_only_page": true,
+  "image_stats": {
+   "blur_norm": null,
+   "contrast_rms": null,
+   "eff_res_xheight_px": null,
+   "endpoint_density": 0.0013736263736263737,
+   "frag_index": 0.0,
+   "ink_frac": 0.056950610432852385,
+   "label_contact_cc": null,
+   "measured_on": "paddle_crop",
+   "midtone_frac": null,
+   "skew_deg": 4.0,
+   "speckle_mad": null,
+   "stats_version": "imgstat-2",
+   "stroke_w_cv": 0.17377117589562366,
+   "stroke_w_mean": 6.449724046738593
+  },
+  "ocr_words": [],
+  "ocr_words_level": "block"
+ },
+ "dataset_version": "v1.0",
+ "display_id": null,
+ "extraction": {
+  "caption_stripped": false,
+  "color_mode": "gray8",
+  "context_bbox": [
+   46,
+   199,
+   318,
+   570
+  ],
+  "context_block_count": 0,
+  "context_char_count": 0,
+  "context_window_rule": "ctxwin-1",
+  "crop_bbox": [
+   46,
+   199,
+   318,
+   570
+  ],
+  "ocr_engine_version": "none (pre-cropped source)",
+  "ocr_status": "unavailable",
+  "panel_of": "prop_bb9237999a059ca1",
+  "pipeline_version": "extract-1.0.0",
+  "proposal_id": "prop_945c5787981fa966",
+  "render_dpi": 0,
+  "renderer_version": "precropped@1",
+  "source_crop": {
+   "block_bbox": [
+    0,
+    0,
+    1259,
+    618
+   ],
+   "file": "imgs/200a.png",
+   "file_sha256": "fbbdcb1c1b90010d3b65300eb916a61bdd6e687349138186801645f0762ca86e",
+   "frame": "precropped_image",
+   "frame_wh": [
+    1259,
+    618
+   ],
+   "modifications": [
+    "cropped_by_collector"
+   ],
+   "precropped_origin": "html_image",
+   "regenerable_from_master": true,
+   "rotation_deg": null,
+   "snapshot_id": "snap_cd8df292a2f94bfe",
+   "source": "precropped@1",
+   "source_page": null
+  }
+ },
+ "id": "hmb_6439ca0e2875ef67",
+ "quality": {
+  "eligible": true,
+  "exclusion_reasons": [],
+  "funnel_exit_stage": null,
+  "is_cluster_representative": true,
+  "phash_cluster_id": "singleton"
+ },
+ "semantic_card": {
+  "abstained_count": 5,
+  "ambiguous_entity_count": 0,
+  "asc_version": "asc-2.0.0+1a2109cf8efd5691",
+  "card_uid": "card_27270f4f9ad40df5",
+  "context_assisted_fact_count": 0,
+  "contradiction_rate": 0.0,
+  "eligible_geometric_count": 23,
+  "eligible_mgs_count": {
+   "E": 9,
+   "L": 0,
+   "R": 14
+  },
+  "eligible_model_count": 0,
+  "facts": "semantic_cards/hmb_6439ca0e2875ef67.json",
+  "facts_sha256": "9059fb2c05ed60bf8c390e3ebeca5120ecdde76e786d84d1382b57a85e50059a",
+  "generation_manifest": "manifests/cards/card_27270f4f9ad40df5/hmb_6439ca0e2875ef67.json",
+  "generation_manifest_sha256": "fa3413ed489a5b96aca1046475722176c2ca328e53fd343deaf175d49d27f65b",
+  "union_mgs_count": 23
+ },
+ "source": {
+  "book_id": "bk_7a63cf76aa43",
+  "page_index": 200,
+  "printed_page_label": null,
+  "rights_manifest_sha256": "edb3cc93dde5c9f355be1bfda9c9fca5355da4358b9723fa1ac7075fe2351584",
+  "rights_manifest_version": "rights-1",
+  "work_id": "wk_ramus_way_to_geometry"
+ },
+ "split": "test",
+ "split_group": "sg_c3804aedff"
+}

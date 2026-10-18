@@ -1,0 +1,50 @@
+{
+ "S": 0.7333333333333333,
+ "evaluator_failure": null,
+ "item_id": "hmb_6439ca0e2875ef67",
+ "metric_hash": "e60d6873cdecd6620dda6ea11fa4b2ed7bc804e0abfbf6575ed15ada19983d81",
+ "model_id": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+ "outcome_code": "OK",
+ "per_class": {
+  "E": {
+   "R": 0.5555555555555556,
+   "n": 9,
+   "n_absent": 4,
+   "n_contradicted": 0,
+   "n_exempt": 0,
+   "n_indeterminate": 0,
+   "n_present": 5,
+   "n_star": 9,
+   "reportable": true
+  },
+  "L": {
+   "R": null,
+   "label_errors": {
+    "attachment": 0,
+    "missing": 0,
+    "transcription": 0
+   },
+   "n": 0,
+   "n_absent": 0,
+   "n_contradicted": 0,
+   "n_exempt": 0,
+   "n_indeterminate": 0,
+   "n_present": 0,
+   "n_star": 0,
+   "reportable": false
+  },
+  "R": {
+   "R": 1.0,
+   "n": 14,
+   "n_absent": 0,
+   "n_contradicted": 0,
+   "n_exempt": 8,
+   "n_indeterminate": 0,
+   "n_present": 6,
+   "n_star": 6,
+   "reportable": true
+  }
+ },
+ "profile": "production",
+ "track": "B"
+}

@@ -1,0 +1,26 @@
+# HistMathBench v2 batch inference configuration (hmb.batch; 2026-09-26). Copy to configs/batch.yaml
+# (gitignored) and pass as `--batch-config`. No secret belongs here: authentication is the caller's
+# IAM credentials; the service role below is passed to Bedrock with iam:PassRole.
+#
+# Which calls may use batch is NOT configured here: it is the versioned capability matrix
+# hmb/batch/capability_matrix.json (only SUPPORTED_LIVE_COMPLETED routes; see `hmb batch-plan`).
+# AWS resources (created 2026-09-26, project-scoped; policies in docs/aws/):
+#   bucket  hmb-bedrock-batch-<ACCOUNT>-use1  (private, SSE-S3, bucket-owner-enforced, tagged)
+#   role    service-role/hmb-bedrock-batch-service-role (trust: bedrock.amazonaws.com, this account's
+#           model-invocation jobs only; InvokeModel on the roster's batch-capable routes; S3 under hmb/)
+version: batch-1
+region: us-east-1
+s3_bucket: hmb-bedrock-batch-<ACCOUNT>-use1
+s3_prefix: hmb/run                       # jobs live under s3://<bucket>/<prefix>/jobs/<job-name>/
+role_arn: arn:aws:iam::<ACCOUNT>:role/service-role/hmb-bedrock-batch-service-role
+poll_seconds: 60                         # job status polling interval
+timeout_hours: 24                        # CreateModelInvocationJob timeoutDurationInHours (24..168)
+max_records_per_job: 10000               # service quota: 100,000 records per job
+fill_target: 1000                        # records that flush a lane immediately
+window_seconds: 900                      # oldest-record age that flushes a lane (>= the model's minimum,
+                                         # 100 records) or spills it to synchronous calls
+workers: 8                               # concurrent cells (backpressure)
+default_sync_concurrency: 4              # concurrent synchronous calls per model
+sync_concurrency: {}                     # model_id -> concurrent synchronous calls (overrides)
+kms_key_id: null                         # optional SSE-KMS key for input/output objects
+tags: {Project: HistMathBench, hmb-purpose: benchmark}

@@ -1,0 +1,148 @@
+{
+ "global.anthropic.claude-haiku-4-5-20251001-v1_0": {
+  "H_fixed_den": 0.27616943421027806,
+  "H_report": 0.29958150784363147,
+  "class_fixed_den_item_mean": {
+   "E": 0.38857679108737786,
+   "R": 0.24324515297599808,
+   "L": 0.33814160719074726
+  }
+ },
+ "google.gemma-4-26b-a4b": {
+  "H_fixed_den": 0.552706959775571,
+  "H_report": 0.5894401509378383,
+  "class_fixed_den_item_mean": {
+   "E": 0.5922017329140019,
+   "R": 0.4255919968630354,
+   "L": 0.5868528285820727
+  }
+ },
+ "google.gemma-4-e2b": {
+  "H_fixed_den": 0.2625356424886059,
+  "H_report": 0.30852665150651115,
+  "class_fixed_den_item_mean": {
+   "E": 0.4071704654460767,
+   "R": 0.2280528141269402,
+   "L": 0.3548541671794115
+  }
+ },
+ "mistral.ministral-3-14b-instruct": {
+  "H_fixed_den": 0.3548615501426167,
+  "H_report": 0.3909742458179683,
+  "class_fixed_den_item_mean": {
+   "E": 0.5085279892081457,
+   "R": 0.290181435082539,
+   "L": 0.43985985144368067
+  }
+ },
+ "nvidia.nemotron-nano-12b-v2": {
+  "H_fixed_den": 0.16507137142262174,
+  "H_report": 0.19716241722088143,
+  "class_fixed_den_item_mean": {
+   "E": 0.32549572252617165,
+   "R": 0.15842370486641247,
+   "L": 0.2623051820022465
+  }
+ },
+ "us.meta.llama4-maverick-17b-instruct-v1_0": {
+  "H_fixed_den": 0.4867845454364724,
+  "H_report": 0.5242405692152032,
+  "class_fixed_den_item_mean": {
+   "E": 0.5316563595528415,
+   "R": 0.3250919756732563,
+   "L": 0.49466029295160285
+  }
+ },
+ "pairs": {
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|google.gemma-4-26b-a4b": {
+   "diff": -0.27653752556529304,
+   "p": 1.3294154072931761e-08,
+   "bh_adj": 4.985307777349411e-08,
+   "sep": true
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|google.gemma-4-e2b": {
+   "diff": 0.013633791721672197,
+   "p": 0.7423149631837547,
+   "bh_adj": 0.7423149631837547,
+   "sep": false
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|mistral.ministral-3-14b-instruct": {
+   "diff": -0.0786921159323387,
+   "p": 0.0411027010909577,
+   "bh_adj": 0.04742619356648965,
+   "sep": true
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.11109806278765633,
+   "p": 0.0014727584131687878,
+   "bh_adj": 0.002209137619753182,
+   "sep": true
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.2106151112261944,
+   "p": 3.88976881161719e-07,
+   "bh_adj": 8.335218882036836e-07,
+   "sep": true
+  },
+  "google.gemma-4-26b-a4b|google.gemma-4-e2b": {
+   "diff": 0.29017131728696527,
+   "p": 9.547385105659396e-13,
+   "bh_adj": 4.773692552829698e-12,
+   "sep": true
+  },
+  "google.gemma-4-26b-a4b|mistral.ministral-3-14b-instruct": {
+   "diff": 0.19784540963295436,
+   "p": 2.4976373694056313e-06,
+   "bh_adj": 4.6830700676355585e-06,
+   "sep": true
+  },
+  "google.gemma-4-26b-a4b|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.3876355883529493,
+   "p": 6.580850941630719e-18,
+   "bh_adj": 9.871276412446078e-17,
+   "sep": true
+  },
+  "google.gemma-4-26b-a4b|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": 0.06592241433909868,
+   "p": 0.07588859886976261,
+   "bh_adj": 0.08130921307474566,
+   "sep": true
+  },
+  "google.gemma-4-e2b|mistral.ministral-3-14b-instruct": {
+   "diff": -0.09232590765401091,
+   "p": 0.006567192040965062,
+   "bh_adj": 0.008208990051206328,
+   "sep": true
+  },
+  "google.gemma-4-e2b|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.09746427106598411,
+   "p": 7.025087203044032e-05,
+   "bh_adj": 0.00011708478671740053,
+   "sep": true
+  },
+  "google.gemma-4-e2b|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.22424890294786665,
+   "p": 3.014574713271696e-07,
+   "bh_adj": 7.536436783179239e-07,
+   "sep": true
+  },
+  "mistral.ministral-3-14b-instruct|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.189790178719995,
+   "p": 1.0879335005218861e-07,
+   "bh_adj": 3.2638005015656585e-07,
+   "sep": true
+  },
+  "mistral.ministral-3-14b-instruct|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.13192299529385568,
+   "p": 0.003865594336144508,
+   "bh_adj": 0.00527126500383342,
+   "sep": true
+  },
+  "nvidia.nemotron-nano-12b-v2|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.3217131740138507,
+   "p": 5.253920143594401e-16,
+   "bh_adj": 3.940440107695801e-15,
+   "sep": true
+  }
+ }
+}

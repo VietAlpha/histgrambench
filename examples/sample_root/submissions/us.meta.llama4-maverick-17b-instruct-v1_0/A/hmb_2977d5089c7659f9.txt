@@ -1,0 +1,20 @@
+The image is a simple triangle with a label "a" inside it. The triangle appears to be equilateral, but this is not explicitly stated. To reconstruct the mathematical figure, we can create a TikZ picture that draws an equilateral triangle with a label "a" inside it.
+
+```latex
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}
+    \draw (0,0) -- (1,0) -- (0.5, {sqrt(3)/2}) -- cycle;
+    \node at (0.5, {sqrt(3)/6}) {$a$};
+\end{tikzpicture}
+\end{document}
+```
+
+However, to meet the output contract, we need to simplify the code to fit within a single fenced block without the document wrapper.
+
+```latex
+\begin{tikzpicture}
+    \draw (0,0) -- (1,0) -- (0.5, {sqrt(3)/2}) -- cycle;
+    \node at (0.5, {sqrt(3)/6}) {$a$};
+\end{tikzpicture}
+```

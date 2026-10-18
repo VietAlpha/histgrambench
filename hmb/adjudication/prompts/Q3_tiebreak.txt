@@ -1,0 +1,23 @@
+You see ONE image: a rendered mathematical diagram. Below is the list of entities a reference
+specification describes, with their types and labels (a name in quotes such as “A” is a printed label;
+an identifier such as S1 or P2 is only a reference name and is NOT printed), and a list of candidate objects found in the
+rendered diagram, with their types and approximate positions (fractions of the image width from the
+left and of the image height from the top).
+
+ENTITIES:
+$entities
+
+CANDIDATE OBJECTS:
+$objects
+
+Each question below asks which candidate object corresponds to an entity and lists the ONLY allowed
+answers. You must decide every question: choose exactly one of its listed options, the one that fits the
+image best, even when the evidence is weak or two options look alike. Do not skip a question, do not
+answer with anything that is not listed for it, and do not refuse.
+
+QUESTIONS:
+$statements
+
+Answer with ONE JSON object and nothing else, in exactly this form:
+{"schema": "$schema", "answers": [{"id": "<question id>", "object": "<one of the listed options>"}]}
+Give exactly one answer per question id.

@@ -1,0 +1,318 @@
+{
+ "alignment_ambiguous": [
+  "s_1",
+  "s_2",
+  "s_3",
+  "s_4"
+ ],
+ "card_uid": "card_27270f4f9ad40df5",
+ "evaluator_failure": null,
+ "facts": [
+  {
+   "binding": {},
+   "evidence": "basis=entity absent",
+   "fact_id": "e_001",
+   "source": "extractor",
+   "verdict": "ABSENT",
+   "votes": []
+  },
+  {
+   "binding": {},
+   "evidence": "basis=entity absent",
+   "fact_id": "e_002",
+   "source": "extractor",
+   "verdict": "ABSENT",
+   "votes": []
+  },
+  {
+   "binding": {},
+   "evidence": "basis=entity absent",
+   "fact_id": "e_003",
+   "source": "extractor",
+   "verdict": "ABSENT",
+   "votes": []
+  },
+  {
+   "binding": {},
+   "evidence": "basis=entity absent",
+   "fact_id": "e_004",
+   "source": "extractor",
+   "verdict": "ABSENT",
+   "votes": []
+  },
+  {
+   "binding": {
+    "s_1": "sg1"
+   },
+   "evidence": "basis=bound",
+   "fact_id": "e_005",
+   "source": "extractor",
+   "verdict": "PRESENT",
+   "votes": []
+  },
+  {
+   "binding": {
+    "args": {},
+    "e_incompatible": false
+   },
+   "evidence": null,
+   "fact_id": "e_006",
+   "source": "judges",
+   "verdict": "PRESENT",
+   "votes": [
+    {
+     "judge_family": "qwen",
+     "judge_id": "qwen.qwen3-vl-235b-a22b-instruct",
+     "positive": true,
+     "question": "Q1",
+     "raw_call_sha256": "a30de17e56d213c1f3bcacfcb800385e934d8bb81acfbfd7a5ca97574f307fa8"
+    },
+    {
+     "judge_family": "mistral",
+     "judge_id": "mistral.mistral-large-3-675b-instruct",
+     "positive": true,
+     "question": "Q1",
+     "raw_call_sha256": "06fbbcff28c58275806af69cb3295cdc05035740fb1a49475cc70ce6b569547c"
+    }
+   ]
+  },
+  {
+   "binding": {
+    "s_3": "sg2"
+   },
+   "evidence": "basis=bound",
+   "fact_id": "e_007",
+   "source": "extractor",
+   "verdict": "PRESENT",
+   "votes": []
+  },
+  {
+   "binding": {
+    "args": {},
+    "e_incompatible": false
+   },
+   "evidence": null,
+   "fact_id": "e_008",
+   "source": "judges",
+   "verdict": "PRESENT",
+   "votes": [
+    {
+     "judge_family": "qwen",
+     "judge_id": "qwen.qwen3-vl-235b-a22b-instruct",
+     "positive": true,
+     "question": "Q1",
+     "raw_call_sha256": "a30de17e56d213c1f3bcacfcb800385e934d8bb81acfbfd7a5ca97574f307fa8"
+    },
+    {
+     "judge_family": "mistral",
+     "judge_id": "mistral.mistral-large-3-675b-instruct",
+     "positive": true,
+     "question": "Q1",
+     "raw_call_sha256": "06fbbcff28c58275806af69cb3295cdc05035740fb1a49475cc70ce6b569547c"
+    }
+   ]
+  },
+  {
+   "binding": {
+    "g_1": "pg1"
+   },
+   "evidence": "basis=shared_predicate",
+   "fact_id": "e_009",
+   "source": "extractor",
+   "verdict": "PRESENT",
+   "votes": []
+  },
+  {
+   "binding": {
+    "s_1": "sg1"
+   },
+   "evidence": "argument entity absent: ['p_1']",
+   "fact_id": "r_001",
+   "source": "deterministic",
+   "verdict": "EXEMPT",
+   "votes": []
+  },
+  {
+   "binding": {},
+   "evidence": "argument entity absent: ['p_1']",
+   "fact_id": "r_002",
+   "source": "deterministic",
+   "verdict": "EXEMPT",
+   "votes": []
+  },
+  {
+   "binding": {},
+   "evidence": "argument entity absent: ['p_2']",
+   "fact_id": "r_003",
+   "source": "deterministic",
+   "verdict": "EXEMPT",
+   "votes": []
+  },
+  {
+   "binding": {
+    "s_3": "sg2"
+   },
+   "evidence": "argument entity absent: ['p_2']",
+   "fact_id": "r_004",
+   "source": "deterministic",
+   "verdict": "EXEMPT",
+   "votes": []
+  },
+  {
+   "binding": {
+    "s_3": "sg2"
+   },
+   "evidence": "argument entity absent: ['p_3']",
+   "fact_id": "r_005",
+   "source": "deterministic",
+   "verdict": "EXEMPT",
+   "votes": []
+  },
+  {
+   "binding": {},
+   "evidence": "argument entity absent: ['p_3']",
+   "fact_id": "r_006",
+   "source": "deterministic",
+   "verdict": "EXEMPT",
+   "votes": []
+  },
+  {
+   "binding": {
+    "s_1": "sg1"
+   },
+   "evidence": "argument entity absent: ['p_4']",
+   "fact_id": "r_007",
+   "source": "deterministic",
+   "verdict": "EXEMPT",
+   "votes": []
+  },
+  {
+   "binding": {},
+   "evidence": "argument entity absent: ['p_4']",
+   "fact_id": "r_008",
+   "source": "deterministic",
+   "verdict": "EXEMPT",
+   "votes": []
+  },
+  {
+   "binding": {
+    "g_1": "pg1",
+    "s_1": "sg1"
+   },
+   "evidence": "basis=shared_predicate",
+   "fact_id": "r_009",
+   "source": "extractor",
+   "verdict": "PRESENT",
+   "votes": []
+  },
+  {
+   "binding": {
+    "args": {
+     "g_1": "pg1"
+    },
+    "e_incompatible": false
+   },
+   "evidence": null,
+   "fact_id": "r_010",
+   "source": "judges",
+   "verdict": "ABSENT",
+   "votes": [
+    {
+     "judge_family": "qwen",
+     "judge_id": "qwen.qwen3-vl-235b-a22b-instruct",
+     "positive": false,
+     "question": "Q1",
+     "raw_call_sha256": "a30de17e56d213c1f3bcacfcb800385e934d8bb81acfbfd7a5ca97574f307fa8"
+    },
+    {
+     "judge_family": "mistral",
+     "judge_id": "mistral.mistral-large-3-675b-instruct",
+     "positive": false,
+     "question": "Q1",
+     "raw_call_sha256": "06fbbcff28c58275806af69cb3295cdc05035740fb1a49475cc70ce6b569547c"
+    }
+   ]
+  },
+  {
+   "binding": {
+    "g_1": "pg1",
+    "s_3": "sg2"
+   },
+   "evidence": "basis=shared_predicate",
+   "fact_id": "r_011",
+   "source": "extractor",
+   "verdict": "PRESENT",
+   "votes": []
+  },
+  {
+   "binding": {
+    "args": {
+     "g_1": "pg1"
+    },
+    "e_incompatible": false
+   },
+   "evidence": null,
+   "fact_id": "r_012",
+   "source": "judges",
+   "verdict": "ABSENT",
+   "votes": [
+    {
+     "judge_family": "qwen",
+     "judge_id": "qwen.qwen3-vl-235b-a22b-instruct",
+     "positive": false,
+     "question": "Q1",
+     "raw_call_sha256": "a30de17e56d213c1f3bcacfcb800385e934d8bb81acfbfd7a5ca97574f307fa8"
+    },
+    {
+     "judge_family": "mistral",
+     "judge_id": "mistral.mistral-large-3-675b-instruct",
+     "positive": false,
+     "question": "Q1",
+     "raw_call_sha256": "06fbbcff28c58275806af69cb3295cdc05035740fb1a49475cc70ce6b569547c"
+    }
+   ]
+  },
+  {
+   "binding": {
+    "s_1": "sg1",
+    "s_3": "sg2"
+   },
+   "evidence": "basis=shared_predicate",
+   "fact_id": "r_013",
+   "source": "extractor",
+   "verdict": "ABSENT",
+   "votes": []
+  },
+  {
+   "binding": {
+    "args": {},
+    "e_incompatible": false
+   },
+   "evidence": null,
+   "fact_id": "r_014",
+   "source": "judges",
+   "verdict": "PRESENT",
+   "votes": [
+    {
+     "judge_family": "qwen",
+     "judge_id": "qwen.qwen3-vl-235b-a22b-instruct",
+     "positive": true,
+     "question": "Q1",
+     "raw_call_sha256": "a30de17e56d213c1f3bcacfcb800385e934d8bb81acfbfd7a5ca97574f307fa8"
+    },
+    {
+     "judge_family": "mistral",
+     "judge_id": "mistral.mistral-large-3-675b-instruct",
+     "positive": true,
+     "question": "Q1",
+     "raw_call_sha256": "06fbbcff28c58275806af69cb3295cdc05035740fb1a49475cc70ce6b569547c"
+    }
+   ]
+  }
+ ],
+ "item_id": "hmb_6439ca0e2875ef67",
+ "judge_config_hash": "c06fd35a645b1a3d2b635bbd8860fd80826c015c86daff55039074b3f8cd4ea9",
+ "model_id": "google.gemma-4-26b-a4b",
+ "profile": "production",
+ "track": "B"
+}

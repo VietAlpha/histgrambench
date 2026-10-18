@@ -1,0 +1,602 @@
+[
+ {
+  "fact_text": "The drawing contains segment S8.",
+  "reference": true,
+  "render_png": "compiled/google.gemma-4-26b-a4b/A/hmb_3a07e59d29b37a34/render.png",
+  "triple_id": "google.gemma-4-26b-a4b|A|hmb_3a07e59d29b37a34|e_014"
+ },
+ {
+  "fact_text": "The drawing contains point P5.",
+  "reference": true,
+  "render_png": "compiled/google.gemma-4-26b-a4b/A/hmb_c630ca27218b78bc/render.png",
+  "triple_id": "google.gemma-4-26b-a4b|A|hmb_c630ca27218b78bc|e_007"
+ },
+ {
+  "fact_text": "point “P₁” carries the name label “P₁(x₁,y₁)”.",
+  "reference": true,
+  "render_png": "compiled/google.gemma-4-e2b/A/hmb_0691b08a46380b73/render.png",
+  "triple_id": "google.gemma-4-e2b|A|hmb_0691b08a46380b73|l_012"
+ },
+ {
+  "fact_text": "line “B” is labelled “B”.",
+  "reference": false,
+  "render_png": "compiled/google.gemma-4-e2b/A/hmb_a1ea6b673c9e176d/render.png",
+  "triple_id": "google.gemma-4-e2b|A|hmb_a1ea6b673c9e176d|l_004"
+ },
+ {
+  "fact_text": "point “P” is labelled “P”.",
+  "reference": false,
+  "render_png": "compiled/google.gemma-4-e2b/A/hmb_a1ea6b673c9e176d/render.png",
+  "triple_id": "google.gemma-4-e2b|A|hmb_a1ea6b673c9e176d|l_009"
+ },
+ {
+  "fact_text": "point “P₂” is an endpoint of segment S4.",
+  "reference": false,
+  "render_png": "compiled/google.gemma-4-e2b/A/hmb_d587e0cfb4c57004/render.png",
+  "triple_id": "google.gemma-4-e2b|A|hmb_d587e0cfb4c57004|r_009"
+ },
+ {
+  "fact_text": "point “O” is labelled “O”.",
+  "reference": true,
+  "render_png": "compiled/google.gemma-4-e2b/B/hmb_0691b08a46380b73/render.png",
+  "triple_id": "google.gemma-4-e2b|B|hmb_0691b08a46380b73|l_001"
+ },
+ {
+  "fact_text": "point P9 lies on curve “(2)”.",
+  "reference": false,
+  "render_png": "compiled/google.gemma-4-e2b/B/hmb_263113f6bead8a9b/render.png",
+  "triple_id": "google.gemma-4-e2b|B|hmb_263113f6bead8a9b|r_016"
+ },
+ {
+  "fact_text": "point P7 lies on curve “(2)”.",
+  "reference": false,
+  "render_png": "compiled/google.gemma-4-e2b/B/hmb_263113f6bead8a9b/render.png",
+  "triple_id": "google.gemma-4-e2b|B|hmb_263113f6bead8a9b|r_020"
+ },
+ {
+  "fact_text": "The drawing contains segment S13.",
+  "reference": true,
+  "render_png": "compiled/google.gemma-4-e2b/B/hmb_3a07e59d29b37a34/render.png",
+  "triple_id": "google.gemma-4-e2b|B|hmb_3a07e59d29b37a34|e_026"
+ },
+ {
+  "fact_text": "point “O” lies on line L2.",
+  "reference": false,
+  "render_png": "compiled/google.gemma-4-e2b/B/hmb_3a07e59d29b37a34/render.png",
+  "triple_id": "google.gemma-4-e2b|B|hmb_3a07e59d29b37a34|r_007"
+ },
+ {
+  "fact_text": "The drawing contains point P2.",
+  "reference": false,
+  "render_png": "compiled/google.gemma-4-e2b/B/hmb_63475c4a17f02f2d/render.png",
+  "triple_id": "google.gemma-4-e2b|B|hmb_63475c4a17f02f2d|e_004"
+ },
+ {
+  "fact_text": "The drawing contains curve CV2, a curve of kind “line”.",
+  "reference": false,
+  "render_png": "compiled/google.gemma-4-e2b/B/hmb_63475c4a17f02f2d/render.png",
+  "triple_id": "google.gemma-4-e2b|B|hmb_63475c4a17f02f2d|e_016"
+ },
+ {
+  "fact_text": "The drawing contains curve CV2, a curve of kind “hyperbola”.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_0327c3ed4cab5381/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_0327c3ed4cab5381|e_021"
+ },
+ {
+  "fact_text": "The drawing contains line L1.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_11af541540ffe3e7/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_11af541540ffe3e7|e_024"
+ },
+ {
+  "fact_text": "point “H” is an endpoint of segment S5.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_122562318495c2e7/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_122562318495c2e7|r_007"
+ },
+ {
+  "fact_text": "point “M” is an endpoint of segment S10.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_122562318495c2e7/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_122562318495c2e7|r_009"
+ },
+ {
+  "fact_text": "point “R” is an endpoint of segment S10.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_122562318495c2e7/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_122562318495c2e7|r_021"
+ },
+ {
+  "fact_text": "segment S5 is an edge of solid SD2.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_122562318495c2e7/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_122562318495c2e7|r_042"
+ },
+ {
+  "fact_text": "point “T′” is an endpoint of segment S11.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_1bee197784b83d05/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_1bee197784b83d05|r_023"
+ },
+ {
+  "fact_text": "The drawing contains segment S1.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_1ff648cc6a5cc079/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_1ff648cc6a5cc079|e_006"
+ },
+ {
+  "fact_text": "The drawing contains segment S1.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_2ebff96d74c66bb4/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_2ebff96d74c66bb4|e_011"
+ },
+ {
+  "fact_text": "point “R” is an endpoint of segment S5.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_2ebff96d74c66bb4/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_2ebff96d74c66bb4|r_016"
+ },
+ {
+  "fact_text": "The drawing contains segment S4.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_30b0bde500cf379d/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_30b0bde500cf379d|e_008"
+ },
+ {
+  "fact_text": "point “P₁(3,-2)” is an endpoint of segment S2.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_30b0bde500cf379d/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_30b0bde500cf379d|r_012"
+ },
+ {
+  "fact_text": "point “C” is an endpoint of segment S8.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_3adf82a53f7ae415/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_3adf82a53f7ae415|r_034"
+ },
+ {
+  "fact_text": "The drawing contains segment S8.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_3ed71b2ebf750984/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_3ed71b2ebf750984|e_019"
+ },
+ {
+  "fact_text": "point “O” is an endpoint of ray R1.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_3ed71b2ebf750984/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_3ed71b2ebf750984|r_021"
+ },
+ {
+  "fact_text": "segment S5 is an edge of solid SD1.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_3f28afd3004dc57c/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_3f28afd3004dc57c|r_040"
+ },
+ {
+  "fact_text": "The drawing contains circle C2.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_4258d2d217fab203/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_4258d2d217fab203|e_009"
+ },
+ {
+  "fact_text": "The drawing contains circle C6.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_4258d2d217fab203/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_4258d2d217fab203|e_016"
+ },
+ {
+  "fact_text": "point “P” is an endpoint of segment S3.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_4dbc0f1ee5eb279f/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_4dbc0f1ee5eb279f|r_013"
+ },
+ {
+  "fact_text": "point “O′” is labelled “O'”.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_53fc1c588b9d1af6/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_53fc1c588b9d1af6|l_002"
+ },
+ {
+  "fact_text": "The drawing contains curve CV1, a curve of kind “periodic”.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_5678f7151e5979c9/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_5678f7151e5979c9|e_012"
+ },
+ {
+  "fact_text": "point “2\\pi” is labelled “2\\pi”.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_5678f7151e5979c9/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_5678f7151e5979c9|l_005"
+ },
+ {
+  "fact_text": "point “V” carries the coordinate label “(a,0)”.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_60fa129a6de082fb/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_60fa129a6de082fb|l_014"
+ },
+ {
+  "fact_text": "The drawing contains point “R”.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_64025563a866b276/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_64025563a866b276|e_009"
+ },
+ {
+  "fact_text": "The drawing contains point “N₂”.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_685e386582a18dc7/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_685e386582a18dc7|e_014"
+ },
+ {
+  "fact_text": "point “P_2(5,6)” is labelled “P_2(5,6)”.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_685e386582a18dc7/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_685e386582a18dc7|l_016"
+ },
+ {
+  "fact_text": "point “P_0” carries the name label “(x_0,y_0)”.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_685e386582a18dc7/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_685e386582a18dc7|l_022"
+ },
+ {
+  "fact_text": "point “P_0” is an endpoint of segment S10.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_685e386582a18dc7/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_685e386582a18dc7|r_034"
+ },
+ {
+  "fact_text": "The drawing contains circle C2.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_6cc7d2fe8f3bc09d/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_6cc7d2fe8f3bc09d|e_015"
+ },
+ {
+  "fact_text": "point “E” lies on line L1.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_6f4362651aee5b7b/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_6f4362651aee5b7b|r_005"
+ },
+ {
+  "fact_text": "axis “Y” is parallel to line L2.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_6fe24db66928ff5a/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_6fe24db66928ff5a|r_012"
+ },
+ {
+  "fact_text": "The drawing contains segment “OQ”.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_7014022f046e2396/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_7014022f046e2396|e_008"
+ },
+ {
+  "fact_text": "The drawing contains point P2.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_a1ea6b673c9e176d/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_a1ea6b673c9e176d|e_002"
+ },
+ {
+  "fact_text": "axis AX2 and line L1 cross at point “O”.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_a1ea6b673c9e176d/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_a1ea6b673c9e176d|r_015"
+ },
+ {
+  "fact_text": "point P7 lies on curve CV1.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_c630ca27218b78bc/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_c630ca27218b78bc|r_003"
+ },
+ {
+  "fact_text": "point P1 lies on curve CV1.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_c630ca27218b78bc/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_c630ca27218b78bc|r_004"
+ },
+ {
+  "fact_text": "point “P₁” is an endpoint of segment S10.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_cb95fb8d41186bea/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_cb95fb8d41186bea|r_024"
+ },
+ {
+  "fact_text": "point “D” is an endpoint of segment S10.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_cce53c317aa84d09/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_cce53c317aa84d09|r_032"
+ },
+ {
+  "fact_text": "The drawing contains line L2.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_e28c9fe00e1c826c/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_e28c9fe00e1c826c|e_011"
+ },
+ {
+  "fact_text": "The drawing contains point P6.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/A/hmb_f3e3bd4fedc1d13b/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|A|hmb_f3e3bd4fedc1d13b|e_004"
+ },
+ {
+  "fact_text": "The drawing contains arrow AW1.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/B/hmb_0691b08a46380b73/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|B|hmb_0691b08a46380b73|e_016"
+ },
+ {
+  "fact_text": "The drawing contains point P15.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/B/hmb_263113f6bead8a9b/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|B|hmb_263113f6bead8a9b|e_003"
+ },
+ {
+  "fact_text": "point P9 lies on curve “(2)”.",
+  "reference": false,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/B/hmb_263113f6bead8a9b/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|B|hmb_263113f6bead8a9b|r_016"
+ },
+ {
+  "fact_text": "The drawing contains line “B'”.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/B/hmb_a1ea6b673c9e176d/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|B|hmb_a1ea6b673c9e176d|e_020"
+ },
+ {
+  "fact_text": "The drawing contains point P7.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/B/hmb_c630ca27218b78bc/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|B|hmb_c630ca27218b78bc|e_001"
+ },
+ {
+  "fact_text": "The drawing contains point P5.",
+  "reference": true,
+  "render_png": "compiled/mistral.ministral-3-14b-instruct/B/hmb_c630ca27218b78bc/render.png",
+  "triple_id": "mistral.ministral-3-14b-instruct|B|hmb_c630ca27218b78bc|e_007"
+ },
+ {
+  "fact_text": "axis “X” and axis “Y” cross at point “O”.",
+  "reference": false,
+  "render_png": "compiled/nvidia.nemotron-nano-12b-v2/A/hmb_1f2683346cc16955/render.png",
+  "triple_id": "nvidia.nemotron-nano-12b-v2|A|hmb_1f2683346cc16955|r_009"
+ },
+ {
+  "fact_text": "The drawing contains line L3.",
+  "reference": true,
+  "render_png": "compiled/nvidia.nemotron-nano-12b-v2/A/hmb_4ba430eb9f658007/render.png",
+  "triple_id": "nvidia.nemotron-nano-12b-v2|A|hmb_4ba430eb9f658007|e_042"
+ },
+ {
+  "fact_text": "point “F” is an endpoint of segment S8.",
+  "reference": true,
+  "render_png": "compiled/nvidia.nemotron-nano-12b-v2/A/hmb_4ba430eb9f658007/render.png",
+  "triple_id": "nvidia.nemotron-nano-12b-v2|A|hmb_4ba430eb9f658007|r_062"
+ },
+ {
+  "fact_text": "point “P₂” is an endpoint of segment S4.",
+  "reference": false,
+  "render_png": "compiled/nvidia.nemotron-nano-12b-v2/A/hmb_d587e0cfb4c57004/render.png",
+  "triple_id": "nvidia.nemotron-nano-12b-v2|A|hmb_d587e0cfb4c57004|r_009"
+ },
+ {
+  "fact_text": "point “P” carries the name label “P(x,y)”.",
+  "reference": true,
+  "render_png": "compiled/nvidia.nemotron-nano-12b-v2/B/hmb_0691b08a46380b73/render.png",
+  "triple_id": "nvidia.nemotron-nano-12b-v2|B|hmb_0691b08a46380b73|l_011"
+ },
+ {
+  "fact_text": "point “A′” lies on curve CV3.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_0327c3ed4cab5381/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_0327c3ed4cab5381|r_017"
+ },
+ {
+  "fact_text": "The drawing contains curve CV7, a curve of kind “hyperbola”.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_11af541540ffe3e7/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_11af541540ffe3e7|e_037"
+ },
+ {
+  "fact_text": "The drawing contains solid SD2, a solid of kind “prism”.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_122562318495c2e7/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_122562318495c2e7|e_026"
+ },
+ {
+  "fact_text": "point “P₁” is an endpoint of segment “P₁Q₁”.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_122730dc5f7480da/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_122730dc5f7480da|r_006"
+ },
+ {
+  "fact_text": "axis “Y” is parallel to segment S1.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_122730dc5f7480da/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_122730dc5f7480da|r_027"
+ },
+ {
+  "fact_text": "The drawing contains segment S3.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_18df638a34b1075f/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_18df638a34b1075f|e_011"
+ },
+ {
+  "fact_text": "The drawing contains segment “PC”.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_18df638a34b1075f/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_18df638a34b1075f|e_012"
+ },
+ {
+  "fact_text": "The drawing contains line L1.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_18df638a34b1075f/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_18df638a34b1075f|e_017"
+ },
+ {
+  "fact_text": "point “C” is an endpoint of segment “PC”.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_18df638a34b1075f/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_18df638a34b1075f|r_014"
+ },
+ {
+  "fact_text": "axis “X” and line L1 cross at point “A”.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_18df638a34b1075f/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_18df638a34b1075f|r_024"
+ },
+ {
+  "fact_text": "point “T′” is an endpoint of segment S11.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_1bee197784b83d05/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_1bee197784b83d05|r_023"
+ },
+ {
+  "fact_text": "point “O” lies on segment “AA'”.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_304322bacc7f8e0f/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_304322bacc7f8e0f|r_020"
+ },
+ {
+  "fact_text": "The drawing contains segment S12.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_3a07e59d29b37a34/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_3a07e59d29b37a34|e_017"
+ },
+ {
+  "fact_text": "point “A” is an endpoint of segment S7.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_3a07e59d29b37a34/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_3a07e59d29b37a34|r_040"
+ },
+ {
+  "fact_text": "The drawing contains point “B”.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_3ed71b2ebf750984/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_3ed71b2ebf750984|e_003"
+ },
+ {
+  "fact_text": "segment S10 carries the length label “z”.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_3f28afd3004dc57c/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_3f28afd3004dc57c|l_018"
+ },
+ {
+  "fact_text": "The drawing contains point “P₁”.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_3f9de2a63f95d291/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_3f9de2a63f95d291|e_002"
+ },
+ {
+  "fact_text": "The drawing contains segment S7.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_3f9de2a63f95d291/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_3f9de2a63f95d291|e_010"
+ },
+ {
+  "fact_text": "The drawing contains point “O”.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_409af495380224d7/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_409af495380224d7|e_003"
+ },
+ {
+  "fact_text": "point “O” is labelled “O”.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_409af495380224d7/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_409af495380224d7|l_003"
+ },
+ {
+  "fact_text": "point “Q” is labelled “Q”.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_4258d2d217fab203/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_4258d2d217fab203|l_002"
+ },
+ {
+  "fact_text": "axis AX2 and axis AX1 cross at point “O”.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_459d4604cde47d72/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_459d4604cde47d72|r_003"
+ },
+ {
+  "fact_text": "point “T” lies on segment S22.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_4ba430eb9f658007/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_4ba430eb9f658007|r_054"
+ },
+ {
+  "fact_text": "point “P_0” carries the name label “(x_0,y_0)”.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_685e386582a18dc7/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_685e386582a18dc7|l_022"
+ },
+ {
+  "fact_text": "point “F” is labelled “F”.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_6fe24db66928ff5a/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_6fe24db66928ff5a|l_012"
+ },
+ {
+  "fact_text": "point “P” is an endpoint of segment S5.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_bad4c876655e84a6/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_bad4c876655e84a6|r_026"
+ },
+ {
+  "fact_text": "angle marker “θ” carries the angle label “θ”.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_c06a58851c76315c/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_c06a58851c76315c|l_009"
+ },
+ {
+  "fact_text": "point “P₂” is an endpoint of segment S3.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_c06a58851c76315c/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_c06a58851c76315c|r_011"
+ },
+ {
+  "fact_text": "The drawing contains curve CV4, a curve of kind “hyperbola”.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_c4266ffdcdcf04ca/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_c4266ffdcdcf04ca|e_044"
+ },
+ {
+  "fact_text": "point “P” lies on line L4.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_c4880773b1db9f27/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_c4880773b1db9f27|r_003"
+ },
+ {
+  "fact_text": "point “Q_p” is an endpoint of segment S8.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_cb95fb8d41186bea/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_cb95fb8d41186bea|r_011"
+ },
+ {
+  "fact_text": "point “Pₚ” is an endpoint of segment S8.",
+  "reference": true,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_cb95fb8d41186bea/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_cb95fb8d41186bea|r_013"
+ },
+ {
+  "fact_text": "The drawing contains segment S4.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_e1cbee61f874c0b0/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_e1cbee61f874c0b0|e_022"
+ },
+ {
+  "fact_text": "point “P” is an endpoint of segment S13.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_e1cbee61f874c0b0/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|A|hmb_e1cbee61f874c0b0|r_019"
+ },
+ {
+  "fact_text": "segment S19 is parallel to segment S2.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/B/hmb_4ba430eb9f658007/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|B|hmb_4ba430eb9f658007|r_092"
+ },
+ {
+  "fact_text": "The drawing contains segment S2.",
+  "reference": false,
+  "render_png": "compiled/us.meta.llama4-maverick-17b-instruct-v1_0/B/hmb_63475c4a17f02f2d/render.png",
+  "triple_id": "us.meta.llama4-maverick-17b-instruct-v1:0|B|hmb_63475c4a17f02f2d|e_010"
+ }
+]

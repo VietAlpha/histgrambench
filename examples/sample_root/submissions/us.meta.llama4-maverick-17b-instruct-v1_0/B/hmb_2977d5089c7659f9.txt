@@ -1,0 +1,12 @@
+The image depicts an equilateral triangle with a label "a" inside it. To reconstruct the mathematical figure, we can use TikZ to create a similar diagram.
+
+```latex
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    \draw (0,0) -- (2,0) -- (1,{sqrt(3)}) -- cycle;
+    \node at (1, {sqrt(3)/2}) {$a$};
+\end{tikzpicture}
+\end{document}
+```

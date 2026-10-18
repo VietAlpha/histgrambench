@@ -1,0 +1,1549 @@
+{
+ "artifact": "cp1_form_freeze",
+ "awaiting_level_freeze": [
+  {
+   "kind": "provisional",
+   "name": "render_dpi",
+   "section": "§5.2/§6.1",
+   "status": "provisional"
+  },
+  {
+   "kind": "calibrated",
+   "name": "g8_max_tokens",
+   "section": "§6.3 G8b (decoding for the gatekeeper)",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g0b_min_xheight_px",
+   "section": "§6.1",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g0c_min_page_ink",
+   "section": "§6.1",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "text_height_tol",
+   "section": "§6.4",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g2_min_short_side_cm",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g2_max_area_frac",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g2_aspect_min",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g2_aspect_max",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g3_ink_min",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g3_ink_max",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g4_solid_frac",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g4_min_components",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g5_bimodality_min",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g5_mode_band",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g6_skel_frac",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g6_multi_count",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g6_multi_frac",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "sauvola_window_px",
+   "section": "§6.3.1",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "sauvola_k",
+   "section": "§6.3.1",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g7a_strip_px",
+   "section": "§6.3.1",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g7a_border_ink_max",
+   "section": "§6.3.1",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g7a_touch_area_frac",
+   "section": "§6.3.1",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g7b_gap_frac",
+   "section": "§6.4",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g7b_side_ink_min",
+   "section": "§6.4",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g7b_max_depth",
+   "section": "§6.4",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g7b_max_panels",
+   "section": "§6.4",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "caption_band_frac",
+   "section": "§6.4",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "caption_min_chars",
+   "section": "§6.4",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "prose_run_chars",
+   "section": "§6.4",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g7c_word_cover",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "g7c_median_word_len",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "phash_near_hamming",
+   "section": "§6.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "calibrated",
+   "name": "card_builder_max_tokens",
+   "section": "§7.3/§8.8 (builder decoding settings)",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "item_min_entity_facts",
+   "section": "§8.7",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "item_min_strict_relation_facts",
+   "section": "§8.7",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "item_max_contradiction",
+   "section": "§8.7",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "item_max_ambiguous_frac",
+   "section": "§8.7",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "eps_ink",
+   "section": "§9.5",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "cpu_seconds",
+   "section": "§9.6",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "wall_seconds",
+   "section": "§9.6",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "memory_bytes",
+   "section": "§9.6",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "output_bytes",
+   "section": "§9.6",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "log_bytes",
+   "section": "§9.6",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "page_cap",
+   "section": "§9.6",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "page_dim_cap_cm",
+   "section": "§9.6",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "render_pixel_cap",
+   "section": "§9.5 V_OVERSIZE (pixel cap named, no value)",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "sandbox_pids_limit",
+   "section": "§9.6 (process limit named, no value)",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "raster_cpu_seconds",
+   "section": "§9.7 (in-container pdftoppm)",
+   "status": "provisional"
+  },
+  {
+   "kind": "calibrated",
+   "name": "contestant_max_tokens",
+   "section": "§9.1",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "eps_on_frac",
+   "section": "§10.2",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "tangency_rel",
+   "section": "§10.2",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "parallel_deg",
+   "section": "§10.2",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "perpendicular_deg",
+   "section": "§10.2",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "circle_fit_resid_rel",
+   "section": "§10.2.1 (tolerance named, no value)",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "label_bind_frac",
+   "section": "§10.3",
+   "status": "provisional"
+  },
+  {
+   "kind": "calibrated",
+   "name": "judge_max_tokens",
+   "section": "§10.6 (pinned judge decoding)",
+   "status": "provisional"
+  },
+  {
+   "kind": "calibrated",
+   "name": "delta_star",
+   "section": "§14.4/§17.5",
+   "status": "provisional"
+  },
+  {
+   "kind": "calibrated",
+   "name": "N_star",
+   "section": "§13.7",
+   "status": "provisional"
+  },
+  {
+   "kind": "calibrated",
+   "name": "G_star",
+   "section": "§13.7",
+   "status": "provisional"
+  },
+  {
+   "kind": "provisional",
+   "name": "F_bar_min",
+   "section": "§17.5 G2",
+   "status": "provisional"
+  }
+ ],
+ "components": {
+  "builder_prompts": {
+   "detail": {
+    "hmb/cards/prompt_templates/builder_generation_entities.txt": "93d472fa45c1e7c53328ce79ee12caf8b2a6a9c04fcfbedf4ce4b83ca9eaec07",
+    "hmb/cards/prompt_templates/builder_generation_facts.txt": "48739d2461942d4d7d90523f04f4b30102f2ce38384ad8c73cec8eb4c382b933",
+    "hmb/cards/prompt_templates/builder_verification.txt": "fc4502763f26e044e762847158bb416952a2a5e5f4cc1f4bd58e6031ddcdb9f4",
+    "hmb/cards/prompt_templates/conventions.txt": "cc86c5dbf101d69343f07421b9eef532032c7e1ffccd24a4268433efab2be9e6",
+    "hmb/cards/prompts.py": "1b7c60a9c22adf776309cb9fdc28f587739f4696ab9514e45c042431b5619e5c",
+    "hmb/cards/verify.py": "bc014ef137cad46b20e21ec4345b2a4b54b09a02ffbc46fad02bb824a6881c8f"
+   },
+   "sha256": "3984668e554f8a98982b660af99f32693db0d1a1e7495d50f813f8c5cce815a2"
+  },
+  "contestant_prompts_and_wrapper": {
+   "detail": {
+    "hmb/submission/prompts.py": "dda7189f277696fa5f1fcc8beb7ba25b06495969bba944a6a2e3201428112df5",
+    "hmb/submission/prompts/reconstruction-A-v2.txt": "e7cb418068c4f1d860325273a3125ca584107dac6e7db8b108c2b3ac3501cea7",
+    "hmb/submission/prompts/reconstruction-B-v2.txt": "1313949262639d9253466e7be19a71297b53032b9d8fdaaea49c11794439b641",
+    "hmb/submission/prompts/reconstruction-T3-v2.txt": "b9a78032b78fcaf73dd38b69d27829d6d24b9a1ac10cc41d26d57a6c5bcbecad",
+    "hmb/submission/wrapper_v1.tex": "9effa084058bbf404e41edce3ef00dd429122af057bd123ac4c143954f237413"
+   },
+   "sha256": "4b3aebfa9b3448c8b0fcc619baeca20bf59327c4b9c09ed7335cebcb8d3f2bcc"
+  },
+  "estimator_code": {
+   "detail": {
+    "hmb/stats.py": "45238bc713a75247b3b2ed9949a271de8fa6fdaf92c9b044f568a74746813f6a"
+   },
+   "sha256": "b5781a8fefdb181ef3056e830680ac2200e9287206f1acb3b480f0a1ace0829a"
+  },
+  "gate_forms": {
+   "detail": {
+    "acquisition_gates": {
+     "hmb/acquisition/gates.py": "047302c517c00eb7343380ee8da7b004ea87e1232b5e3420bb70c3c7fffdeec6",
+     "hmb/acquisition/prompts/g8b_gatekeeper.txt": "8dd265e383e073bb3975f3997dc39ad49efb429e2c8082513031e1eac0bc276a"
+    },
+    "functions": {
+     "books_ready": "8aebf8ee53dbcb8e8d9ae7e931a902bde5d42e23ece4bb8d51f9499ddc4c7b2c",
+     "decide": "f17edb8a7ad7ca389dda98ee2dbdb0bb1b259ade479727ea4f4e4784e24e741a",
+     "evaluate_all": "a8ed837ef86bdab46d7c30145ba6e44763286ebf5de4f5b826b919a2e6f24486",
+     "g1": "c32a532273a2f7c8d43188f7c5f3a216436503054a456bac832f01cd1c8b5e3b",
+     "g2": "25d615780541d3860a2e972318084a28f59d874f1d119a6a6398292f66a9f52d",
+     "g6": "582d08a671ea263ed8fe17bcd636832dfe5519d22574c21fa91c989d9dd8b54b",
+     "g7": "9d43068998abeff6aa970aef4134b4391d4675a1684362cd3f4c8770edf83c24",
+     "g8": "7fb6c4d7a6c9f190c4af3e5bdf5bfe26f6011ab6edb9516fa0f4f3a6e82c4458",
+     "g9": "3132209b0e1168de5ac063357fd8a29c41a0dd1dc86d3b959ae283e0ee1d0f82",
+     "ms1_exit": "1435c78decdd6d2f3ddd1c433c63bdfc20169b05887fdd998d6309ecd7f3cdd4",
+     "ms2_exit": "ac7269cd5cf542377b0555c7d69e8453ddbe2a94e35ee7d78a06878f96cdd792",
+     "ms3_exit": "ce076cca2e62e0327a5b3391eb4305d4e1da43552c7e06fdeb8d79bd0bd745a7",
+     "ms4_exit": "37267d0ea6bf0814ec506364febda48701e4bb5d0c2d10177dc3ec2cf8f533e6",
+     "ms5_exit": "cab8d362916adbcfc23ce289113c3dbecd5e95bf9188c1c10458980638e16c84"
+    },
+    "hmb/gates.py": "c5f2126fdc1413b4638ffc1e8c508dae8d3e8ffd51c11c40f271a731457d88bf"
+   },
+   "sha256": "728b562df288019a26be0a83a6f167f446af79f08874a06b5674252a69c75dc5"
+  },
+  "judge_prompts_and_verdict_schema": {
+   "detail": {
+    "prompts": {
+     "Q1.txt": "ad26b225ee9d3655ceb238954d5d3e1bf8a29c3eebac6300a2704810ff666e45",
+     "Q3.txt": "253867962141beb7abe1b24f3094fa42113bfaac7b0b431761be9bf8d17a863d",
+     "Q3_tiebreak.txt": "a80ea9f91a9fcfd5b229e00bd6f61af9fc8c859248a5b87b6fb96c611494e490",
+     "convention_note.txt": "42bd5c956219ab69fcb40c4f5049c0126cf12676bfc204861375c270a0f90caf"
+    },
+    "statement_serializer": {
+     "source_sha256": "28b5627a7fd28663154da11bfe62a2be59848017dd7a3a6fb43faa96507aa6fd",
+     "version": "judge-serializer-3"
+    },
+    "verdict_schema_version": "hmb-judge-verdict-2"
+   },
+   "sha256": "63bacc56ff9dde9c131c9b32f1d3872797f136bd32106d1b5cd638637b2aa6af"
+  },
+  "metric_code": {
+   "detail": {
+    "aggregation_rules": [
+     "S_i = g * PRESENT / scorable over strict classes E, R, L",
+     "EXEMPT removed from numerator and denominator",
+     "INDETERMINATE in the denominator (counts as not recovered)",
+     "every eligible cell is scored for every model (common denominator)",
+     "H = mean over split groups of the mean item score; IM t-interval over group means"
+    ],
+    "sources": {
+     "__init__.py": "b4bda907a92d0b7e42a30dcc49e6e86dfb45cf70c66274990761f3b525ed8bbb",
+     "cell.py": "dab706131096648f9a03280bb55cce1262a67982de1a829e224c5c37000590d5",
+     "cli.py": "244f4f40e16142860ca2c540ae0dc9a2a8dfb3731030a611aca61853937156c8",
+     "tables.py": "2c3744465959b5ec80792ef7486f70d6b4319ec1ed4031aab0670c9edbc80516"
+    }
+   },
+   "sha256": "a0692ed366c8433c6527201625762e399756757df1d06773d097a055d008d9e0"
+  },
+  "normalization_and_confusables": {
+   "detail": {
+    "confusable_map": {
+     "0": "O",
+     "1": "l",
+     "A": "A",
+     "B": "B",
+     "C": "C",
+     "E": "E",
+     "H": "H",
+     "I": "l",
+     "J": "J",
+     "K": "K",
+     "M": "M",
+     "N": "N",
+     "O": "O",
+     "P": "P",
+     "S": "S",
+     "T": "T",
+     "X": "X",
+     "Y": "Y",
+     "Z": "Z",
+     "a": "a",
+     "c": "c",
+     "e": "e",
+     "i": "i",
+     "j": "j",
+     "l": "l",
+     "o": "o",
+     "p": "p",
+     "s": "s",
+     "v": "v",
+     "x": "x",
+     "y": "y",
+     "|": "l",
+     "ǀ": "l",
+     "ʹ": "'",
+     "Α": "A",
+     "Β": "B",
+     "Ε": "E",
+     "Ζ": "Z",
+     "Η": "H",
+     "Ι": "l",
+     "Κ": "K",
+     "Μ": "M",
+     "Ν": "N",
+     "Ο": "O",
+     "Ρ": "P",
+     "Τ": "T",
+     "Υ": "Y",
+     "Χ": "X",
+     "ν": "v",
+     "ο": "o",
+     "ρ": "p",
+     "χ": "x",
+     "ϲ": "c",
+     "Ϲ": "C",
+     "Ѕ": "S",
+     "І": "l",
+     "Ј": "J",
+     "А": "A",
+     "В": "B",
+     "Е": "E",
+     "К": "K",
+     "М": "M",
+     "Н": "H",
+     "О": "O",
+     "Р": "P",
+     "С": "C",
+     "Т": "T",
+     "Х": "X",
+     "а": "a",
+     "е": "e",
+     "о": "o",
+     "р": "p",
+     "с": "c",
+     "у": "y",
+     "х": "x",
+     "ѕ": "s",
+     "і": "i",
+     "ј": "j",
+     "Ү": "Y",
+     "’": "'",
+     "′": "'",
+     "″": "''",
+     "‴": "'''",
+     "Ⲟ": "O",
+     "　": " ",
+     "！": "!",
+     "＂": "\"",
+     "＃": "#",
+     "＄": "$",
+     "％": "%",
+     "＆": "&",
+     "＇": "'",
+     "（": "(",
+     "）": ")",
+     "＊": "*",
+     "＋": "+",
+     "，": ",",
+     "－": "-",
+     "．": ".",
+     "／": "/",
+     "０": "O",
+     "１": "l",
+     "２": "2",
+     "３": "3",
+     "４": "4",
+     "５": "5",
+     "６": "6",
+     "７": "7",
+     "８": "8",
+     "９": "9",
+     "：": ":",
+     "；": ";",
+     "＜": "<",
+     "＝": "=",
+     "＞": ">",
+     "？": "?",
+     "＠": "@",
+     "Ａ": "A",
+     "Ｂ": "B",
+     "Ｃ": "C",
+     "Ｄ": "D",
+     "Ｅ": "E",
+     "Ｆ": "F",
+     "Ｇ": "G",
+     "Ｈ": "H",
+     "Ｉ": "l",
+     "Ｊ": "J",
+     "Ｋ": "K",
+     "Ｌ": "L",
+     "Ｍ": "M",
+     "Ｎ": "N",
+     "Ｏ": "O",
+     "Ｐ": "P",
+     "Ｑ": "Q",
+     "Ｒ": "R",
+     "Ｓ": "S",
+     "Ｔ": "T",
+     "Ｕ": "U",
+     "Ｖ": "V",
+     "Ｗ": "W",
+     "Ｘ": "X",
+     "Ｙ": "Y",
+     "Ｚ": "Z",
+     "［": "[",
+     "＼": "\\",
+     "］": "]",
+     "＾": "^",
+     "＿": "_",
+     "｀": "`",
+     "ａ": "a",
+     "ｂ": "b",
+     "ｃ": "c",
+     "ｄ": "d",
+     "ｅ": "e",
+     "ｆ": "f",
+     "ｇ": "g",
+     "ｈ": "h",
+     "ｉ": "i",
+     "ｊ": "j",
+     "ｋ": "k",
+     "ｌ": "l",
+     "ｍ": "m",
+     "ｎ": "n",
+     "ｏ": "o",
+     "ｐ": "p",
+     "ｑ": "q",
+     "ｒ": "r",
+     "ｓ": "s",
+     "ｔ": "t",
+     "ｕ": "u",
+     "ｖ": "v",
+     "ｗ": "w",
+     "ｘ": "x",
+     "ｙ": "y",
+     "ｚ": "z",
+     "｛": "{",
+     "｜": "l",
+     "｝": "}",
+     "～": "~",
+     "｡": "。"
+    },
+    "steps": [
+     "NFC",
+     "trim",
+     "confusable_map(as printed)",
+     "casefold(Latin)"
+    ],
+    "version": "labelnorm-1+confusables-2"
+   },
+   "sha256": "326431846f275b5ca6cf30b0c8841a29e73c436a7e8ff0e463a848979363b61a"
+  },
+  "ontology_table": {
+   "detail": {
+    "arg_types": {
+     "arc_of": [
+      [
+       "arc"
+      ],
+      null
+     ],
+     "between": [
+      [
+       "point"
+      ],
+      [
+       "point"
+      ],
+      [
+       "point"
+      ]
+     ],
+     "center_of": [
+      [
+       "point"
+      ],
+      [
+       "arc",
+       "circle",
+       "ellipse"
+      ]
+     ],
+     "collinear": [
+      [
+       "point"
+      ]
+     ],
+     "concyclic": [
+      [
+       "point"
+      ]
+     ],
+     "edge_of": [
+      [
+       "segment"
+      ],
+      [
+       "polygon",
+       "solid"
+      ]
+     ],
+     "endpoint_of": [
+      [
+       "point"
+      ],
+      [
+       "arc",
+       "ray",
+       "segment"
+      ]
+     ],
+     "intersect_at": [
+      null,
+      null,
+      [
+       "point"
+      ]
+     ],
+     "on": [
+      [
+       "point"
+      ],
+      [
+       "arc",
+       "axis",
+       "circle",
+       "curve",
+       "ellipse",
+       "line",
+       "polygon",
+       "ray",
+       "segment"
+      ]
+     ],
+     "tangent_to": [
+      null,
+      null,
+      [
+       "point"
+      ]
+     ],
+     "vertex_of": [
+      [
+       "point"
+      ],
+      [
+       "angle_marker",
+       "polygon",
+       "solid"
+      ]
+     ]
+    },
+    "card_classes": [
+     "entity",
+     "label",
+     "relation"
+    ],
+    "entity_types": [
+     "point",
+     "segment",
+     "line",
+     "ray",
+     "circle",
+     "arc",
+     "ellipse",
+     "polygon",
+     "region",
+     "axis",
+     "arrow",
+     "angle_marker",
+     "right_angle_marked",
+     "length_tick",
+     "curve",
+     "solid"
+    ],
+    "enums": {
+     "axis_o": [
+      "horizontal",
+      "vertical",
+      "oblique"
+     ],
+     "curve_f": [
+      "line",
+      "parabola",
+      "hyperbola",
+      "ellipse_arc",
+      "periodic",
+      "monotone_other",
+      "unspecified"
+     ],
+     "measure_kind": [
+      "length",
+      "angle",
+      "area",
+      "coordinate",
+      "name"
+     ],
+     "orientation_o": [
+      "horizontal",
+      "vertical",
+      "oblique"
+     ],
+     "solid_k": [
+      "cube",
+      "prism",
+      "pyramid",
+      "cylinder",
+      "cone",
+      "sphere",
+      "polyhedron_other"
+     ]
+    },
+    "predicates": [
+     [
+      "point",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "segment",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "line",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "ray",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "circle",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "arc",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "ellipse",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "polygon",
+      [
+       "ent",
+       "int"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "region",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "model",
+      []
+     ],
+     [
+      "axis",
+      [
+       "ent",
+       "enum:axis_o"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "arrow",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "angle_marker",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "right_angle_marked",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "length_tick",
+      [
+       "ent"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "curve",
+      [
+       "ent",
+       "enum:curve_f"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "model",
+      []
+     ],
+     [
+      "solid",
+      [
+       "ent",
+       "enum:solid_k"
+      ],
+      "entity",
+      "strict",
+      "A",
+      "model",
+      []
+     ],
+     [
+      "on",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "endpoint_of",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "vertex_of",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "edge_of",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "face_of",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "B",
+      "model",
+      []
+     ],
+     [
+      "center_of",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "arc_of",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "intersect_at",
+      [
+       "ent",
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      [
+       [
+        0,
+        1
+       ]
+      ]
+     ],
+     [
+      "tangent_to",
+      [
+       "ent",
+       "ent",
+       "ent?"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "parallel",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      [
+       [
+        0,
+        1
+       ]
+      ]
+     ],
+     [
+      "perpendicular",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      [
+       [
+        0,
+        1
+       ]
+      ]
+     ],
+     [
+      "collinear",
+      [
+       "set"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "concyclic",
+      [
+       "set"
+      ],
+      "relation",
+      "strict",
+      "B",
+      "geo",
+      []
+     ],
+     [
+      "between",
+      [
+       "ent",
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      [
+       [
+        0,
+        2
+       ]
+      ]
+     ],
+     [
+      "equal_length",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "model",
+      [
+       [
+        0,
+        1
+       ]
+      ]
+     ],
+     [
+      "equal_angle",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "model",
+      [
+       [
+        0,
+        1
+       ]
+      ]
+     ],
+     [
+      "contains",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "cross_section_of",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "B",
+      "model",
+      []
+     ],
+     [
+      "hidden_edge",
+      [
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "B",
+      "model",
+      []
+     ],
+     [
+      "asymptote_of",
+      [
+       "ent",
+       "ent"
+      ],
+      "relation",
+      "strict",
+      "B",
+      "model",
+      []
+     ],
+     [
+      "label",
+      [
+       "text",
+       "ent"
+      ],
+      "label",
+      "strict",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "measure_label",
+      [
+       "text",
+       "ent",
+       "enum:measure_kind"
+      ],
+      "label",
+      "strict",
+      "A",
+      "model",
+      []
+     ],
+     [
+      "left_of",
+      [
+       "ent",
+       "ent"
+      ],
+      "layout",
+      "coarse",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "above",
+      [
+       "ent",
+       "ent"
+      ],
+      "layout",
+      "coarse",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "inside",
+      [
+       "ent",
+       "ent"
+      ],
+      "layout",
+      "coarse",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "outside",
+      [
+       "ent",
+       "ent"
+      ],
+      "layout",
+      "coarse",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "same_side",
+      [
+       "ent",
+       "ent",
+       "ent"
+      ],
+      "layout",
+      "coarse",
+      "A",
+      "geo",
+      [
+       [
+        0,
+        1
+       ]
+      ]
+     ],
+     [
+      "opposite_sides",
+      [
+       "ent",
+       "ent",
+       "ent"
+      ],
+      "layout",
+      "coarse",
+      "A",
+      "geo",
+      [
+       [
+        0,
+        1
+       ]
+      ]
+     ],
+     [
+      "order_along",
+      [
+       "ent",
+       "seq"
+      ],
+      "layout",
+      "coarse",
+      "A",
+      "geo",
+      []
+     ],
+     [
+      "orientation",
+      [
+       "ent",
+       "enum:orientation_o"
+      ],
+      "layout",
+      "coarse",
+      "A",
+      "geo",
+      []
+     ]
+    ],
+    "version": "asc-2.0.0"
+   },
+   "sha256": "ca7799849a7b3567ea6de45d7607eac702e0be9e91b2b0da34345c8cff5fc89c"
+  },
+  "outcome_vocabulary": {
+   "detail": {
+    "groups": {
+     "Compile@1": [
+      "OK",
+      "V_EMPTY",
+      "V_MULTIPAGE",
+      "V_OVERSIZE",
+      "V_RASTER"
+     ],
+     "Extraction-failure@1": [
+      "E_NO_OUTPUT",
+      "E_NO_TIKZ",
+      "E_TRUNCATED"
+     ],
+     "Protocol-violation@1": [
+      "E_MULTI_CANDIDATE",
+      "V_MULTIPAGE"
+     ],
+     "Timeout@1": [
+      "C_TIMEOUT"
+     ],
+     "Unsafe/Invalid@1": [
+      "C_SANDBOX_VIOLATION",
+      "P_POLICY_REJECT",
+      "V_RASTER"
+     ],
+     "Valid@1": [
+      "OK"
+     ]
+    },
+    "outcomes": [
+     "E_NO_OUTPUT",
+     "E_TRUNCATED",
+     "E_NO_TIKZ",
+     "E_MULTI_CANDIDATE",
+     "P_POLICY_REJECT",
+     "C_ERROR",
+     "C_TIMEOUT",
+     "C_WALLCLOCK",
+     "C_RESOURCE",
+     "C_MISSING_GLYPH",
+     "C_SANDBOX_VIOLATION",
+     "V_MULTIPAGE",
+     "V_RASTER",
+     "V_EMPTY",
+     "V_OVERSIZE",
+     "OK"
+    ]
+   },
+   "sha256": "505070390f31e385402d5231a376468a5a9fdda59e656d2e1d4eb0853010b41d"
+  },
+  "parameter_registry": {
+   "detail": {
+    "registry_hash": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb"
+   },
+   "sha256": "3fcfa6c2b479c199f772d6cfadebabc672f2d07ee5e43a405bd03c89dc5adbeb"
+  },
+  "rules_R_E": {
+   "detail": {
+    "derived_only": [
+     "chord_of",
+     "diameter_of",
+     "radius_of",
+     "secant_to"
+    ],
+    "exclusions": [
+     "E1 inside(P,X) xor on(P,X) xor outside(P,X)",
+     "E2 parallel(X,Y) xor intersect_at(X,Y,_)",
+     "E3 tangent_to(L,C,_) xor two distinct intersect_at(L,C,.)",
+     "E4 left_of(A,B) xor left_of(B,A)",
+     "E5 above(A,B) xor above(B,A)",
+     "E6 same_side(P,Q,L) xor opposite_sides(P,Q,L)",
+     "E7 two different normalized labels on one entity"
+    ],
+    "predicates": [
+     "above",
+     "angle_marker",
+     "arc",
+     "arc_of",
+     "arrow",
+     "asymptote_of",
+     "axis",
+     "between",
+     "center_of",
+     "circle",
+     "collinear",
+     "concyclic",
+     "contains",
+     "cross_section_of",
+     "curve",
+     "edge_of",
+     "ellipse",
+     "endpoint_of",
+     "equal_angle",
+     "equal_length",
+     "face_of",
+     "hidden_edge",
+     "inside",
+     "intersect_at",
+     "label",
+     "left_of",
+     "length_tick",
+     "line",
+     "measure_label",
+     "on",
+     "opposite_sides",
+     "order_along",
+     "orientation",
+     "outside",
+     "parallel",
+     "perpendicular",
+     "point",
+     "polygon",
+     "ray",
+     "region",
+     "right_angle_marked",
+     "same_side",
+     "segment",
+     "solid",
+     "tangent_to",
+     "vertex_of"
+    ],
+    "rules": [
+     "R1 endpoint_of(P,X) -> on(P,X)",
+     "R2 vertex_of(P,G) -> on(P,G)",
+     "R3 edge_of(S,G) & endpoint_of(P,S) -> vertex_of(P,G)",
+     "R4 center_of(P,C) & circle(C) -> inside(P,C)",
+     "R5 tangent_to(L,C,P) & P != unknown -> on(P,L) & on(P,C)",
+     "R6 intersect_at(X,Y,P) -> on(P,X) & on(P,Y)",
+     "R7 between(P,Q,R) -> collinear({P,Q,R})",
+     "R8 collinear(S) & S' subset S & |S'|>=3 -> collinear(S') [maximal set kept]",
+     "R9 parallel(X,Y) & parallel(Y,Z) -> parallel(X,Z) [spanning tree kept]",
+     "R10 perpendicular(X,Y) & parallel(Y,Z) -> perpendicular(X,Z)",
+     "R11 center_of(O,C) & endpoint_of(O,S) & endpoint_of(P,S) & on(P,C) -> radius_of(S,C) [derived only]"
+    ],
+    "version": "asc-1.0.0/R-1/E-1"
+   },
+   "sha256": "9661917a41294062c8305fe6f3a9f1b282089c5efa51ac47bdc9072ddb616bed"
+  }
+ },
+ "created_utc": "2026-09-27T18:53:54+00:00",
+ "form_freeze_sha256": "255a5c7b3c4cca8d52ecc3d588e66b781cbc37f33ed9e3fd3bd73436d52af84e",
+ "incomplete_components": [],
+ "note": "MS1 is frozen only by the owner's hash-and-commit act; this file is its input.",
+ "status": "awaiting_owner_hash_and_commit",
+ "version": "form-freeze-1"
+}

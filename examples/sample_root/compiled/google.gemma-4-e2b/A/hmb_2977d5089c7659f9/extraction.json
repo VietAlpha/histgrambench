@@ -1,0 +1,10 @@
+{
+ "n_blocks": 1,
+ "n_fenced_all": 1,
+ "notes": [],
+ "outcome": null,
+ "path": "fenced",
+ "reject_token": null,
+ "span_sha256": "6ba6b818b2a3c5a373c1b8395bf663b60e23fbf790195d80f915175ab1500ce6",
+ "wrapper_class": "D"
+}

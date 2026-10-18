@@ -1,0 +1,14 @@
+[project]
+name = "histmathbench"
+version = "0.1.0"
+description = "HistMathBench v2 zero-annotation evaluation pipeline"
+requires-python = ">=3.12"
+# Pinned versions are recorded in requirements.lock (uv pip freeze of .venv).
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "docker: requires the pinned LuaLaTeX sandbox image (skipped when Docker/image unavailable)",
+    "live: makes paid provider calls (never run without explicit authorization)",
+]
+addopts = "-m 'not live'"

@@ -1,0 +1,15 @@
+{
+ "version": "fignum-1",
+ "note": "§6.4 figure-number pattern list, authored once at Phase 0 per source language. Each pattern is a Python regex; group 'n' captures the figure number (arabic, roman, or CJK numerals). Matching is case-insensitive. Changing this file requires a new version string.",
+ "patterns": {
+  "en": ["\\bfig(?:ure|s)?\\s*\\.?\\s*(?P<n>[0-9]+|[ivxlc]+)\\b", "\\bpl(?:ate)?\\s*\\.?\\s*(?P<n>[0-9]+|[ivxlc]+)\\b", "\\bdiagram\\s+(?P<n>[0-9]+)\\b"],
+  "fr": ["\\bfig(?:ure)?\\s*\\.?\\s*(?P<n>[0-9]+|[ivxlc]+)\\b", "\\bpl(?:anche)?\\s*\\.?\\s*(?P<n>[0-9]+|[ivxlc]+)\\b"],
+  "de": ["\\bfig(?:ur)?\\s*\\.?\\s*(?P<n>[0-9]+|[ivxlc]+)\\b", "\\babb(?:ildung)?\\s*\\.?\\s*(?P<n>[0-9]+)\\b", "\\btaf(?:el)?\\s*\\.?\\s*(?P<n>[0-9]+|[ivxlc]+)\\b"],
+  "la": ["\\bfig(?:ura)?\\s*\\.?\\s*(?P<n>[0-9]+|[ivxlc]+)\\b", "\\btab(?:ula)?\\s*\\.?\\s*(?P<n>[0-9]+|[ivxlc]+)\\b"],
+  "it": ["\\bfig(?:ura)?\\s*\\.?\\s*(?P<n>[0-9]+|[ivxlc]+)\\b", "\\btav(?:ola)?\\s*\\.?\\s*(?P<n>[0-9]+|[ivxlc]+)\\b"],
+  "ru": ["\\bрис(?:унок)?\\s*\\.?\\s*(?P<n>[0-9]+)\\b", "\\bчерт(?:\\.|еж)?\\s*(?P<n>[0-9]+)\\b"],
+  "vi": ["\\bhình\\s*(?P<n>[0-9]+)\\b"],
+  "zh": ["第\\s*(?P<n>[0-9一二三四五六七八九十百]+)\\s*[圖图]", "[圖图]\\s*(?P<n>[0-9一二三四五六七八九十百]+)"],
+  "ja": ["第\\s*(?P<n>[0-9一二三四五六七八九十百]+)\\s*[圖図]", "[圖図]\\s*(?P<n>[0-9一二三四五六七八九十百]+)"]
+ }
+}

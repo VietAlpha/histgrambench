@@ -1,0 +1,12 @@
+```latex
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, math}
+
+\begin{document}
+\begin{tikzpicture}
+    \node[equilateral triangle, minimum size=2cm] (triangle) {};
+    \node at (triangle) [font=\small] {$a$};
+\end{tikzpicture}
+\end{document}
+```

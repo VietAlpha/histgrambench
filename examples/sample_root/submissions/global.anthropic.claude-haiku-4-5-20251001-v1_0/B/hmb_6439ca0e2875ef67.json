@@ -1,0 +1,58 @@
+{
+ "access_date": "2026-10-02",
+ "attempts": [
+  {
+   "index": 1,
+   "transport_error": null,
+   "utc": "2026-10-02T15:35:02.950+00:00"
+  }
+ ],
+ "body_sha256": "b0bcc01185e7f817557f36b2c7552ff9a8454938f7baabdf53805995d3bf08e3",
+ "cgx_record": "cgx/global.anthropic.claude-haiku-4-5-20251001-v1_0/B/hmb_6439ca0e2875ef67.json",
+ "cgx_sha256": "ef168a1c532382b59bf05ebbcf5680dc3334ed5600858d40c913813e23751eb3",
+ "cpu_seconds": 2.06,
+ "dataset_version": "v1.0",
+ "decoding_params": {
+  "effort": null,
+  "max_tokens": 8192,
+  "seed": null,
+  "temperature": 0.0,
+  "top_p": 1.0
+ },
+ "extraction_path": "fenced",
+ "harness_version": "d9a0fa817f9ebbd2f9bf143ba854b7933eb5412b0f62274315fb2fb96c700644",
+ "image_encoding": {
+  "crop_sha256": "07355242119205f778a34b27587bb44c23effd1a8e6fdd0873a8a0dca0c8962a",
+  "format": "png",
+  "height": 1024,
+  "width": 1024
+ },
+ "ink_fraction": 0.01958084,
+ "item_id": "hmb_6439ca0e2875ef67",
+ "judge_config_id": "c06fd35a645b1a3d2b635bbd8860fd80826c015c86daff55039074b3f8cd4ea9",
+ "model_family": "anthropic",
+ "model_id": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+ "model_version_string": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+ "n_blocks": 1,
+ "normalized_tex": "submissions/global.anthropic.claude-haiku-4-5-20251001-v1_0/B/hmb_6439ca0e2875ef67.tex",
+ "normalized_tex_sha256": "4184dd7ba71a725981227d90964ebf708b9ea37439e38fbf5d610938d55d7c94",
+ "outcome_code": "OK",
+ "output_release": "public",
+ "page_count": 1,
+ "pdf_sha256": "2c1db4b55e2907a70697467f81ce14d9cf21f5e538cbe8271c9fa1a2432c91ee",
+ "prompt_id": "reconstruction-B-v2",
+ "prompt_sha256": "1313949262639d9253466e7be19a71297b53032b9d8fdaaea49c11794439b641",
+ "provider_terms_version": "aws-bedrock-service-terms-2026-09-30",
+ "raw_output": "submissions/global.anthropic.claude-haiku-4-5-20251001-v1_0/B/hmb_6439ca0e2875ef67.txt",
+ "raw_output_sha256": "a2e55ae222932877829dc2da1667b83d6ac202802130e0cf565b9bc475bb0ccd",
+ "release_hash": "sha256:a1bfbd4f1938236aa657dc10fc4e3f51f168b4324197d59d128087021e20283e",
+ "render_sha256": "e3fdca721ce9eb0f8f8caf6b90299b3c9ff28c4f32952acbc250e3af23e3c988",
+ "sandbox_image_digest": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "scores": "scores/global.anthropic.claude-haiku-4-5-20251001-v1_0/B/hmb_6439ca0e2875ef67.json",
+ "scores_sha256": "de4fd7c11073b839d987fd8725a366fbb47ae5501985f51a54d4d57a9465120a",
+ "stop_reason": "end_turn",
+ "track": "B",
+ "verdicts": "verdicts/global.anthropic.claude-haiku-4-5-20251001-v1_0/B/hmb_6439ca0e2875ef67.json",
+ "verdicts_sha256": "fd941c867c6e2ae0adccd06d2673c3376a140d9262119879c460a094d0388999",
+ "wrapper_class": "D"
+}

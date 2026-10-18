@@ -1,0 +1,840 @@
+{
+ "asc_hash_inputs": {
+  "alignment": {
+   "delta_margin": 0.15,
+   "sigma": 0.05,
+   "theta_match": 0.9,
+   "w_G": 1.0,
+   "w_L": 1.0,
+   "w_R": 0.5,
+   "wl_rounds": 2
+  },
+  "builder_order": [
+   "us.openai.gpt-6.1-sol",
+   "moonshotai.kimi-k2.5"
+  ],
+  "builders": [
+   {
+    "decoding": {
+     "additional_model_request_fields": {
+      "reasoning": {
+       "effort": "medium"
+      }
+     }
+    },
+    "effort": "medium",
+    "model_id": "us.openai.gpt-6.1-sol",
+    "provider": "bedrock",
+    "snapshot": "us.openai.gpt-6.1-sol"
+   },
+   {
+    "decoding": {},
+    "effort": null,
+    "model_id": "moonshotai.kimi-k2.5",
+    "provider": "bedrock",
+    "snapshot": "moonshotai.kimi-k2.5"
+   }
+  ],
+  "caps": {
+   "card_max_entities": 40,
+   "card_max_facts": 60,
+   "card_verify_chunk_size": 20
+  },
+  "closure": {
+   "derived_only": [
+    "chord_of",
+    "diameter_of",
+    "radius_of",
+    "secant_to"
+   ],
+   "exclusions": [
+    "E1 inside(P,X) xor on(P,X) xor outside(P,X)",
+    "E2 parallel(X,Y) xor intersect_at(X,Y,_)",
+    "E3 tangent_to(L,C,_) xor two distinct intersect_at(L,C,.)",
+    "E4 left_of(A,B) xor left_of(B,A)",
+    "E5 above(A,B) xor above(B,A)",
+    "E6 same_side(P,Q,L) xor opposite_sides(P,Q,L)",
+    "E7 two different normalized labels on one entity"
+   ],
+   "predicates": [
+    "above",
+    "angle_marker",
+    "arc",
+    "arc_of",
+    "arrow",
+    "asymptote_of",
+    "axis",
+    "between",
+    "center_of",
+    "circle",
+    "collinear",
+    "concyclic",
+    "contains",
+    "cross_section_of",
+    "curve",
+    "edge_of",
+    "ellipse",
+    "endpoint_of",
+    "equal_angle",
+    "equal_length",
+    "face_of",
+    "hidden_edge",
+    "inside",
+    "intersect_at",
+    "label",
+    "left_of",
+    "length_tick",
+    "line",
+    "measure_label",
+    "on",
+    "opposite_sides",
+    "order_along",
+    "orientation",
+    "outside",
+    "parallel",
+    "perpendicular",
+    "point",
+    "polygon",
+    "ray",
+    "region",
+    "right_angle_marked",
+    "same_side",
+    "segment",
+    "solid",
+    "tangent_to",
+    "vertex_of"
+   ],
+   "rules": [
+    "R1 endpoint_of(P,X) -> on(P,X)",
+    "R2 vertex_of(P,G) -> on(P,G)",
+    "R3 edge_of(S,G) & endpoint_of(P,S) -> vertex_of(P,G)",
+    "R4 center_of(P,C) & circle(C) -> inside(P,C)",
+    "R5 tangent_to(L,C,P) & P != unknown -> on(P,L) & on(P,C)",
+    "R6 intersect_at(X,Y,P) -> on(P,X) & on(P,Y)",
+    "R7 between(P,Q,R) -> collinear({P,Q,R})",
+    "R8 collinear(S) & S' subset S & |S'|>=3 -> collinear(S') [maximal set kept]",
+    "R9 parallel(X,Y) & parallel(Y,Z) -> parallel(X,Z) [spanning tree kept]",
+    "R10 perpendicular(X,Y) & parallel(Y,Z) -> perpendicular(X,Z)",
+    "R11 center_of(O,C) & endpoint_of(O,S) & endpoint_of(P,S) & on(P,C) -> radius_of(S,C) [derived only]"
+   ],
+   "version": "asc-1.0.0/R-1/E-1"
+  },
+  "consensus_rule": "0d601bc85d8a9b816cc3dc12a34fdc6e5e6421e7f863e38790f1b9a23334d978",
+  "family_map": {
+   "moonshotai.kimi-k2.5": "moonshot",
+   "us.openai.gpt-6.1-sol": "openai"
+  },
+  "generation_protocol": "staged-entities-facts-1",
+  "max_tokens": 8096,
+  "normalization": {
+   "confusable_map": {
+    "0": "O",
+    "1": "l",
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "E": "E",
+    "H": "H",
+    "I": "l",
+    "J": "J",
+    "K": "K",
+    "M": "M",
+    "N": "N",
+    "O": "O",
+    "P": "P",
+    "S": "S",
+    "T": "T",
+    "X": "X",
+    "Y": "Y",
+    "Z": "Z",
+    "a": "a",
+    "c": "c",
+    "e": "e",
+    "i": "i",
+    "j": "j",
+    "l": "l",
+    "o": "o",
+    "p": "p",
+    "s": "s",
+    "v": "v",
+    "x": "x",
+    "y": "y",
+    "|": "l",
+    "ǀ": "l",
+    "ʹ": "'",
+    "Α": "A",
+    "Β": "B",
+    "Ε": "E",
+    "Ζ": "Z",
+    "Η": "H",
+    "Ι": "l",
+    "Κ": "K",
+    "Μ": "M",
+    "Ν": "N",
+    "Ο": "O",
+    "Ρ": "P",
+    "Τ": "T",
+    "Υ": "Y",
+    "Χ": "X",
+    "ν": "v",
+    "ο": "o",
+    "ρ": "p",
+    "χ": "x",
+    "ϲ": "c",
+    "Ϲ": "C",
+    "Ѕ": "S",
+    "І": "l",
+    "Ј": "J",
+    "А": "A",
+    "В": "B",
+    "Е": "E",
+    "К": "K",
+    "М": "M",
+    "Н": "H",
+    "О": "O",
+    "Р": "P",
+    "С": "C",
+    "Т": "T",
+    "Х": "X",
+    "а": "a",
+    "е": "e",
+    "о": "o",
+    "р": "p",
+    "с": "c",
+    "у": "y",
+    "х": "x",
+    "ѕ": "s",
+    "і": "i",
+    "ј": "j",
+    "Ү": "Y",
+    "’": "'",
+    "′": "'",
+    "″": "''",
+    "‴": "'''",
+    "Ⲟ": "O",
+    "　": " ",
+    "！": "!",
+    "＂": "\"",
+    "＃": "#",
+    "＄": "$",
+    "％": "%",
+    "＆": "&",
+    "＇": "'",
+    "（": "(",
+    "）": ")",
+    "＊": "*",
+    "＋": "+",
+    "，": ",",
+    "－": "-",
+    "．": ".",
+    "／": "/",
+    "０": "O",
+    "１": "l",
+    "２": "2",
+    "３": "3",
+    "４": "4",
+    "５": "5",
+    "６": "6",
+    "７": "7",
+    "８": "8",
+    "９": "9",
+    "：": ":",
+    "；": ";",
+    "＜": "<",
+    "＝": "=",
+    "＞": ">",
+    "？": "?",
+    "＠": "@",
+    "Ａ": "A",
+    "Ｂ": "B",
+    "Ｃ": "C",
+    "Ｄ": "D",
+    "Ｅ": "E",
+    "Ｆ": "F",
+    "Ｇ": "G",
+    "Ｈ": "H",
+    "Ｉ": "l",
+    "Ｊ": "J",
+    "Ｋ": "K",
+    "Ｌ": "L",
+    "Ｍ": "M",
+    "Ｎ": "N",
+    "Ｏ": "O",
+    "Ｐ": "P",
+    "Ｑ": "Q",
+    "Ｒ": "R",
+    "Ｓ": "S",
+    "Ｔ": "T",
+    "Ｕ": "U",
+    "Ｖ": "V",
+    "Ｗ": "W",
+    "Ｘ": "X",
+    "Ｙ": "Y",
+    "Ｚ": "Z",
+    "［": "[",
+    "＼": "\\",
+    "］": "]",
+    "＾": "^",
+    "＿": "_",
+    "｀": "`",
+    "ａ": "a",
+    "ｂ": "b",
+    "ｃ": "c",
+    "ｄ": "d",
+    "ｅ": "e",
+    "ｆ": "f",
+    "ｇ": "g",
+    "ｈ": "h",
+    "ｉ": "i",
+    "ｊ": "j",
+    "ｋ": "k",
+    "ｌ": "l",
+    "ｍ": "m",
+    "ｎ": "n",
+    "ｏ": "o",
+    "ｐ": "p",
+    "ｑ": "q",
+    "ｒ": "r",
+    "ｓ": "s",
+    "ｔ": "t",
+    "ｕ": "u",
+    "ｖ": "v",
+    "ｗ": "w",
+    "ｘ": "x",
+    "ｙ": "y",
+    "ｚ": "z",
+    "｛": "{",
+    "｜": "l",
+    "｝": "}",
+    "～": "~",
+    "｡": "。"
+   },
+   "steps": [
+    "NFC",
+    "trim",
+    "confusable_map(as printed)",
+    "casefold(Latin)"
+   ],
+   "version": "labelnorm-1+confusables-2"
+  },
+  "ontology": "asc-2.0.0",
+  "predicate_table": [
+   [
+    "point",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "segment",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "line",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "ray",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "circle",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "arc",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "ellipse",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "polygon",
+    [
+     "ent",
+     "int"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "region",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "model",
+    []
+   ],
+   [
+    "axis",
+    [
+     "ent",
+     "enum:axis_o"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "arrow",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "angle_marker",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "right_angle_marked",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "length_tick",
+    [
+     "ent"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "curve",
+    [
+     "ent",
+     "enum:curve_f"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "model",
+    []
+   ],
+   [
+    "solid",
+    [
+     "ent",
+     "enum:solid_k"
+    ],
+    "entity",
+    "strict",
+    "A",
+    "model",
+    []
+   ],
+   [
+    "on",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "endpoint_of",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "vertex_of",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "edge_of",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "face_of",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "B",
+    "model",
+    []
+   ],
+   [
+    "center_of",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "arc_of",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "intersect_at",
+    [
+     "ent",
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    [
+     [
+      0,
+      1
+     ]
+    ]
+   ],
+   [
+    "tangent_to",
+    [
+     "ent",
+     "ent",
+     "ent?"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "parallel",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    [
+     [
+      0,
+      1
+     ]
+    ]
+   ],
+   [
+    "perpendicular",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    [
+     [
+      0,
+      1
+     ]
+    ]
+   ],
+   [
+    "collinear",
+    [
+     "set"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "concyclic",
+    [
+     "set"
+    ],
+    "relation",
+    "strict",
+    "B",
+    "geo",
+    []
+   ],
+   [
+    "between",
+    [
+     "ent",
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    [
+     [
+      0,
+      2
+     ]
+    ]
+   ],
+   [
+    "equal_length",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "model",
+    [
+     [
+      0,
+      1
+     ]
+    ]
+   ],
+   [
+    "equal_angle",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "model",
+    [
+     [
+      0,
+      1
+     ]
+    ]
+   ],
+   [
+    "contains",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "cross_section_of",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "B",
+    "model",
+    []
+   ],
+   [
+    "hidden_edge",
+    [
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "B",
+    "model",
+    []
+   ],
+   [
+    "asymptote_of",
+    [
+     "ent",
+     "ent"
+    ],
+    "relation",
+    "strict",
+    "B",
+    "model",
+    []
+   ],
+   [
+    "label",
+    [
+     "text",
+     "ent"
+    ],
+    "label",
+    "strict",
+    "A",
+    "geo",
+    []
+   ],
+   [
+    "measure_label",
+    [
+     "text",
+     "ent",
+     "enum:measure_kind"
+    ],
+    "label",
+    "strict",
+    "A",
+    "model",
+    []
+   ]
+  ],
+  "prompts": {
+   "builder_generation_entities": "056cc8f2a75f7ba9f625b9407e125ae2ca925a7231270a41b01c0a64a5a7874e",
+   "builder_generation_facts": "513036e7429c737ef7aee572c4f7023d1a6755274da175905310ae0ffb2873bb",
+   "builder_verification": "2a02e632293cfbb2a7f75da19a7e632ec1b5489f0873e7dbea102d5b08c88892"
+  }
+ },
+ "asc_version": "asc-2.0.0+1a2109cf8efd5691",
+ "builder_order": [
+  "us.openai.gpt-6.1-sol",
+  "moonshotai.kimi-k2.5"
+ ],
+ "calls": {
+  "moonshotai.kimi-k2.5": {
+   "card_generation": 2,
+   "card_verification": 2
+  },
+  "us.openai.gpt-6.1-sol": {
+   "card_generation": 2,
+   "card_verification": 2
+  }
+ },
+ "card_sha256": "9059fb2c05ed60bf8c390e3ebeca5120ecdde76e786d84d1382b57a85e50059a",
+ "card_uid": "card_27270f4f9ad40df5",
+ "context_supplied": false,
+ "empty_truncated_generation_calls": [],
+ "family_map": {
+  "moonshotai.kimi-k2.5": "moonshot",
+  "us.openai.gpt-6.1-sol": "openai"
+ },
+ "item_id": "hmb_6439ca0e2875ef67",
+ "malformed_builders": [],
+ "oov_rate": {
+  "moonshotai.kimi-k2.5": 0.0,
+  "us.openai.gpt-6.1-sol": 0.0
+ },
+ "profile": "production",
+ "truncated_calls": [],
+ "verification_statements": {
+  "moonshotai.kimi-k2.5": 23,
+  "us.openai.gpt-6.1-sol": 23
+ },
+ "votes_sha256": "4fdb5cec7aae96086d6dc31f5a3fe7886fe99fe97cc053f170ba00b9938d0cd5"
+}

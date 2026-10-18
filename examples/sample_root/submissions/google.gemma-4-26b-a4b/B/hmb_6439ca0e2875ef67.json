@@ -1,0 +1,58 @@
+{
+ "access_date": "2026-10-01",
+ "attempts": [
+  {
+   "index": 1,
+   "transport_error": null,
+   "utc": "2026-10-01T16:56:48.405+00:00"
+  }
+ ],
+ "body_sha256": "cfc8ef880f757385bba53f3c9bfa68b90101ee900bf2850e6836fd91ae06ce11",
+ "cgx_record": "cgx/google.gemma-4-26b-a4b/B/hmb_6439ca0e2875ef67.json",
+ "cgx_sha256": "b2a20b7f4de8a989bf40b4b5946e3334a168f5f80607916dac77fbbe7542cb77",
+ "cpu_seconds": 2.27,
+ "dataset_version": "v1.0",
+ "decoding_params": {
+  "effort": null,
+  "max_tokens": 8192,
+  "seed": null,
+  "temperature": 0.0,
+  "top_p": 1.0
+ },
+ "extraction_path": "fenced",
+ "harness_version": "93e9e015e087dd9cc959471d85fc156303da275f6d605f60e6f5f4dfa26c66f1",
+ "image_encoding": {
+  "crop_sha256": "07355242119205f778a34b27587bb44c23effd1a8e6fdd0873a8a0dca0c8962a",
+  "format": "png",
+  "height": 1024,
+  "width": 1024
+ },
+ "ink_fraction": 0.02749252,
+ "item_id": "hmb_6439ca0e2875ef67",
+ "judge_config_id": "c06fd35a645b1a3d2b635bbd8860fd80826c015c86daff55039074b3f8cd4ea9",
+ "model_family": "google",
+ "model_id": "google.gemma-4-26b-a4b",
+ "model_version_string": "google.gemma-4-26b-a4b",
+ "n_blocks": 1,
+ "normalized_tex": "submissions/google.gemma-4-26b-a4b/B/hmb_6439ca0e2875ef67.tex",
+ "normalized_tex_sha256": "d86a23eb69a8c05df5be48c3d2ea161712fc4b3a4adeac936c5615c8555d8a9a",
+ "outcome_code": "OK",
+ "output_release": "public",
+ "page_count": 1,
+ "pdf_sha256": "c291553bb99d9e0a5627f013ffef89412f287c740da66182f8cd1d46f7d85078",
+ "prompt_id": "reconstruction-B-v2",
+ "prompt_sha256": "1313949262639d9253466e7be19a71297b53032b9d8fdaaea49c11794439b641",
+ "provider_terms_version": "aws-bedrock-service-terms-2026-09-30",
+ "raw_output": "submissions/google.gemma-4-26b-a4b/B/hmb_6439ca0e2875ef67.txt",
+ "raw_output_sha256": "d15ea9a928c60ea953c7edafe7ba7df7e9949beac4a716add7d9692c8bb59950",
+ "release_hash": "sha256:a1bfbd4f1938236aa657dc10fc4e3f51f168b4324197d59d128087021e20283e",
+ "render_sha256": "e9f217f99c4b2468c410e1de7b0a70e2a796d3a70acdfa0cab32932f46ee9957",
+ "sandbox_image_digest": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "scores": "scores/google.gemma-4-26b-a4b/B/hmb_6439ca0e2875ef67.json",
+ "scores_sha256": "97c4d96bd85ad205d17472c9fca9c4200dd0b7dfc0a3916796cfba3c636de238",
+ "stop_reason": "stop",
+ "track": "B",
+ "verdicts": "verdicts/google.gemma-4-26b-a4b/B/hmb_6439ca0e2875ef67.json",
+ "verdicts_sha256": "9174a9a7fe4a123ddf288dc6ef7800b02a77e58bb681461935c09fbf6fc77425",
+ "wrapper_class": "D"
+}

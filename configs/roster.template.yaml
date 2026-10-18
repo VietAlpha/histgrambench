@@ -1,0 +1,63 @@
+# HistMathBench v2 benchmark model roster (plan §2.7, §7.3, §10.9, §6.3 G8b).
+# OWNER DECISION: fill in and save as configs/roster.yaml. The template ships EMPTY on purpose;
+# the engineering agents that built this software are not part of the benchmark roster.
+# Requirements checked by `python -m hmb roster-check configs/roster.yaml`:
+#   builders: exactly 2, in 2 distinct families (§7.3 as amended 2026-09-26; writers GPT-6 Sol + Kimi K2.5 since the
+#   owner decisions of 2026-09-26; Claude Sonnet 5 + Kimi K2.5 in between); judges: >= 3 families,
+#   disjoint from builders (primary configuration); exactly one verifier (the G8b gatekeeper, the only
+#   AI screening step; the classifier/metadata/embedder roles were cut 2026-09-23 and are refused);
+#   every live model needs `unit_price_id` in manifests/pricing.yaml; builders, judges and contestants
+#   need a pinned `snapshot`; contestants follow the §2.7 inclusion rule frozen on a recorded date D.
+#   effort: required for builders, judges and the verifier (roster decision 2026-09-23: gatekeeper and
+#   graders high, writers medium), one value per (role, family); optional for contestants. No default
+#   is applied: a missing effort is reported, never filled in.
+# Entry schema:
+#   - model_id: "<provider model id>"
+#     provider: bedrock | bedrock_mantle
+#     family: "<declared model family>"
+#     snapshot: "<dated snapshot or provider version>"
+#     unit_price_id: "<id in manifests/pricing.yaml>"
+#     decoding: {temperature: 0.0, top_p: 1.0}
+#     effort: medium | high                # recorded with every result and in the cache key
+#     input_mode: vision | text_only       # text_only: never sent the image (contestant floor only)
+#     endpoint: "<base URL>"               # bedrock_mantle only: the model card's In-Region endpoint URL,
+#                                          # e.g. https://bedrock-mantle.us-east-1.api.aws/openai/v1 (Gemma 4)
+#                                          # or https://bedrock-mantle.us-east-1.api.aws/v1 (DeepSeek V3.1)
+# Transports (D14 closed 2026-09-25): only `bedrock` (bedrock-runtime Converse, us-east-1) and
+# `bedrock_mantle` (Chat Completions on bedrock-mantle.<region>.api.aws). The direct anthropic, openai
+# and gemini providers are removed and refused. Standard (default) service tier only; no fallback.
+# How effort reaches the model: bedrock_mantle sends `reasoning_effort: <effort>`; a `bedrock` (Converse)
+# entry with effort must also state the family's own request field in
+# `decoding.additional_model_request_fields` (roster-check refuses it otherwise). Live-verified 2026-09-26:
+#   Claude Opus 5.5 {thinking: {type: adaptive}, output_config: {effort: medium}}; Grok 4.6 {reasoning_effort: medium};
+#   Claude Sonnet 5 (us.anthropic.claude-sonnet-5): the same Anthropic fields (model card; NOT live-verified).
+#   Kimi K2.5 (moonshotai.kimi-k2.5, writer): no documented effort control -> no `effort` (roster-check allows it).
+#   GPT-6 on Converse {reasoning: {effort: high}}.
+# GPT-6 Luna (gatekeeper) runs on GLOBAL CRIS (GPT-6 Sol is no longer on the roster) (owner decision 2026-09-26; live parity verified,
+#   reports/batch_inference_compatibility_20260926.md): model_id global.openai.gpt-6-sol / global.openai.gpt-6-luna,
+#   provider bedrock (bedrock-runtime Converse), no endpoint, decoding {additional_model_request_fields:
+#   {reasoning: {effort: <effort>}}} and nothing else (no sampling control). roster-check refuses the retired
+#   openai.gpt-6-* (Mantle) and us.openai.gpt-6-* ids. Prompts and outputs of these two models may be processed
+#   in any supported commercial AWS Region (Global CRIS).
+# Request shape (hmb.roster.MODEL_REQUEST_SHAPE, 2026-09-26): GPT-6 Luna/Sol accept no sampling control;
+#   Claude Sonnet 4.5 rejects temperature with top_p -> `decoding: {temperature: 0.0}`.
+#   structured_output: native_json_schema   # optional, one value per role, never for contestants; the 2026-09-26
+#                                           # evidence: gatekeeper native, judges prompt-stated (reports/prompt_repair_20260926.md)
+# CONTESTANTS ARE LOCKED (owner decision 2026-09-26; hmb.roster.LOCKED_CONTESTANTS). roster-check refuses any
+# addition, alias, substitution, route or family change, any grader model and any answer-key company:
+#   - model_id: "us.meta.llama4-maverick-17b-instruct-v1:0"  provider: bedrock  family: meta  input_mode: vision
+#   - model_id: "moonshotai.kimi-k2.5"  provider: bedrock  family: moonshot  input_mode: vision
+#   - model_id: "nvidia.nemotron-nano-12b-v2"  provider: bedrock  family: nvidia  input_mode: vision
+#   - model_id: "google.gemma-4-26b-a4b"  provider: bedrock_mantle  family: google  input_mode: vision
+#     endpoint: "https://bedrock-mantle.us-east-1.api.aws/openai/v1"
+#   - model_id: "mistral.ministral-3-14b-instruct"  provider: bedrock  family: mistral  input_mode: vision
+#   - model_id: "google.gemma-4-e2b"  provider: bedrock_mantle  family: google  input_mode: vision
+#     endpoint: "https://bedrock-mantle.us-east-1.api.aws/openai/v1"
+#   - model_id: "deepseek.v3.1"  provider: bedrock_mantle  family: deepseek  input_mode: text_only
+#     endpoint: "https://bedrock-mantle.us-east-1.api.aws/v1"   # never the direct-figure track (Track A)
+version: roster-1
+inclusion_rule_date: null        # §2.7 date D (owner)
+builder: []                      # 2 answer-key writers, 2 families (2026-09-26)
+judge: []
+contestant: []
+verifier: []                     # G8b strict gatekeeper (exactly one)

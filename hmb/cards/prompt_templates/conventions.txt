@@ -1,0 +1,6 @@
+GEOMETRIC CONVENTIONS (binding)
+- intersect_at(x, y, p): only a transversal crossing, with p strictly inside both x and y. A tangency
+  point is tangent_to; a meeting at an endpoint is endpoint_of / on; a T-junction is on.
+- parallel and perpendicular hold only between linear entities (segment, line, ray, axis).
+  Two collinear overlapping segments are not parallel.
+- A printed label belongs to the nearest point; if no point is near it, to the nearest other entity.

@@ -1,0 +1,58 @@
+{
+ "access_date": "2026-10-01",
+ "attempts": [
+  {
+   "index": 1,
+   "transport_error": null,
+   "utc": "2026-10-01T17:20:25+00:00"
+  }
+ ],
+ "body_sha256": "837e4bbdbe80bf8a6f2425be0577b7bb22d9a13048ef459273c896bb6fa822b8",
+ "cgx_record": null,
+ "cgx_sha256": null,
+ "cpu_seconds": 2.22,
+ "dataset_version": "v1.0",
+ "decoding_params": {
+  "effort": null,
+  "max_tokens": 8192,
+  "seed": null,
+  "temperature": 0.0,
+  "top_p": 1.0
+ },
+ "extraction_path": "fenced",
+ "harness_version": "93e9e015e087dd9cc959471d85fc156303da275f6d605f60e6f5f4dfa26c66f1",
+ "image_encoding": {
+  "crop_sha256": "07355242119205f778a34b27587bb44c23effd1a8e6fdd0873a8a0dca0c8962a",
+  "format": "png",
+  "height": 1024,
+  "width": 1024
+ },
+ "ink_fraction": 0.05230713,
+ "item_id": "hmb_6439ca0e2875ef67",
+ "judge_config_id": null,
+ "model_family": "mistral",
+ "model_id": "mistral.ministral-3-14b-instruct",
+ "model_version_string": "mistral.ministral-3-14b-instruct",
+ "n_blocks": 1,
+ "normalized_tex": "submissions/mistral.ministral-3-14b-instruct/B/hmb_6439ca0e2875ef67.tex",
+ "normalized_tex_sha256": "bae44358f7194a90a8465dae1686e18e7532976c33efa23a3ff88806286a545b",
+ "outcome_code": "OK",
+ "output_release": "public",
+ "page_count": 1,
+ "pdf_sha256": "9857604bcc9dc8246b0cdf61bf829837cdd9b48109c67b16c7fe09398a80e5f1",
+ "prompt_id": "reconstruction-B-v2",
+ "prompt_sha256": "1313949262639d9253466e7be19a71297b53032b9d8fdaaea49c11794439b641",
+ "provider_terms_version": "aws-bedrock-service-terms-2026-09-30",
+ "raw_output": "submissions/mistral.ministral-3-14b-instruct/B/hmb_6439ca0e2875ef67.txt",
+ "raw_output_sha256": "27f8c3a29e83d146ddbfb83c2978217691e7261191d7bf3484ced08821338474",
+ "release_hash": "sha256:a1bfbd4f1938236aa657dc10fc4e3f51f168b4324197d59d128087021e20283e",
+ "render_sha256": "c425a5d817f3cd89e5fa128f7b0423590edf7945c65918b1e6180ddd596b000f",
+ "sandbox_image_digest": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "scores": null,
+ "scores_sha256": null,
+ "stop_reason": "end_turn",
+ "track": "B",
+ "verdicts": null,
+ "verdicts_sha256": null,
+ "wrapper_class": "D"
+}

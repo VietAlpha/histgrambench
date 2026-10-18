@@ -1,0 +1,46 @@
+{
+ "canon": {
+  "H": 440,
+  "W": 558,
+  "canon_version": "canon-9.7-v1",
+  "canvas": 1024,
+  "h": 807,
+  "offset": [
+   0,
+   108
+  ],
+  "pillow": "12.0.0",
+  "png_compress_level": 9,
+  "render_sha256": "4974fb3a400fd793b89f7eb498df8f87cf29dd4b1c4c23e474cb7a6f8434b92f",
+  "resample": "LANCZOS",
+  "s": 1.8351254480286738,
+  "w": 1024
+ },
+ "cpu_seconds": 2.62,
+ "exit_code": 0,
+ "image_id": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "image_xobjects": 0,
+ "ink_fraction": 0.0235014,
+ "log_bytes": 31483,
+ "log_path": "compiled/global.anthropic.claude-haiku-4-5-20251001-v1_0/B/hmb_2977d5089c7659f9/cand.log",
+ "log_sha256": "e1262fd8cff0d1e39d3926c7df1d207583c61656936b8223dded4a2ad905b6b0",
+ "log_truncated": false,
+ "max_rss_kb": 719520,
+ "missing_glyphs": [],
+ "notes": [],
+ "outcome": "OK",
+ "page_count": 1,
+ "page_size_cm": [
+  4.717,
+  3.7169
+ ],
+ "path_op_count": 3,
+ "pdf_path": "compiled/global.anthropic.claude-haiku-4-5-20251001-v1_0/B/hmb_2977d5089c7659f9/cand.pdf",
+ "pdf_sha256": "0bfa411cf722f3890d5a9d8e4c5dff1c9f3fb34bd8946ff3115fd1af7785a7ef",
+ "render_path": "compiled/global.anthropic.claude-haiku-4-5-20251001-v1_0/B/hmb_2977d5089c7659f9/render.png",
+ "render_sha256": "4974fb3a400fd793b89f7eb498df8f87cf29dd4b1c4c23e474cb7a6f8434b92f",
+ "signal": null,
+ "violations": [],
+ "wall_seconds": 3.255,
+ "wallclock_reruns": 0
+}

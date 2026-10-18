@@ -1,0 +1,472 @@
+{
+ "version": "batch-capability-1",
+ "updated_utc": "2026-10-02 (contestant Claude Haiku 4.5 on Global CRIS added, owner roster amendment)",
+ "region": "us-east-1",
+ "note": "Production routes to batch only where final_route is batch (loader-enforced: SUPPORTED_LIVE_COMPLETED Converse-job probe). Evidence paths are relative to the repository root.",
+ "entries": [
+  {
+   "route_id": "gatekeeper-gpt-6-luna-global",
+   "roles": [
+    "verifier"
+   ],
+   "model_id": "global.openai.gpt-6-luna",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "converse_job",
+   "region": "us-east-1",
+   "inference_scope": "global_cris",
+   "modality": "image",
+   "structured_output_required": true,
+   "sync_structured_output": "documented",
+   "batch_submission": "UNSUPPORTED_LIVE_CONFIRMED",
+   "batch_structured_output": "UNSUPPORTED_LIVE_CONFIRMED",
+   "min_records": null,
+   "pricing_state": "published on-demand rate only (model card; no batch rate)",
+   "final_route": "synchronous",
+   "reason": "batch rejected at submission for every GPT-6 Luna id and API: 'Batch inference is not supported for the requested model'; the role also requires native JSON Schema",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-luna.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference.html",
+    "reports/batch_probes_20260926/gpt-6-luna__plain.json",
+    "reports/batch_probes_20260926/gpt-6-luna__schema.json",
+    "reports/batch_probes_20260926/variants.json",
+    "reports/batch_probes_20260926/openai_batch_variants.json"
+   ]
+  },
+  {
+   "route_id": "writer-opus-5-5-us",
+   "roles": [
+    "none (writer retired by the owner 2026-09-26; evidence kept)"
+   ],
+   "model_id": "us.anthropic.claude-opus-5-5",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "converse_job",
+   "region": "us-east-1",
+   "inference_scope": "us_geo_cris",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "unsupported",
+   "batch_submission": "UNSUPPORTED_LIVE_CONFIRMED",
+   "batch_structured_output": "UNSUPPORTED_LIVE_CONFIRMED",
+   "min_records": null,
+   "pricing_state": "published on-demand rate only (Price List API; no batch SKU)",
+   "final_route": "synchronous",
+   "reason": "retired writer route (owner decision 2026-09-26: Sonnet 5 and Kimi K2.5 write the answer key); batch rejected at submission for us./global./base ids, Converse and InvokeModel job types: 'Batch inference is not supported for the requested model'",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-5-5.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "reports/batch_probes_20260926/opus-5-5__plain.json",
+    "reports/batch_probes_20260926/opus-5-5__schema.json",
+    "reports/batch_probes_20260926/variants.json"
+   ]
+  },
+  {
+   "route_id": "writer-sonnet-5-us",
+   "roles": [
+    "none (writer retired by the owner late 2026-09-26: GPT-6 Sol replaced Sonnet 5)"
+   ],
+   "model_id": "us.anthropic.claude-sonnet-5",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "converse_job",
+   "region": "us-east-1",
+   "inference_scope": "us_geo_cris",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "unsupported",
+   "batch_submission": "NOT_PROBED",
+   "batch_structured_output": "NOT_PROBED",
+   "min_records": null,
+   "pricing_state": "published on-demand SKU (Price List API, $2.20/$11 US Geo); no batch SKU",
+   "final_route": "synchronous",
+   "reason": "retired writer route (GPT-6 Sol replaced Sonnet 5, owner 2026-09-26); not in the batch table and no batch SKU (2026-09-26); not probed (owner: edits only). Opus 5.5, the same generation, was refused at submission",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html"
+   ]
+  },
+  {
+   "route_id": "writer-gpt-6-sol-global",
+   "roles": [
+    "none (writer retired by the owner 2026-09-30: GPT-6.1 Sol on US CRIS replaces it; evidence kept)"
+   ],
+   "model_id": "global.openai.gpt-6-sol",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "converse_job",
+   "region": "us-east-1",
+   "inference_scope": "global_cris",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "unsupported",
+   "batch_submission": "UNSUPPORTED_LIVE_CONFIRMED",
+   "batch_structured_output": "UNSUPPORTED_LIVE_CONFIRMED",
+   "min_records": null,
+   "pricing_state": "published on-demand rate only (model card; no batch rate)",
+   "final_route": "synchronous",
+   "reason": "retired writer route (owner 2026-09-30: GPT-6.1 Sol replaces GPT-6 Sol); batch rejected at submission for every GPT-6 Sol id and API: 'Batch inference is not supported for the requested model'",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-sol.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "reports/batch_probes_20260926/gpt-6-sol__plain.json",
+    "reports/batch_probes_20260926/gpt-6-sol__schema.json",
+    "reports/batch_probes_20260926/variants.json",
+    "reports/batch_probes_20260926/openai_batch_variants.json"
+   ]
+  },
+  {
+   "route_id": "writer-gpt-6-1-sol-us",
+   "roles": [
+    "builder"
+   ],
+   "model_id": "us.openai.gpt-6.1-sol",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "none",
+   "region": "us-east-1",
+   "inference_scope": "us_geo_cris",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "not_required",
+   "batch_submission": "DOCUMENTED_UNSUPPORTED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": null,
+   "pricing_state": "published on-demand US CRIS rate only (model card, $2.20/$11.00; no batch rate)",
+   "final_route": "synchronous",
+   "reason": "current writer (owner 2026-09-30, with Kimi K2.5): absent from the batch-supported table (2026-09-30); no global profile or in-Region runtime id at launch, so the route is US geographic CRIS; not probed",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-1-sol.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html"
+   ]
+  },
+  {
+   "route_id": "judge-qwen3-vl-mantle",
+   "roles": [
+    "judge"
+   ],
+   "model_id": "qwen.qwen3-vl-235b-a22b-instruct",
+   "provider": "bedrock_mantle",
+   "endpoint": "https://bedrock-mantle.us-east-1.api.aws/v1",
+   "provider_path": "none",
+   "region": "us-east-1",
+   "inference_scope": "in_region",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "live_verified",
+   "batch_submission": "DOCUMENTED_UNSUPPORTED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": null,
+   "pricing_state": "published on-demand and batch SKUs (batch unusable on this route)",
+   "final_route": "synchronous",
+   "reason": "the locked bedrock-mantle route has no batch surface (batch quotas apply only to bedrock-runtime); moving a grader to a runtime batch route is a grader route change that needs owner re-validation; runtime-route batch evidence recorded separately",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-mantle.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "reports/batch_probes_20260926/qwen3-vl-runtime__plain.json"
+   ]
+  },
+  {
+   "route_id": "judge-gemma-4-31b-mantle",
+   "roles": [
+    "judge"
+   ],
+   "model_id": "google.gemma-4-31b",
+   "provider": "bedrock_mantle",
+   "endpoint": "https://bedrock-mantle.us-east-1.api.aws/openai/v1",
+   "provider_path": "none",
+   "region": "us-east-1",
+   "inference_scope": "in_region",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "live_verified",
+   "batch_submission": "DOCUMENTED_UNSUPPORTED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": null,
+   "pricing_state": "published on-demand and batch SKUs (batch unusable on this route)",
+   "final_route": "synchronous",
+   "reason": "the locked bedrock-mantle route has no batch surface (batch quotas apply only to bedrock-runtime); moving a grader to a runtime batch route is a grader route change that needs owner re-validation; no bedrock-runtime route exists",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-mantle.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html"
+   ]
+  },
+  {
+   "route_id": "judge-mistral-large-3-mantle",
+   "roles": [
+    "judge"
+   ],
+   "model_id": "mistral.mistral-large-3-675b-instruct",
+   "provider": "bedrock_mantle",
+   "endpoint": "https://bedrock-mantle.us-east-1.api.aws/v1",
+   "provider_path": "none",
+   "region": "us-east-1",
+   "inference_scope": "in_region",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "live_verified",
+   "batch_submission": "DOCUMENTED_UNSUPPORTED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": null,
+   "pricing_state": "published on-demand and batch SKUs (batch unusable on this route)",
+   "final_route": "synchronous",
+   "reason": "the locked bedrock-mantle route has no batch surface (batch quotas apply only to bedrock-runtime); moving a grader to a runtime batch route is a grader route change that needs owner re-validation; runtime-route batch evidence recorded separately",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-mantle.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "reports/batch_probes_20260926/mistral-large-3-runtime__plain.json"
+   ]
+  },
+  {
+   "route_id": "contestant-gemma-4-26b-mantle",
+   "roles": [
+    "contestant"
+   ],
+   "model_id": "google.gemma-4-26b-a4b",
+   "provider": "bedrock_mantle",
+   "endpoint": "https://bedrock-mantle.us-east-1.api.aws/openai/v1",
+   "provider_path": "none",
+   "region": "us-east-1",
+   "inference_scope": "in_region",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "not_required",
+   "batch_submission": "DOCUMENTED_UNSUPPORTED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": null,
+   "pricing_state": "published on-demand and batch SKUs (batch unusable on this route)",
+   "final_route": "synchronous",
+   "reason": "locked bedrock-mantle route has no batch surface",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-mantle.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html"
+   ]
+  },
+  {
+   "route_id": "contestant-gemma-4-e2b-mantle",
+   "roles": [
+    "contestant"
+   ],
+   "model_id": "google.gemma-4-e2b",
+   "provider": "bedrock_mantle",
+   "endpoint": "https://bedrock-mantle.us-east-1.api.aws/openai/v1",
+   "provider_path": "none",
+   "region": "us-east-1",
+   "inference_scope": "in_region",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "not_required",
+   "batch_submission": "DOCUMENTED_UNSUPPORTED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": null,
+   "pricing_state": "published on-demand and batch SKUs (batch unusable on this route)",
+   "final_route": "synchronous",
+   "reason": "locked bedrock-mantle route has no batch surface",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-mantle.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html"
+   ]
+  },
+  {
+   "route_id": "contestant-deepseek-v3-1-mantle",
+   "roles": [
+    "contestant"
+   ],
+   "model_id": "deepseek.v3.1",
+   "provider": "bedrock_mantle",
+   "endpoint": "https://bedrock-mantle.us-east-1.api.aws/v1",
+   "provider_path": "none",
+   "region": "us-east-1",
+   "inference_scope": "in_region",
+   "modality": "text",
+   "structured_output_required": false,
+   "sync_structured_output": "not_required",
+   "batch_submission": "DOCUMENTED_UNSUPPORTED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": null,
+   "pricing_state": "published on-demand and batch SKUs (batch unusable on this route)",
+   "final_route": "synchronous",
+   "reason": "locked bedrock-mantle route has no batch surface",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-mantle.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html"
+   ]
+  },
+  {
+   "route_id": "contestant-llama4-maverick-us",
+   "roles": [
+    "contestant"
+   ],
+   "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "converse_job",
+   "region": "us-east-1",
+   "inference_scope": "us_geo_cris",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "not_required",
+   "batch_submission": "SUPPORTED_LIVE_COMPLETED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": 100,
+   "pricing_state": "published explicit batch SKU (Price List API)",
+   "final_route": "batch",
+   "reason": "Converse-job probe 2026-09-26: 100/100 records completed, retrieved, parsed and correct (image+text, role decoding); same bedrock-runtime Converse route and request body as the synchronous call",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "reports/batch_probes_20260926/llama4-maverick__plain.json"
+   ]
+  },
+  {
+   "route_id": "writer-kimi-k2-5",
+   "roles": [
+    "builder"
+   ],
+   "model_id": "moonshotai.kimi-k2.5",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "converse_job",
+   "region": "us-east-1",
+   "inference_scope": "in_region",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "not_required",
+   "batch_submission": "SUPPORTED_LIVE_COMPLETED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": 100,
+   "pricing_state": "published explicit batch SKU (Price List API)",
+   "final_route": "batch",
+   "reason": "Converse-job probe 2026-09-26: 100/100 records completed, retrieved, parsed and correct (image+text, temperature 0 / top_p 1, no effort field). The writer calls use the same route, decoding and request family (the model documents no effort control); writer-length prompts were not probed. Answer-key writer since the owner decision of 2026-09-26 (no longer a contestant)",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "reports/batch_probes_20260926/kimi-k2.5__plain.json"
+   ]
+  },
+  {
+   "route_id": "contestant-nemotron-nano-12b",
+   "roles": [
+    "contestant"
+   ],
+   "model_id": "nvidia.nemotron-nano-12b-v2",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "converse_job",
+   "region": "us-east-1",
+   "inference_scope": "in_region",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "not_required",
+   "batch_submission": "SUPPORTED_LIVE_COMPLETED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": 100,
+   "pricing_state": "published explicit batch SKU (Price List API)",
+   "final_route": "synchronous",
+   "reason": "Converse-job probe 2026-09-26 completed but 15/100 records failed server-side (HTTP 400 validation_error 'Already borrowed'); with no synchronous fallback after a failed batch record, that rate would fail contestant cells, so the route stays synchronous",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "reports/batch_probes_20260926/nemotron-nano-12b__plain.json"
+   ]
+  },
+  {
+   "route_id": "contestant-ministral-3-14b",
+   "roles": [
+    "contestant"
+   ],
+   "model_id": "mistral.ministral-3-14b-instruct",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "converse_job",
+   "region": "us-east-1",
+   "inference_scope": "in_region",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "not_required",
+   "batch_submission": "SUPPORTED_LIVE_COMPLETED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": 100,
+   "pricing_state": "published explicit batch SKU (Price List API)",
+   "final_route": "batch",
+   "reason": "Converse-job probe 2026-09-26: 100/100 records completed, retrieved, parsed and correct (image+text, role decoding); same bedrock-runtime Converse route and request body as the synchronous call",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "reports/batch_probes_20260926/ministral-3-14b__plain.json"
+   ]
+  },
+  {
+   "route_id": "evidence-qwen3-vl-runtime",
+   "roles": [
+    "none (evidence only)"
+   ],
+   "model_id": "qwen.qwen3-vl-235b-a22b",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "converse_job",
+   "region": "us-east-1",
+   "inference_scope": "in_region",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "unknown",
+   "batch_submission": "SUPPORTED_LIVE_COMPLETED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": 100,
+   "pricing_state": "published explicit batch SKU (Price List API)",
+   "final_route": "synchronous",
+   "reason": "Converse-job probe 2026-09-26: 100/100 records correct; not a roster route (the graders are locked to bedrock-mantle, and effort is not carried on this route); evidence for an owner decision only",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "reports/batch_probes_20260926/qwen3-vl-runtime__plain.json"
+   ]
+  },
+  {
+   "route_id": "evidence-mistral-large-3-runtime",
+   "roles": [
+    "none (evidence only)"
+   ],
+   "model_id": "mistral.mistral-large-3-675b-instruct",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "converse_job",
+   "region": "us-east-1",
+   "inference_scope": "in_region",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "unknown",
+   "batch_submission": "SUPPORTED_LIVE_COMPLETED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": 100,
+   "pricing_state": "published explicit batch SKU (Price List API)",
+   "final_route": "synchronous",
+   "reason": "Converse-job probe 2026-09-26: 100/100 records correct; not a roster route (the graders are locked to bedrock-mantle, and effort is not carried on this route); evidence for an owner decision only",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "reports/batch_probes_20260926/mistral-large-3-runtime__plain.json"
+   ]
+  },
+  {
+   "route_id": "contestant-claude-haiku-4-5-global",
+   "roles": [
+    "contestant"
+   ],
+   "model_id": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+   "provider": "bedrock",
+   "endpoint": null,
+   "provider_path": "converse_job",
+   "region": "us-east-1",
+   "inference_scope": "global_cris",
+   "modality": "image",
+   "structured_output_required": false,
+   "sync_structured_output": "not_required",
+   "batch_submission": "DOCUMENTED_SUPPORTED_UNTESTED",
+   "batch_structured_output": "DOCUMENTED_UNSUPPORTED",
+   "min_records": 100,
+   "pricing_state": "batch = 50% of on-demand (rate card 2026-10-02, to confirm on the first bill)",
+   "final_route": "synchronous",
+   "reason": "added by the owner's roster amendment 2026-10-02; AWS batch table lists Claude Haiku 4.5 with cross-Region inference profile support in us-east-1; a live Converse-job probe is required before final_route batch",
+   "evidence": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference-supported.html",
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-haiku-4-5.html"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "access_date": "2026-10-02",
+ "attempts": [
+  {
+   "index": 1,
+   "transport_error": null,
+   "utc": "2026-10-02T15:09:25.465+00:00"
+  }
+ ],
+ "body_sha256": "e3d202a621440ac23a233243b05887ea8e3803935101dc1c28d11a4c21902249",
+ "cgx_record": null,
+ "cgx_sha256": null,
+ "cpu_seconds": 2.75,
+ "dataset_version": "v1.0",
+ "decoding_params": {
+  "effort": null,
+  "max_tokens": 8192,
+  "seed": null,
+  "temperature": 0.0,
+  "top_p": 1.0
+ },
+ "extraction_path": "fenced",
+ "harness_version": "d9a0fa817f9ebbd2f9bf143ba854b7933eb5412b0f62274315fb2fb96c700644",
+ "image_encoding": {
+  "crop_sha256": "9763f26aaaf0ff71603575e81193a161af365a46ceb3f00ed358e500a7e6c744",
+  "format": "png",
+  "height": 1024,
+  "width": 1024
+ },
+ "ink_fraction": 0.0235014,
+ "item_id": "hmb_2977d5089c7659f9",
+ "judge_config_id": null,
+ "model_family": "anthropic",
+ "model_id": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+ "model_version_string": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
+ "n_blocks": 1,
+ "normalized_tex": "submissions/global.anthropic.claude-haiku-4-5-20251001-v1_0/A/hmb_2977d5089c7659f9.tex",
+ "normalized_tex_sha256": "c87e34b42863d0b3a2aa7904e5c0dada2919faf05530229c7335f4c662d23ee4",
+ "outcome_code": "OK",
+ "output_release": "public",
+ "page_count": 1,
+ "pdf_sha256": "0bfa411cf722f3890d5a9d8e4c5dff1c9f3fb34bd8946ff3115fd1af7785a7ef",
+ "prompt_id": "reconstruction-A-v2",
+ "prompt_sha256": "e7cb418068c4f1d860325273a3125ca584107dac6e7db8b108c2b3ac3501cea7",
+ "provider_terms_version": "aws-bedrock-service-terms-2026-09-30",
+ "raw_output": "submissions/global.anthropic.claude-haiku-4-5-20251001-v1_0/A/hmb_2977d5089c7659f9.txt",
+ "raw_output_sha256": "bb58224877eaf67f69c1dc0eacff67e1b58f890c888093d45b59e098dd5ac7c4",
+ "release_hash": "sha256:a1bfbd4f1938236aa657dc10fc4e3f51f168b4324197d59d128087021e20283e",
+ "render_sha256": "4974fb3a400fd793b89f7eb498df8f87cf29dd4b1c4c23e474cb7a6f8434b92f",
+ "sandbox_image_digest": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "scores": null,
+ "scores_sha256": null,
+ "stop_reason": "end_turn",
+ "track": "A",
+ "verdicts": null,
+ "verdicts_sha256": null,
+ "wrapper_class": "D"
+}

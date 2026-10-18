@@ -1,0 +1,58 @@
+{
+ "access_date": "2026-10-01",
+ "attempts": [
+  {
+   "index": 1,
+   "transport_error": null,
+   "utc": "2026-10-01T16:38:14+00:00"
+  }
+ ],
+ "body_sha256": "a3abdbd96e71d5ea09fe97bbf608be6d207e4f58264d0a0e5d31a1e15a839424",
+ "cgx_record": null,
+ "cgx_sha256": null,
+ "cpu_seconds": 3.27,
+ "dataset_version": "v1.0",
+ "decoding_params": {
+  "effort": null,
+  "max_tokens": 8192,
+  "seed": null,
+  "temperature": 0.0,
+  "top_p": 1.0
+ },
+ "extraction_path": "fenced",
+ "harness_version": "93e9e015e087dd9cc959471d85fc156303da275f6d605f60e6f5f4dfa26c66f1",
+ "image_encoding": {
+  "crop_sha256": "9763f26aaaf0ff71603575e81193a161af365a46ceb3f00ed358e500a7e6c744",
+  "format": "png",
+  "height": 1024,
+  "width": 1024
+ },
+ "ink_fraction": 0.03334141,
+ "item_id": "hmb_2977d5089c7659f9",
+ "judge_config_id": null,
+ "model_family": "meta",
+ "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+ "model_version_string": "us.meta.llama4-maverick-17b-instruct-v1:0",
+ "n_blocks": 2,
+ "normalized_tex": "submissions/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_2977d5089c7659f9.tex",
+ "normalized_tex_sha256": "2613ad666895456c590691e6679ba578556323696630bd0953f7bbf56ed2eda8",
+ "outcome_code": "OK",
+ "output_release": "public",
+ "page_count": 1,
+ "pdf_sha256": "1d1cc096ca204ef14f6426a194f13afc89e9412b21626a5afdefc64cf404c2d2",
+ "prompt_id": "reconstruction-A-v2",
+ "prompt_sha256": "e7cb418068c4f1d860325273a3125ca584107dac6e7db8b108c2b3ac3501cea7",
+ "provider_terms_version": "aws-bedrock-service-terms-2026-09-30",
+ "raw_output": "submissions/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_2977d5089c7659f9.txt",
+ "raw_output_sha256": "9b55fe82a375bf2398f24e812d31f3abb6dcd133641bcef4940e8b19839f1b00",
+ "release_hash": "sha256:a1bfbd4f1938236aa657dc10fc4e3f51f168b4324197d59d128087021e20283e",
+ "render_sha256": "e83b88e998dfea0cdae7f0d2130f5a7e33177652874de899dab089ed3fa132a3",
+ "sandbox_image_digest": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "scores": null,
+ "scores_sha256": null,
+ "stop_reason": "end_turn",
+ "track": "A",
+ "verdicts": null,
+ "verdicts_sha256": null,
+ "wrapper_class": "P"
+}

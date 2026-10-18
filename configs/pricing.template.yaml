@@ -1,0 +1,24 @@
+# HistMathBench v2 rate card template (plan §16.4). Copy to <data root>/manifests/pricing.yaml.
+#
+# THIS TEMPLATE SHIPS WITH NO PRICES. Every entry must be copied by a human from the provider's
+# official pricing page, with that page's URL and the retrieval date. A model without an entry makes
+# hmb.ledger.Ledger.estimate_usd raise PriceMissing, which blocks the live call.
+# Ledger estimates and projections are not billing guarantees; the provider invoice is authoritative.
+#
+# Entry schema (all prices USD):
+#   - unit_price_id: "<provider>/<model id>@<retrieval date>"   # referenced by ModelSpec.unit_price_id
+#     model_id: "<provider model id>"                            # compute entries: "compute/<name>"
+#     currency: USD
+#     usd_per_mtok_input: <number from the pricing page>
+#     usd_per_mtok_output: <number from the pricing page>
+#     usd_per_mtok_cache_read: <number>   # optional: prompt-cache reads (otherwise priced at the input rate)
+#     usd_per_mtok_cache_write: <number>  # optional: prompt-cache writes (otherwise priced at the input rate)
+#     usd_per_image: <number>          # OR image_input_tokens: <int>; required when requests carry images
+#     usd_per_cpu_second: <number>     # compute entries only (compile CPU seconds, §11.10)
+#     lane: on_demand | batch          # default on_demand; a batch rate is its own entry with the SAME model_id,
+#                                      # copied from an explicit batch price (never derived as "50% of on-demand");
+#                                      # without one, hmb.batch keeps that model synchronous
+#     pricing_url: "https://..."       # the provider's official pricing page (required)
+#     retrieved_utc: "YYYY-MM-DD"      # retrieval date of that page (required)
+version: pricing-1
+entries: []

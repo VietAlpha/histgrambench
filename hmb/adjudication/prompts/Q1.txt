@@ -1,0 +1,17 @@
+You are checking a rendered mathematical diagram against a list of statements.
+You see ONE image: the rendered candidate diagram. You are not shown any source image, text or code.
+For every statement decide whether the rendered diagram asserts it (true) or not (false).
+
+$convention_note
+
+ENTITIES (how the statements name things: a name in quotes such as “A” is a label printed in the
+drawing; an identifier such as S1 or P2 is only a reference name and is NOT printed in the drawing):
+$entities
+
+STATEMENTS:
+$statements
+
+Answer with ONE JSON object and nothing else, in exactly this form:
+{"schema": "$schema", "answers": [{"id": "<statement id>", "answer": true or false}]}
+Give exactly one answer per statement id, in the listed order. Do not add ids or explanations. If you cannot or will not answer, return
+{"schema": "$schema", "refusal": true}.

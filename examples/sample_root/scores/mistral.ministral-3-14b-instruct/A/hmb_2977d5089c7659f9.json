@@ -1,0 +1,50 @@
+{
+ "S": 0.3333333333333333,
+ "evaluator_failure": null,
+ "item_id": "hmb_2977d5089c7659f9",
+ "metric_hash": "e60d6873cdecd6620dda6ea11fa4b2ed7bc804e0abfbf6575ed15ada19983d81",
+ "model_id": "mistral.ministral-3-14b-instruct",
+ "outcome_code": "OK",
+ "per_class": {
+  "E": {
+   "R": 0.36363636363636365,
+   "n": 11,
+   "n_absent": 7,
+   "n_contradicted": 0,
+   "n_exempt": 0,
+   "n_indeterminate": 0,
+   "n_present": 4,
+   "n_star": 11,
+   "reportable": true
+  },
+  "L": {
+   "R": 1.0,
+   "label_errors": {
+    "attachment": 0,
+    "missing": 0,
+    "transcription": 0
+   },
+   "n": 1,
+   "n_absent": 0,
+   "n_contradicted": 0,
+   "n_exempt": 0,
+   "n_indeterminate": 0,
+   "n_present": 1,
+   "n_star": 1,
+   "reportable": true
+  },
+  "R": {
+   "R": 0.16666666666666666,
+   "n": 18,
+   "n_absent": 5,
+   "n_contradicted": 0,
+   "n_exempt": 12,
+   "n_indeterminate": 0,
+   "n_present": 1,
+   "n_star": 6,
+   "reportable": true
+  }
+ },
+ "profile": "production",
+ "track": "A"
+}

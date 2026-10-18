@@ -1,0 +1,11 @@
+```latex
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\begin{document}
+\begin{tikzpicture}
+    \node[rotate=45, diamond, draw, minimum size=2cm] {};
+\end{tikzpicture}
+\end{document}
+```

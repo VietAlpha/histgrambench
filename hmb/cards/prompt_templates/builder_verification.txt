@@ -1,0 +1,19 @@
+You are checking statements about a printed historical mathematical diagram.
+
+INPUTS
+- Image: the diagram crop.
+- OCR_WORDS: words printed in the crop with crop-relative boxes (x, y, w, h in [0, 1], origin top-left).
+- STATEMENTS: numbered statements about the diagram. Entities are named by their printed label when they
+  have one, otherwise by their type and approximate crop-relative position.
+
+For every statement write one line: the statement id, one space, and one word.
+- true     the image shows the statement holds;
+- false    the image shows it does not hold;
+- abstain  the image does not let you decide.
+Judge each statement independently, from the image only. Coordinates and measures are never asked.
+
+{CONVENTIONS}
+
+OUTPUT: one line per statement, in the listed order, and nothing else (no prose, no JSON), e.g.
+s01 true
+s02 abstain

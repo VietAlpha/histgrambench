@@ -1,0 +1,920 @@
+{
+ "abstained": [],
+ "asc_version": "asc-2.0.0+1a2109cf8efd5691",
+ "builder_order": [
+  "us.openai.gpt-6.1-sol",
+  "moonshotai.kimi-k2.5"
+ ],
+ "card_uid": "card_1c66694beb50fba1",
+ "contradictions": [],
+ "entities": [
+  {
+   "ambiguous": false,
+   "anchor": {
+    "h": 0.9635,
+    "w": 0.9235,
+    "x": 0.5,
+    "y": 0.498
+   },
+   "entity_id": "g_1",
+   "label": "a",
+   "members": {
+    "moonshotai.kimi-k2.5": "e7",
+    "us.openai.gpt-6.1-sol": "e1"
+   },
+   "type": "polygon"
+  },
+  {
+   "ambiguous": false,
+   "anchor": {
+    "h": 0.01,
+    "w": 0.01,
+    "x": 0.4325,
+    "y": 0.019
+   },
+   "entity_id": "p_1",
+   "label": null,
+   "members": {
+    "moonshotai.kimi-k2.5": "e1",
+    "us.openai.gpt-6.1-sol": "e2"
+   },
+   "type": "point"
+  },
+  {
+   "ambiguous": false,
+   "anchor": {
+    "h": 0.01,
+    "w": 0.01,
+    "x": 0.0315,
+    "y": 0.979
+   },
+   "entity_id": "p_2",
+   "label": null,
+   "members": {
+    "moonshotai.kimi-k2.5": "e2",
+    "us.openai.gpt-6.1-sol": "e3"
+   },
+   "type": "point"
+  },
+  {
+   "ambiguous": false,
+   "anchor": {
+    "h": 0.01,
+    "w": 0.01,
+    "x": 0.9684999999999999,
+    "y": 0.979
+   },
+   "entity_id": "p_3",
+   "label": null,
+   "members": {
+    "moonshotai.kimi-k2.5": "e3",
+    "us.openai.gpt-6.1-sol": "e4"
+   },
+   "type": "point"
+  },
+  {
+   "ambiguous": false,
+   "anchor": {
+    "h": 0.968,
+    "w": 0.401,
+    "x": 0.229,
+    "y": 0.498
+   },
+   "entity_id": "s_1",
+   "label": null,
+   "members": {
+    "us.openai.gpt-6.1-sol": "e5"
+   },
+   "type": "segment"
+  },
+  {
+   "ambiguous": false,
+   "anchor": {
+    "h": 0.968,
+    "w": 0.543,
+    "x": 0.701,
+    "y": 0.498
+   },
+   "entity_id": "s_2",
+   "label": null,
+   "members": {
+    "us.openai.gpt-6.1-sol": "e6"
+   },
+   "type": "segment"
+  },
+  {
+   "ambiguous": false,
+   "anchor": {
+    "h": 0.0,
+    "w": 0.944,
+    "x": 0.5,
+    "y": 0.982
+   },
+   "entity_id": "s_3",
+   "label": null,
+   "members": {
+    "us.openai.gpt-6.1-sol": "e7"
+   },
+   "type": "segment"
+  },
+  {
+   "ambiguous": false,
+   "anchor": {
+    "h": 0.05,
+    "w": 0.05,
+    "x": 0.236,
+    "y": 0.5
+   },
+   "entity_id": "s_4",
+   "label": null,
+   "members": {
+    "moonshotai.kimi-k2.5": "e4"
+   },
+   "type": "segment"
+  },
+  {
+   "ambiguous": false,
+   "anchor": {
+    "h": 0.05,
+    "w": 0.05,
+    "x": 0.7,
+    "y": 0.5
+   },
+   "entity_id": "s_5",
+   "label": null,
+   "members": {
+    "moonshotai.kimi-k2.5": "e5"
+   },
+   "type": "segment"
+  },
+  {
+   "ambiguous": false,
+   "anchor": {
+    "h": 0.02,
+    "w": 0.05,
+    "x": 0.5,
+    "y": 0.976
+   },
+   "entity_id": "s_6",
+   "label": null,
+   "members": {
+    "moonshotai.kimi-k2.5": "e6"
+   },
+   "type": "segment"
+  },
+  {
+   "ambiguous": false,
+   "anchor": {
+    "h": 0.08,
+    "w": 0.06,
+    "x": 0.436,
+    "y": 0.69
+   },
+   "entity_id": "rg_1",
+   "label": "a",
+   "members": {
+    "moonshotai.kimi-k2.5": "e8"
+   },
+   "type": "region"
+  }
+ ],
+ "facts": [
+  {
+   "anchor": "A",
+   "args": [
+    "p_1"
+   ],
+   "class": "entity",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "e_001",
+   "ineligible_reasons": [],
+   "predicate": "point",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_2"
+   ],
+   "class": "entity",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "e_002",
+   "ineligible_reasons": [],
+   "predicate": "point",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_3"
+   ],
+   "class": "entity",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "e_003",
+   "ineligible_reasons": [],
+   "predicate": "point",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_1"
+   ],
+   "class": "entity",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "e_004",
+   "ineligible_reasons": [],
+   "predicate": "segment",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_2"
+   ],
+   "class": "entity",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "e_005",
+   "ineligible_reasons": [],
+   "predicate": "segment",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_3"
+   ],
+   "class": "entity",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "e_006",
+   "ineligible_reasons": [],
+   "predicate": "segment",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_4"
+   ],
+   "class": "entity",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "e_007",
+   "ineligible_reasons": [],
+   "predicate": "segment",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_5"
+   ],
+   "class": "entity",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "e_008",
+   "ineligible_reasons": [],
+   "predicate": "segment",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_6"
+   ],
+   "class": "entity",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "e_009",
+   "ineligible_reasons": [],
+   "predicate": "segment",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "g_1",
+    3
+   ],
+   "class": "entity",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "e_010",
+   "ineligible_reasons": [],
+   "predicate": "polygon",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "rg_1"
+   ],
+   "class": "entity",
+   "context_assisted": false,
+   "decidability": "model",
+   "eligible": true,
+   "fact_id": "e_011",
+   "ineligible_reasons": [],
+   "predicate": "region",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "a",
+    "g_1"
+   ],
+   "class": "label",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": false,
+   "fact_id": "l_001",
+   "ineligible_reasons": [
+    "not_supported_by_both_writers",
+    "writer_voted_false"
+   ],
+   "predicate": "label",
+   "strictness": "strict",
+   "supporting_families": [
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "false",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "a",
+    "rg_1"
+   ],
+   "class": "label",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "l_002",
+   "ineligible_reasons": [],
+   "predicate": "label",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_1",
+    "s_1"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_001",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_1",
+    "s_2"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_002",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_1",
+    "s_4"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_003",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_1",
+    "s_5"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_004",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_2",
+    "s_1"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_005",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_2",
+    "s_3"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_006",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_2",
+    "s_4"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_007",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_2",
+    "s_6"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_008",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_3",
+    "s_2"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_009",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_3",
+    "s_3"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_010",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_3",
+    "s_5"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_011",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "p_3",
+    "s_6"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_012",
+   "ineligible_reasons": [],
+   "predicate": "endpoint_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_1",
+    "g_1"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_013",
+   "ineligible_reasons": [],
+   "predicate": "edge_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_2",
+    "g_1"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_014",
+   "ineligible_reasons": [],
+   "predicate": "edge_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_3",
+    "g_1"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_015",
+   "ineligible_reasons": [],
+   "predicate": "edge_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "true",
+    "us.openai.gpt-6.1-sol": "generated"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_4",
+    "g_1"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_016",
+   "ineligible_reasons": [],
+   "predicate": "edge_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_5",
+    "g_1"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_017",
+   "ineligible_reasons": [],
+   "predicate": "edge_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    "s_6",
+    "g_1"
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": true,
+   "fact_id": "r_018",
+   "ineligible_reasons": [],
+   "predicate": "edge_of",
+   "strictness": "strict",
+   "supporting_families": [
+    "moonshot",
+    "openai"
+   ],
+   "votes": {
+    "moonshotai.kimi-k2.5": "generated",
+    "us.openai.gpt-6.1-sol": "true"
+   }
+  },
+  {
+   "anchor": "A",
+   "args": [
+    [
+     "p_1",
+     "p_2",
+     "p_3"
+    ]
+   ],
+   "class": "relation",
+   "context_assisted": false,
+   "decidability": "geo",
+   "eligible": false,
+   "fact_id": "r_019",
+   "ineligible_reasons": [
+    "not_supported_by_both_writers",
+    "writer_voted_false"
+   ],
+   "predicate": "collinear",
+   "strictness": "strict",
+   "supporting_families": [],
+   "votes": {
+    "moonshotai.kimi-k2.5": "false",
+    "us.openai.gpt-6.1-sol": "false"
+   }
+  }
+ ],
+ "family_map": {
+  "moonshotai.kimi-k2.5": "moonshot",
+  "us.openai.gpt-6.1-sol": "openai"
+ },
+ "item_id": "hmb_2977d5089c7659f9",
+ "profile": "production"
+}

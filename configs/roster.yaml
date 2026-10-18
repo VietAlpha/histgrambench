@@ -1,0 +1,59 @@
+# HistMathBench v2 benchmark model roster (plan §2.7, §7.3, §10.9, §6.3 G8b). Filled 2026-09-26 at the owner's
+# request from: reports/decision_model_roster_20260923.md (top entries: writers Sonnet 5 + Kimi K2.5, Qwen grader at
+# medium; writer A later replaced by GPT-6 Sol, see the builder block: current writers GPT-6 Sol + Kimi K2.5), hmb.roster.LOCKED_CONTESTANTS (5 image + DeepSeek text-only floor), and the routes/request shapes that were
+# live_integration_verified on 2026-09-26 (repair run, Global CRIS parity, writer check after C41).
+# Schema and rules: configs/roster.template.yaml. Snapshots are the pinned Bedrock model / profile ids.
+version: roster-1
+inclusion_rule_date: 2026-09-23  # §2.7 date D: confirmed by the owner 2026-09-26
+
+verifier:                        # G8b strict gatekeeper, Global CRIS, native JSON Schema (11/11 known-outcome)
+  - {model_id: "global.openai.gpt-6-luna", provider: bedrock, family: openai, snapshot: "global.openai.gpt-6-luna",
+     unit_price_id: "bedrock/global.openai.gpt-6-luna@2026-09-26", effort: high,
+     decoding: {additional_model_request_fields: {reasoning: {effort: high}}}, structured_output: native_json_schema}
+
+builder:                         # 2 answer-key writers, 2 families (owner decision 2026-09-26)
+  # owner 2026-09-26 (later): GPT-6 Sol on Global CRIS replaces Claude Sonnet 5 (US Geo); same $2.00/$10.00 tier as
+  # Sonnet 5 Global, judged the stronger writer. Request shape as live-verified on the Global route (writer at medium).
+  # owner 2026-09-30: GPT-6.1 Sol replaces GPT-6 Sol. Its model card offers no global profile at launch, so it runs on
+  # US CRIS (bedrock-runtime Converse, $2.20/$11.00, 10% above the GPT-6 Sol Global rate). Same effort and shape.
+  - {model_id: "us.openai.gpt-6.1-sol", provider: bedrock, family: openai, snapshot: "us.openai.gpt-6.1-sol",
+     unit_price_id: "bedrock/us.openai.gpt-6.1-sol@2026-09-30", effort: medium,
+     decoding: {additional_model_request_fields: {reasoning: {effort: medium}}}}
+  - {model_id: "moonshotai.kimi-k2.5", provider: bedrock, family: moonshot, snapshot: "moonshotai.kimi-k2.5",
+     unit_price_id: "bedrock/moonshotai.kimi-k2.5@2026-09-23", decoding: {}}   # no documented effort control
+
+judge:                           # 3 families, disjoint from the writers; prompt-stated JSON for the whole panel
+  - {model_id: "qwen.qwen3-vl-235b-a22b-instruct", provider: bedrock_mantle, family: qwen,
+     snapshot: "qwen.qwen3-vl-235b-a22b-instruct", unit_price_id: "bedrock/qwen.qwen3-vl-235b-a22b-instruct@2026-09-23",
+     effort: medium, decoding: {temperature: 0.0, top_p: 1.0}, endpoint: "https://bedrock-mantle.us-east-1.api.aws/v1"}
+  # owner 2026-09-27 (MS2 finding): Gemma 4 31B judge high -> medium; at high ~20 Q3 calls spent all 8192 tokens on
+  # hidden reasoning with empty text. A judge call that still hits the cap counts as a failed answer.
+  - {model_id: "google.gemma-4-31b", provider: bedrock_mantle, family: google, snapshot: "google.gemma-4-31b",
+     unit_price_id: "bedrock/google.gemma-4-31b@2026-09-23", effort: medium, decoding: {temperature: 0.0, top_p: 1.0},
+     endpoint: "https://bedrock-mantle.us-east-1.api.aws/openai/v1"}
+  - {model_id: "mistral.mistral-large-3-675b-instruct", provider: bedrock_mantle, family: mistral,
+     snapshot: "mistral.mistral-large-3-675b-instruct", unit_price_id: "bedrock/mistral.mistral-large-3-675b-instruct@2026-09-23",
+     effort: high, decoding: {temperature: 0.0, top_p: 1.0}, endpoint: "https://bedrock-mantle.us-east-1.api.aws/v1"}
+
+contestant:                      # LOCKED (hmb.roster.LOCKED_CONTESTANTS)
+  - {model_id: "us.meta.llama4-maverick-17b-instruct-v1:0", provider: bedrock, family: meta,
+     snapshot: "us.meta.llama4-maverick-17b-instruct-v1:0", unit_price_id: "bedrock/us.meta.llama4-maverick-17b-instruct-v1:0@2026-09-23",
+     input_mode: vision}
+  - {model_id: "nvidia.nemotron-nano-12b-v2", provider: bedrock, family: nvidia, snapshot: "nvidia.nemotron-nano-12b-v2",
+     unit_price_id: "bedrock/nvidia.nemotron-nano-12b-v2@2026-09-23", input_mode: vision}
+  - {model_id: "google.gemma-4-26b-a4b", provider: bedrock_mantle, family: google, snapshot: "google.gemma-4-26b-a4b",
+     unit_price_id: "bedrock/google.gemma-4-26b-a4b@2026-09-23", input_mode: vision,
+     endpoint: "https://bedrock-mantle.us-east-1.api.aws/openai/v1"}
+  - {model_id: "mistral.ministral-3-14b-instruct", provider: bedrock, family: mistral,
+     snapshot: "mistral.ministral-3-14b-instruct", unit_price_id: "bedrock/mistral.ministral-3-14b-instruct@2026-09-23",
+     input_mode: vision}
+  - {model_id: "google.gemma-4-e2b", provider: bedrock_mantle, family: google, snapshot: "google.gemma-4-e2b",
+     unit_price_id: "bedrock/google.gemma-4-e2b@2026-09-23", input_mode: vision,
+     endpoint: "https://bedrock-mantle.us-east-1.api.aws/openai/v1"}
+  - {model_id: "deepseek.v3.1", provider: bedrock_mantle, family: deepseek, snapshot: "deepseek.v3.1",
+     unit_price_id: "bedrock/deepseek.v3.1@2026-09-23", input_mode: text_only,
+     endpoint: "https://bedrock-mantle.us-east-1.api.aws/v1"}
+  # roster amendment (owner, 2026-10-02): Claude Haiku 4.5, Global CRIS, batch lane; thinking off like every contestant
+  - {model_id: "global.anthropic.claude-haiku-4-5-20251001-v1:0", provider: bedrock, family: anthropic,
+     snapshot: "global.anthropic.claude-haiku-4-5-20251001-v1:0", unit_price_id: "bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0@2026-10-02",
+     input_mode: vision, decoding: {temperature: 0.0}}

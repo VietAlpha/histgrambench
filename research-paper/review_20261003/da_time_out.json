@@ -1,0 +1,295 @@
+{
+ "timing": {
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0": {
+   "A": {
+    "2026-10-02": 2507
+   },
+   "B": {
+    "2026-10-02": 2507
+   }
+  },
+  "google.gemma-4-26b-a4b": {
+   "A": {
+    "2026-10-01": 2507
+   },
+   "B": {
+    "2026-10-01": 2507
+   }
+  },
+  "google.gemma-4-e2b": {
+   "A": {
+    "2026-10-01": 2507
+   },
+   "B": {
+    "2026-10-01": 2507
+   }
+  },
+  "mistral.ministral-3-14b-instruct": {
+   "A": {
+    "2026-10-01": 2507
+   },
+   "B": {
+    "2026-10-01": 2507
+   }
+  },
+  "nvidia.nemotron-nano-12b-v2": {
+   "A": {
+    "2026-10-01": 2507
+   },
+   "B": {
+    "2026-10-01": 2507
+   }
+  },
+  "us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "A": {
+    "2026-10-01": 2507
+   },
+   "B": {
+    "2026-10-01": 2507
+   }
+  }
+ },
+ "harness": {
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0": {
+   "A|d9a0fa81": 2507,
+   "B|d9a0fa81": 2507
+  },
+  "google.gemma-4-26b-a4b": {
+   "A|93e9e015": 2502,
+   "A|d9a0fa81": 5,
+   "B|93e9e015": 2502,
+   "B|d9a0fa81": 5
+  },
+  "google.gemma-4-e2b": {
+   "A|93e9e015": 2507,
+   "B|93e9e015": 2507
+  },
+  "mistral.ministral-3-14b-instruct": {
+   "A|93e9e015": 2507,
+   "B|93e9e015": 2507
+  },
+  "nvidia.nemotron-nano-12b-v2": {
+   "A|93e9e015": 2507,
+   "B|93e9e015": 2507
+  },
+  "us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "A|93e9e015": 2507,
+   "B|93e9e015": 2507
+  }
+ },
+ "same_day_split": {
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0": {
+   "n_same": 969,
+   "n_diff": 0,
+   "item_mean_BA_same": 0.027973923555124583,
+   "item_mean_BA_diff": null,
+   "item_mean_BA_notext": 0.027973923555124583,
+   "item_mean_BA_text": 0.17786057765995272,
+   "item_mean_BA_all": 0.11992672531548584,
+   "frac_items_changed_notext": 0.5397316821465429,
+   "valid_flip_notext": null,
+   "notext_groupmean_small_le3": [
+    -0.0776925107865966,
+    45
+   ],
+   "notext_groupmean_big_gt3": [
+    0.004868482242906003,
+    25
+   ]
+  },
+  "google.gemma-4-26b-a4b": {
+   "n_same": 969,
+   "n_diff": 0,
+   "item_mean_BA_same": -0.022262018492185537,
+   "item_mean_BA_diff": null,
+   "item_mean_BA_notext": -0.022262018492185537,
+   "item_mean_BA_text": -0.03809215417367631,
+   "item_mean_BA_all": -0.03197352574313601,
+   "frac_items_changed_notext": 0.6924664602683178,
+   "valid_flip_notext": null,
+   "notext_groupmean_small_le3": [
+    -0.14751429319342405,
+    45
+   ],
+   "notext_groupmean_big_gt3": [
+    9.885371861689807e-07,
+    25
+   ]
+  },
+  "google.gemma-4-e2b": {
+   "n_same": 969,
+   "n_diff": 0,
+   "item_mean_BA_same": 0.0001533250816319283,
+   "item_mean_BA_diff": null,
+   "item_mean_BA_notext": 0.0001533250816319283,
+   "item_mean_BA_text": 0.0014299288716602336,
+   "item_mean_BA_all": 0.0009364988467151099,
+   "frac_items_changed_notext": 0.7141382868937048,
+   "valid_flip_notext": null,
+   "notext_groupmean_small_le3": [
+    0.03406756665116178,
+    45
+   ],
+   "notext_groupmean_big_gt3": [
+    -0.006974001262353686,
+    25
+   ]
+  },
+  "mistral.ministral-3-14b-instruct": {
+   "n_same": 969,
+   "n_diff": 0,
+   "item_mean_BA_same": 0.039583222400451853,
+   "item_mean_BA_diff": null,
+   "item_mean_BA_notext": 0.039583222400451853,
+   "item_mean_BA_text": 0.0015746284550787455,
+   "item_mean_BA_all": 0.01626562467887872,
+   "frac_items_changed_notext": 0.7987616099071208,
+   "valid_flip_notext": null,
+   "notext_groupmean_small_le3": [
+    0.19222730899461052,
+    45
+   ],
+   "notext_groupmean_big_gt3": [
+    0.030319966828058157,
+    25
+   ]
+  },
+  "nvidia.nemotron-nano-12b-v2": {
+   "n_same": 969,
+   "n_diff": 0,
+   "item_mean_BA_same": 0.04307230095436829,
+   "item_mean_BA_diff": null,
+   "item_mean_BA_notext": 0.04307230095436829,
+   "item_mean_BA_text": -0.040074381851955033,
+   "item_mean_BA_all": -0.007936713068816902,
+   "frac_items_changed_notext": 0.6687306501547987,
+   "valid_flip_notext": null,
+   "notext_groupmean_small_le3": [
+    0.15828832446176017,
+    45
+   ],
+   "notext_groupmean_big_gt3": [
+    0.008620045772145682,
+    25
+   ]
+  },
+  "us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "n_same": 969,
+   "n_diff": 0,
+   "item_mean_BA_same": -0.0002030526336271198,
+   "item_mean_BA_diff": null,
+   "item_mean_BA_notext": -0.0002030526336271198,
+   "item_mean_BA_text": 0.017836672382839345,
+   "item_mean_BA_all": 0.01086399845345921,
+   "frac_items_changed_notext": 0.8307533539731682,
+   "valid_flip_notext": null,
+   "notext_groupmean_small_le3": [
+    -0.05278214746923801,
+    45
+   ],
+   "notext_groupmean_big_gt3": [
+    0.022723705072627432,
+    25
+   ]
+  }
+ },
+ "notext_groups": {
+  "G": 70,
+  "singletons_in_notext": 29,
+  "notext_group_sizes_sorted": [
+   396,
+   115,
+   69,
+   63,
+   44,
+   37,
+   35,
+   19,
+   16,
+   14,
+   13,
+   12,
+   8,
+   8,
+   6,
+   6,
+   5,
+   5,
+   5,
+   5,
+   5,
+   4,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ "text_groups": [
+  273,
+  267,
+  151,
+  126,
+  115,
+  105,
+  72,
+  60,
+  58,
+  51,
+  50,
+  47,
+  44,
+  35,
+  33,
+  21,
+  11,
+  9,
+  5,
+  4,
+  1
+ ]
+}

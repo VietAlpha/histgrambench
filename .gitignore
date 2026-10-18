@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.venv/
+.venv-release/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+# local data roots and dataset copies (the dataset lives on Hugging Face)
+hmb_data/
+hmb_data_*/
+/HistGramBench/
+# owner-filled run configuration for new runs (only templates and the frozen roster are tracked)
+configs/batch.yaml
+configs/pricing.yaml
+# secrets
+.env
+.env.*
+*.pem
+*.key

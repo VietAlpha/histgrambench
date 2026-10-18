@@ -1,0 +1,11 @@
+```latex
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+
+\begin{document}
+\begin{tikzpicture}
+    \node[regular polygon, regular polygon sides=3, draw, minimum size=4cm, label={center:$a$}]{};
+\end{tikzpicture}
+\end{document}
+```

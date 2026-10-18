@@ -1,0 +1,8 @@
+```latex
+\documentclass[tikz,border=5pt]{standalone}
+\begin{document}
+\begin{tikzpicture}
+    \draw[thick] (0,2) -- (1,0) -- (0,-2) -- (-1,0) -- cycle;
+\end{tikzpicture}
+\end{document}
+```

@@ -1,0 +1,33 @@
+```latex
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+    % Define the vertices of the triangle.
+    % Let the base be horizontal for simplicity in coordinates.
+    % We can place the base on the x-axis.
+    % Let the base length be 2 units for a simple representation.
+    \coordinate (A) at (0, 0);
+    \coordinate (B) at (2, 0);
+    % The apex is centered above the base. Let the height be h.
+    % For a general triangle, we can use a variable for the height,
+    % but since the image only shows a label 'a' inside, we just need
+    % to draw the triangle and place the label.
+    \coordinate (C) at (1, 2); % Arbitrary height for visualization
+
+    % Draw the triangle
+    \draw (A) -- (B) -- (C) -- cycle;
+
+    % Place the label 'a' inside the triangle.
+    % The label 'a' appears to be placed near the center of the triangle,
+    % perhaps near the centroid or just centrally located.
+    % We will place it at the centroid for a standard representation.
+    \coordinate (Centroid) at ($(A)!0.333!(B)!0.333!(C)$);
+
+    % Draw the label 'a'
+    \node at (Centroid) {a};
+\end{tikzpicture}
+\end{document}
+```

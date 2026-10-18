@@ -1,0 +1,3 @@
+# Store every file byte for byte: the protocol hashes (code_hash, form_freeze_sha256) are computed over the
+# exact bytes, and some frozen sources have CRLF line endings. Do not enable line-ending conversion.
+* -text

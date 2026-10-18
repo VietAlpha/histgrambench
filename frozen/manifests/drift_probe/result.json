@@ -1,0 +1,47 @@
+{
+ "alpha_min": 0.8,
+ "claim_status": "production",
+ "close_agreement": 0.8666666666666667,
+ "engineering_valid": true,
+ "judge_config_hash": "f44c7335babad37c9bdd71b90ef01654aebe6d8578d9e5476978735482594050",
+ "kappa_min": 0.8,
+ "n_triples": 100,
+ "open_agreement": 0.8666666666666667,
+ "open_vs_close": 0.984375,
+ "pass": true,
+ "per_judge": {
+  "google.gemma-4-31b": {
+   "agreement_close": 0.96875,
+   "agreement_open": 0.984375,
+   "alpha_min": 0.8,
+   "kappa_min": 0.8,
+   "n": 64,
+   "open_vs_close": 0.984375,
+   "status": "ok",
+   "valid": true
+  },
+  "mistral.mistral-large-3-675b-instruct": {
+   "agreement_close": 0.8666666666666667,
+   "agreement_open": 0.8666666666666667,
+   "alpha_min": 0.8,
+   "kappa_min": 0.8,
+   "n": 15,
+   "open_vs_close": 1.0,
+   "status": "ok",
+   "valid": true
+  },
+  "qwen.qwen3-vl-235b-a22b-instruct": {
+   "agreement_close": 0.9466666666666667,
+   "agreement_open": 0.9466666666666667,
+   "alpha_min": 0.8,
+   "kappa_min": 0.8,
+   "n": 75,
+   "open_vs_close": 1.0,
+   "status": "ok",
+   "valid": true
+  }
+ },
+ "profile": "production",
+ "thresholds_hash": "f7eddf6b0b3badb1a1fda840632bb00c5b6eda391ba3039f74d5c0617f33e19e",
+ "triples_sha256": "0d76f6dd96c0ef5165ab18877f51825bc0dd8602f67e48b25ed7d953cbb0232c"
+}

@@ -1,0 +1,12 @@
+```latex
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, angles, quotes}
+
+\begin{document}
+\begin{tikzpicture}
+    \node[isosceles triangle, base=4cm, height=3cm, label={below:$a$}] (tri) {};
+    \draw (tri) node[above] {$a$};
+\end{tikzpicture}
+\end{document}
+```

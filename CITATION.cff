@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use HistGramBench, please cite the paper given under preferred-citation."
+title: "HistGramBench: code, protocol and run records"
+type: software
+version: "v2"
+license: Apache-2.0
+authors:
+  - family-names: Tran
+    given-names: Minh Quang
+    affiliation: Deerfield Academy
+    orcid: "https://orcid.org/0009-0004-7852-0193"
+  - family-names: He
+    given-names: Carter
+    affiliation: Deerfield Academy
+    orcid: "https://orcid.org/0009-0006-7906-8164"
+  - family-names: Bloch
+    given-names: Cameron
+    affiliation: Deerfield Academy
+    orcid: "https://orcid.org/0009-0008-3829-9964"
+  - family-names: Huang
+    given-names: Zitai
+    affiliation: Deerfield Academy
+    orcid: "https://orcid.org/0009-0004-8832-2350"
+  - family-names: Vo
+    given-names: Thien Truong
+    affiliation: "University of Economics Ho Chi Minh City (UEH)"
+    orcid: "https://orcid.org/0009-0008-9633-5775"
+  - family-names: Tran
+    given-names: Trong Nguyen
+    affiliation: "University of Economics Ho Chi Minh City (UEH)"
+    orcid: "https://orcid.org/0009-0006-5782-4918"
+  - family-names: Chen
+    given-names: Isaac
+    affiliation: Deerfield Academy
+    orcid: "https://orcid.org/0009-0006-8984-5772"
+preferred-citation:
+  type: unpublished
+  title: "HistGramBench: Measuring Structural Recovery When Multimodal Models Redraw Historical Mathematical Diagrams as TikZ"
+  year: 2026
+  notes: "Manuscript"
+  authors:
+    - family-names: Tran
+      given-names: Minh Quang
+    - family-names: He
+      given-names: Carter
+    - family-names: Bloch
+      given-names: Cameron
+    - family-names: Huang
+      given-names: Zitai
+    - family-names: Vo
+      given-names: Thien Truong
+    - family-names: Tran
+      given-names: Trong Nguyen
+    - family-names: Chen
+      given-names: Isaac

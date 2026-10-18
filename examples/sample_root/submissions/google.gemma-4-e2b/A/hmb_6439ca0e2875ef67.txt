@@ -1,0 +1,23 @@
+```latex
+\documentclass[border=10pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+
+\begin{document}
+\begin{tikzpicture}
+    % The figure is a diamond shape, which is a rhombus.
+    % We can define the vertices of a diamond centered at the origin.
+    % Let the vertices be at (0, a), (a, 0), (0, -a), (-a, 0).
+    % For simplicity and to represent the shape, we can use a standard diamond shape.
+    % Let the vertices be at (0, 1), (1, 0), (0, -1), (-1, 0).
+
+    \coordinate (A) at (0, 1);
+    \coordinate (B) at (1, 0);
+    \coordinate (C) at (0, -1);
+    \coordinate (D) at (-1, 0);
+
+    % Draw the diamond (rhombus)
+    \draw[thick] (A) -- (B) -- (C) -- (D) -- cycle;
+\end{tikzpicture}
+\end{document}
+```

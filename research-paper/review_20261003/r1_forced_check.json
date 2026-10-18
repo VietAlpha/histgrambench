@@ -1,0 +1,473 @@
+{
+ "models": {
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0": {
+   "judged": 18911,
+   "forced": 31,
+   "forced_share_of_judged": 0.0016392575749563747,
+   "verdict_equals_first_listed_judge_share": 0.9312647289866457,
+   "first_listed_family_counts": {
+    "qwen": 15276
+   },
+   "vote_count_hist": {
+    "nvotes_2": 12362,
+    "nvotes_0": 3635,
+    "nvotes_3": 2914
+   },
+   "H_full": 0.2995815078436315,
+   "H_forced_as_not_recovered": 0.29953152467681415,
+   "H_forced_as_recovered": 0.2995918084744511
+  },
+  "google.gemma-4-26b-a4b": {
+   "judged": 26581,
+   "forced": 4294,
+   "forced_share_of_judged": 0.16154395997140814,
+   "verdict_equals_first_listed_judge_share": 1.0,
+   "first_listed_family_counts": {
+    "qwen": 24412
+   },
+   "vote_count_hist": {
+    "nvotes_2": 24401,
+    "nvotes_0": 2169,
+    "nvotes_1": 11
+   },
+   "H_full": 0.5894401509378383,
+   "H_forced_as_not_recovered": 0.571060762064856,
+   "H_forced_as_recovered": 0.6071653869242855
+  },
+  "google.gemma-4-e2b": {
+   "judged": 23617,
+   "forced": 5627,
+   "forced_share_of_judged": 0.23826057500952705,
+   "verdict_equals_first_listed_judge_share": 1.0,
+   "first_listed_family_counts": {
+    "qwen": 20577
+   },
+   "vote_count_hist": {
+    "nvotes_2": 20577,
+    "nvotes_0": 3040
+   },
+   "H_full": 0.3085266515065112,
+   "H_forced_as_not_recovered": 0.29795473529907435,
+   "H_forced_as_recovered": 0.3597526946964788
+  },
+  "mistral.ministral-3-14b-instruct": {
+   "judged": 32558,
+   "forced": 6051,
+   "forced_share_of_judged": 0.18585293936974015,
+   "verdict_equals_first_listed_judge_share": 0.9999305941143809,
+   "first_listed_family_counts": {
+    "qwen": 28816
+   },
+   "vote_count_hist": {
+    "nvotes_2": 28814,
+    "nvotes_0": 3742,
+    "nvotes_1": 2
+   },
+   "H_full": 0.39097424581796836,
+   "H_forced_as_not_recovered": 0.3553282286640902,
+   "H_forced_as_recovered": 0.4063021874650629
+  },
+  "nvidia.nemotron-nano-12b-v2": {
+   "judged": 18424,
+   "forced": 30,
+   "forced_share_of_judged": 0.001628310898827616,
+   "verdict_equals_first_listed_judge_share": 0.9115619917912181,
+   "first_listed_family_counts": {
+    "qwen": 12906,
+    "mistral": 7
+   },
+   "vote_count_hist": {
+    "nvotes_0": 5511,
+    "nvotes_3": 3153,
+    "nvotes_2": 9760
+   },
+   "H_full": 0.19716241722088138,
+   "H_forced_as_not_recovered": 0.19708469872718706,
+   "H_forced_as_recovered": 0.19726640530440911
+  },
+  "us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "judged": 26804,
+   "forced": 12,
+   "forced_share_of_judged": 0.0004476943739740337,
+   "verdict_equals_first_listed_judge_share": 0.9264910512931241,
+   "first_listed_family_counts": {
+    "qwen": 20841
+   },
+   "vote_count_hist": {
+    "nvotes_2": 16515,
+    "nvotes_0": 5963,
+    "nvotes_3": 4326
+   },
+   "H_full": 0.5242405692152031,
+   "H_forced_as_not_recovered": 0.5242405692152031,
+   "H_forced_as_recovered": 0.5243450813012833
+  }
+ },
+ "pairs_full": {
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|google.gemma-4-26b-a4b": {
+   "diff": -0.2899,
+   "p": 8.443803287510843e-09,
+   "bh_adj": 3.166426232816566e-08,
+   "bh_rej": true,
+   "by_adj": 1.0506927330652788e-07,
+   "by_rej": true
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|google.gemma-4-e2b": {
+   "diff": -0.0089,
+   "p": 0.8399865881434492,
+   "bh_adj": 0.8399865881434491,
+   "bh_rej": false,
+   "by_adj": 1.0,
+   "by_rej": false
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|mistral.ministral-3-14b-instruct": {
+   "diff": -0.0914,
+   "p": 0.023595601087635382,
+   "bh_adj": 0.027225693562656212,
+   "bh_rej": true,
+   "by_adj": 0.09034108574037379,
+   "by_rej": true
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.1024,
+   "p": 0.006209099976133567,
+   "bh_adj": 0.00846695451290941,
+   "bh_rej": true,
+   "by_adj": 0.028095293949087073,
+   "by_rej": true
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.2247,
+   "p": 1.5055044339122702e-07,
+   "bh_adj": 4.516513301736811e-07,
+   "bh_rej": true,
+   "by_adj": 1.4986825386127495e-06,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|google.gemma-4-e2b": {
+   "diff": 0.2809,
+   "p": 6.186970280309801e-12,
+   "bh_adj": 3.0934851401549005e-11,
+   "bh_rej": true,
+   "by_adj": 1.0264892082185045e-10,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|mistral.ministral-3-14b-instruct": {
+   "diff": 0.1985,
+   "p": 2.9167945088010274e-06,
+   "bh_adj": 5.4689897040019266e-06,
+   "bh_rej": true,
+   "by_adj": 1.814736019949004e-05,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.3923,
+   "p": 1.2717277862033677e-17,
+   "bh_adj": 1.9075916793050515e-16,
+   "bh_rej": true,
+   "by_adj": 6.3298260175124055e-16,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": 0.0652,
+   "p": 0.0829362827097733,
+   "bh_adj": 0.08886030290332854,
+   "bh_rej": true,
+   "by_adj": 0.29485883344093516,
+   "by_rej": false
+  },
+  "google.gemma-4-e2b|mistral.ministral-3-14b-instruct": {
+   "diff": -0.0824,
+   "p": 0.019181721631158548,
+   "bh_adj": 0.023977152038948183,
+   "bh_rej": true,
+   "by_adj": 0.07956168107069754,
+   "by_rej": true
+  },
+  "google.gemma-4-e2b|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.1114,
+   "p": 2.540394660689741e-05,
+   "bh_adj": 4.233991101149568e-05,
+   "bh_rej": true,
+   "by_adj": 0.0001404935202890805,
+   "by_rej": true
+  },
+  "google.gemma-4-e2b|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.2157,
+   "p": 1.0351442524736272e-06,
+   "bh_adj": 2.2181662553006297e-06,
+   "bh_rej": true,
+   "by_adj": 7.360383580140735e-06,
+   "by_rej": true
+  },
+  "mistral.ministral-3-14b-instruct|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.1938,
+   "p": 2.2437643531778015e-07,
+   "bh_adj": 5.609410882944503e-07,
+   "bh_rej": true,
+   "by_adj": 1.8613309826720698e-06,
+   "by_rej": true
+  },
+  "mistral.ministral-3-14b-instruct|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.1333,
+   "p": 0.004548173780528476,
+   "bh_adj": 0.006822260670792714,
+   "bh_rej": true,
+   "by_adj": 0.022637823157190266,
+   "by_rej": true
+  },
+  "nvidia.nemotron-nano-12b-v2|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.3271,
+   "p": 1.047370692148106e-15,
+   "bh_adj": 7.855280191110795e-15,
+   "bh_rej": true,
+   "by_adj": 2.606561848008123e-14,
+   "by_rej": true
+  }
+ },
+ "by_c_m": 3.3182289932289932,
+ "pairs_forced_as_not_recovered": {
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|google.gemma-4-26b-a4b": {
+   "diff": -0.2715,
+   "p": 3.585531741419205e-08,
+   "bh_adj": 1.3445744030322017e-07,
+   "bh_rej": true,
+   "by_adj": 4.461605767695018e-07,
+   "by_rej": true
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|google.gemma-4-e2b": {
+   "diff": 0.0016,
+   "p": 0.9712636286069332,
+   "bh_adj": 0.971263628606933,
+   "bh_rej": false,
+   "by_adj": 1.0,
+   "by_rej": false
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|mistral.ministral-3-14b-instruct": {
+   "diff": -0.0558,
+   "p": 0.1512271452319713,
+   "bh_adj": 0.1744928598830438,
+   "bh_rej": false,
+   "by_adj": 0.5790072667753603,
+   "by_rej": false
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.1024,
+   "p": 0.0061939846533022635,
+   "bh_adj": 0.008446342709048541,
+   "bh_rej": true,
+   "by_adj": 0.028026899263913184,
+   "by_rej": true
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.2247,
+   "p": 1.4948903333664796e-07,
+   "bh_adj": 4.188682517257352e-07,
+   "bh_rej": true,
+   "by_adj": 1.3899007772194751e-06,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|google.gemma-4-e2b": {
+   "diff": 0.2731,
+   "p": 4.576671735085947e-12,
+   "bh_adj": 2.2883358675429734e-11,
+   "bh_rej": true,
+   "by_adj": 7.593222421926916e-11,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|mistral.ministral-3-14b-instruct": {
+   "diff": 0.2157,
+   "p": 1.675473006902941e-07,
+   "bh_adj": 4.188682517257352e-07,
+   "bh_rej": true,
+   "by_adj": 1.3899007772194751e-06,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.374,
+   "p": 5.4450605538847445e-17,
+   "bh_adj": 8.167590830827117e-16,
+   "bh_rej": true,
+   "by_adj": 2.710193669968182e-15,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": 0.0468,
+   "p": 0.2055860496195177,
+   "bh_adj": 0.22027076744948326,
+   "bh_rej": false,
+   "by_adj": 0.7309088469116765,
+   "by_rej": false
+  },
+  "google.gemma-4-e2b|mistral.ministral-3-14b-instruct": {
+   "diff": -0.0574,
+   "p": 0.08600296021242718,
+   "bh_adj": 0.10750370026553396,
+   "bh_rej": false,
+   "by_adj": 0.35672189510049424,
+   "by_rej": false
+  },
+  "google.gemma-4-e2b|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.1009,
+   "p": 9.894830474390347e-05,
+   "bh_adj": 0.0001649138412398391,
+   "bh_rej": true,
+   "by_adj": 0.0005472218893867974,
+   "by_rej": true
+  },
+  "google.gemma-4-e2b|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.2263,
+   "p": 2.2799716995049427e-07,
+   "bh_adj": 4.885653641796306e-07,
+   "bh_rej": true,
+   "by_adj": 1.621171756508332e-06,
+   "by_rej": true
+  },
+  "mistral.ministral-3-14b-instruct|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.1582,
+   "p": 5.6636756730379494e-06,
+   "bh_adj": 1.0619391886946155e-05,
+   "bh_rej": true,
+   "by_adj": 3.5237574049725474e-05,
+   "by_rej": true
+  },
+  "mistral.ministral-3-14b-instruct|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.1689,
+   "p": 0.00024140387101477333,
+   "bh_adj": 0.00036210580652216003,
+   "bh_rej": true,
+   "by_adj": 0.0012015499858183995,
+   "by_rej": true
+  },
+  "nvidia.nemotron-nano-12b-v2|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.3272,
+   "p": 1.0352899614569205e-15,
+   "bh_adj": 7.764674710926904e-15,
+   "bh_rej": true,
+   "by_adj": 2.5764968748789605e-14,
+   "by_rej": true
+  }
+ },
+ "pairs_forced_as_recovered": {
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|google.gemma-4-26b-a4b": {
+   "diff": -0.3076,
+   "p": 1.5974330478069805e-09,
+   "bh_adj": 7.987165239034903e-09,
+   "bh_rej": true,
+   "by_adj": 2.6503243269876397e-08,
+   "by_rej": true
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|google.gemma-4-e2b": {
+   "diff": -0.0602,
+   "p": 0.19461380630574787,
+   "bh_adj": 0.2042184930927718,
+   "bh_rej": false,
+   "by_adj": 0.6776437247339703,
+   "by_rej": false
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|mistral.ministral-3-14b-instruct": {
+   "diff": -0.1067,
+   "p": 0.010026779568597315,
+   "bh_adj": 0.013672881229905428,
+   "bh_rej": true,
+   "by_adj": 0.04536975091804869,
+   "by_rej": true
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.1023,
+   "p": 0.00626011649221744,
+   "bh_adj": 0.00939017473832616,
+   "bh_rej": true,
+   "by_adj": 0.03115875006820034,
+   "by_rej": true
+  },
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.2248,
+   "p": 1.4883012720311715e-07,
+   "bh_adj": 3.1892170114953676e-07,
+   "bh_rej": true,
+   "by_adj": 1.0582552353243052e-06,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|google.gemma-4-e2b": {
+   "diff": 0.2474,
+   "p": 3.532278455681159e-09,
+   "bh_adj": 1.3246044208804346e-08,
+   "bh_rej": true,
+   "by_adj": 4.395340793924758e-08,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|mistral.ministral-3-14b-instruct": {
+   "diff": 0.2009,
+   "p": 3.2143608923354205e-06,
+   "bh_adj": 6.026926673128914e-06,
+   "bh_rej": true,
+   "by_adj": 1.999872282684152e-05,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.4099,
+   "p": 2.5679394750204e-18,
+   "bh_adj": 3.8519092125306e-17,
+   "bh_rej": true,
+   "by_adj": 1.2781516828304898e-16,
+   "by_rej": true
+  },
+  "google.gemma-4-26b-a4b|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": 0.0828,
+   "p": 0.030626791113911596,
+   "bh_adj": 0.035338605131436454,
+   "bh_rej": true,
+   "by_adj": 0.11726158412740333,
+   "by_rej": false
+  },
+  "google.gemma-4-e2b|mistral.ministral-3-14b-instruct": {
+   "diff": -0.0465,
+   "p": 0.2042184930927718,
+   "bh_adj": 0.2042184930927718,
+   "bh_rej": false,
+   "by_adj": 0.6776437247339703,
+   "by_rej": false
+  },
+  "google.gemma-4-e2b|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.1625,
+   "p": 1.0636988137685418e-07,
+   "bh_adj": 2.659247034421355e-07,
+   "bh_rej": true,
+   "by_adj": 8.823990609775157e-07,
+   "by_rej": true
+  },
+  "google.gemma-4-e2b|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.1646,
+   "p": 0.000159974742282896,
+   "bh_adj": 0.0002666245704714933,
+   "bh_rej": true,
+   "by_adj": 0.000884721380045736,
+   "by_rej": true
+  },
+  "mistral.ministral-3-14b-instruct|nvidia.nemotron-nano-12b-v2": {
+   "diff": 0.209,
+   "p": 5.825616622392983e-08,
+   "bh_adj": 1.7476849867178948e-07,
+   "bh_rej": true,
+   "by_adj": 5.799218993958347e-07,
+   "by_rej": true
+  },
+  "mistral.ministral-3-14b-instruct|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.118,
+   "p": 0.012244140056405051,
+   "bh_adj": 0.015305175070506313,
+   "bh_rej": true,
+   "by_adj": 0.050786075665399645,
+   "by_rej": true
+  },
+  "nvidia.nemotron-nano-12b-v2|us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "diff": -0.3271,
+   "p": 1.0360683599301708e-15,
+   "bh_adj": 7.77051269947628e-15,
+   "bh_rej": true,
+   "by_adj": 2.5784340531656284e-14,
+   "by_rej": true
+  }
+ }
+}

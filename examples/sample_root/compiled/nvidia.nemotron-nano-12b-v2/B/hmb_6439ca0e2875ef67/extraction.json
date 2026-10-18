@@ -1,0 +1,10 @@
+{
+ "n_blocks": 1,
+ "n_fenced_all": 1,
+ "notes": [],
+ "outcome": null,
+ "path": "fenced",
+ "reject_token": "\\usetikzlibrary{arrows}",
+ "span_sha256": "bb58a1d8699f8b97f88316658de9be6d79428fa0878c93e3b71897415b9d7a77",
+ "wrapper_class": "D"
+}

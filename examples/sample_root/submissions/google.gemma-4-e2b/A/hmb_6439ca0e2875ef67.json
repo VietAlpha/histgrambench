@@ -1,0 +1,58 @@
+{
+ "access_date": "2026-10-01",
+ "attempts": [
+  {
+   "index": 1,
+   "transport_error": null,
+   "utc": "2026-10-01T16:56:48.993+00:00"
+  }
+ ],
+ "body_sha256": "6329cff43e1b5da3f3411ae9bdc1486a774d420773b07d60cb613e1b0597b5c9",
+ "cgx_record": "cgx/google.gemma-4-e2b/A/hmb_6439ca0e2875ef67.json",
+ "cgx_sha256": "687541ab5a93cad87a82ed75d70cf2c777edeb6b249e6de19ebc0ced59eef305",
+ "cpu_seconds": 2.22,
+ "dataset_version": "v1.0",
+ "decoding_params": {
+  "effort": null,
+  "max_tokens": 8192,
+  "seed": null,
+  "temperature": 0.0,
+  "top_p": 1.0
+ },
+ "extraction_path": "fenced",
+ "harness_version": "93e9e015e087dd9cc959471d85fc156303da275f6d605f60e6f5f4dfa26c66f1",
+ "image_encoding": {
+  "crop_sha256": "07355242119205f778a34b27587bb44c23effd1a8e6fdd0873a8a0dca0c8962a",
+  "format": "png",
+  "height": 1024,
+  "width": 1024
+ },
+ "ink_fraction": 0.04138947,
+ "item_id": "hmb_6439ca0e2875ef67",
+ "judge_config_id": "c06fd35a645b1a3d2b635bbd8860fd80826c015c86daff55039074b3f8cd4ea9",
+ "model_family": "google",
+ "model_id": "google.gemma-4-e2b",
+ "model_version_string": "google.gemma-4-e2b",
+ "n_blocks": 1,
+ "normalized_tex": "submissions/google.gemma-4-e2b/A/hmb_6439ca0e2875ef67.tex",
+ "normalized_tex_sha256": "f986179ea6b71d46537884f8024e750919dae3c52e8a5ae06e2e0e2f598c744e",
+ "outcome_code": "OK",
+ "output_release": "public",
+ "page_count": 1,
+ "pdf_sha256": "feec303dc58a8285646c1f2e7015eb31a888c2078058aeb30b7a129bb1c7ce65",
+ "prompt_id": "reconstruction-A-v2",
+ "prompt_sha256": "e7cb418068c4f1d860325273a3125ca584107dac6e7db8b108c2b3ac3501cea7",
+ "provider_terms_version": "aws-bedrock-service-terms-2026-09-30",
+ "raw_output": "submissions/google.gemma-4-e2b/A/hmb_6439ca0e2875ef67.txt",
+ "raw_output_sha256": "860c2ee18f7af0da5ae8ccaf7ce20f79863b2fdf4d590f2eb68339070dc26492",
+ "release_hash": "sha256:a1bfbd4f1938236aa657dc10fc4e3f51f168b4324197d59d128087021e20283e",
+ "render_sha256": "83601e747b47f2fe7887c974879815c1b9d424b74c3bca7d4aca4eefc70cfad1",
+ "sandbox_image_digest": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "scores": "scores/google.gemma-4-e2b/A/hmb_6439ca0e2875ef67.json",
+ "scores_sha256": "bec112e3b4e2496f6583665d33d4eb63ebd0cf203358c5b9b44ce09c4de0e794",
+ "stop_reason": "stop",
+ "track": "A",
+ "verdicts": "verdicts/google.gemma-4-e2b/A/hmb_6439ca0e2875ef67.json",
+ "verdicts_sha256": "6bf6c756f996151d68884aede836997de030d8c9501ec515b22e575bb3836ab9",
+ "wrapper_class": "D"
+}

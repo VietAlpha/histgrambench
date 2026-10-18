@@ -1,0 +1,281 @@
+{
+ "union_by_class": {
+  "entity": 54496,
+  "label": 22806,
+  "relation": 91803
+ },
+ "eligible_by_class": {
+  "entity": 45627,
+  "label": 17959,
+  "relation": 50817
+ },
+ "retention_by_class": {
+  "entity": 0.8372541103934233,
+  "label": 0.7874682101201438,
+  "relation": 0.5535440018300055
+ },
+ "ineligible_reasons": {
+  "relation|not_supported_by_both_writers": 36801,
+  "relation|writer_voted_false": 34733,
+  "entity|not_supported_by_both_writers": 6908,
+  "relation|ambiguous_argument": 6138,
+  "entity|writer_voted_false": 6102,
+  "label|not_supported_by_both_writers": 4737,
+  "label|writer_voted_false": 4681,
+  "entity|ambiguous_argument": 2096,
+  "relation|anchor_b_unbindable": 1668,
+  "relation|e_violation": 278,
+  "label|ambiguous_argument": 242,
+  "entity|e_violation": 115
+ },
+ "support_mix": {
+  "entity|both_generated": 19149,
+  "entity|one_generated": 26478,
+  "label|both_generated": 12549,
+  "relation|one_generated": 43955,
+  "label|one_generated": 5410,
+  "relation|both_generated": 6862
+ },
+ "relation_pred_retention": {
+  "endpoint_of": [
+   20981,
+   35854,
+   0.585
+  ],
+  "label": [
+   17357,
+   21949,
+   0.791
+  ],
+  "segment": [
+   17853,
+   21385,
+   0.835
+  ],
+  "on": [
+   11102,
+   18822,
+   0.59
+  ],
+  "point": [
+   16262,
+   17677,
+   0.92
+  ],
+  "edge_of": [
+   5893,
+   9200,
+   0.641
+  ],
+  "intersect_at": [
+   2305,
+   5358,
+   0.43
+  ],
+  "parallel": [
+   2459,
+   5128,
+   0.48
+  ],
+  "line": [
+   3096,
+   3844,
+   0.805
+  ],
+  "polygon": [
+   1973,
+   2912,
+   0.678
+  ],
+  "perpendicular": [
+   1548,
+   2909,
+   0.532
+  ],
+  "between": [
+   1683,
+   2716,
+   0.62
+  ],
+  "vertex_of": [
+   1281,
+   2287,
+   0.56
+  ],
+  "collinear": [
+   907,
+   2159,
+   0.42
+  ],
+  "tangent_to": [
+   819,
+   2068,
+   0.396
+  ],
+  "axis": [
+   1698,
+   1942,
+   0.874
+  ],
+  "curve": [
+   1004,
+   1666,
+   0.603
+  ],
+  "hidden_edge": [
+   340,
+   1559,
+   0.218
+  ],
+  "contains": [
+   658,
+   1491,
+   0.441
+  ],
+  "circle": [
+   857,
+   1194,
+   0.718
+  ],
+  "center_of": [
+   645,
+   1160,
+   0.556
+  ],
+  "arc": [
+   934,
+   1110,
+   0.841
+  ],
+  "measure_label": [
+   602,
+   857,
+   0.702
+  ],
+  "angle_marker": [
+   489,
+   582,
+   0.84
+  ],
+  "region": [
+   382,
+   436,
+   0.876
+  ],
+  "ray": [
+   230,
+   420,
+   0.548
+  ],
+  "length_tick": [
+   249,
+   344,
+   0.724
+  ],
+  "arrow": [
+   222,
+   312,
+   0.712
+  ],
+  "asymptote_of": [
+   3,
+   305,
+   0.01
+  ],
+  "ellipse": [
+   217,
+   277,
+   0.783
+  ],
+  "solid": [
+   158,
+   273,
+   0.579
+  ],
+  "arc_of": [
+   85,
+   225,
+   0.378
+  ],
+  "face_of": [
+   9,
+   209,
+   0.043
+  ],
+  "equal_length": [
+   49,
+   180,
+   0.272
+  ],
+  "right_angle_marked": [
+   3,
+   122,
+   0.025
+  ],
+  "cross_section_of": [
+   8,
+   82,
+   0.098
+  ],
+  "concyclic": [
+   23,
+   47,
+   0.489
+  ],
+  "equal_angle": [
+   19,
+   44,
+   0.432
+  ]
+ },
+ "present_by_support": {
+  "global.anthropic.claude-haiku-4-5-20251001-v1_0": {
+   "entity|both_generated": 0.817,
+   "entity|one_generated": 0.76,
+   "relation|both_generated": 0.791,
+   "relation|one_generated": 0.599,
+   "label|both_generated": 0.855,
+   "label|one_generated": 0.705
+  },
+  "google.gemma-4-26b-a4b": {
+   "entity|both_generated": 0.879,
+   "entity|one_generated": 0.796,
+   "relation|both_generated": 0.879,
+   "relation|one_generated": 0.728,
+   "label|both_generated": 0.916,
+   "label|one_generated": 0.804
+  },
+  "google.gemma-4-e2b": {
+   "entity|both_generated": 0.671,
+   "entity|one_generated": 0.646,
+   "relation|both_generated": 0.707,
+   "relation|one_generated": 0.523,
+   "label|both_generated": 0.806,
+   "label|one_generated": 0.616
+  },
+  "mistral.ministral-3-14b-instruct": {
+   "entity|both_generated": 0.751,
+   "entity|one_generated": 0.749,
+   "relation|both_generated": 0.681,
+   "relation|one_generated": 0.551,
+   "label|both_generated": 0.814,
+   "label|one_generated": 0.716
+  },
+  "nvidia.nemotron-nano-12b-v2": {
+   "entity|both_generated": 0.63,
+   "entity|one_generated": 0.615,
+   "relation|both_generated": 0.616,
+   "relation|one_generated": 0.445,
+   "label|both_generated": 0.791,
+   "label|one_generated": 0.569
+  },
+  "us.meta.llama4-maverick-17b-instruct-v1_0": {
+   "entity|both_generated": 0.806,
+   "entity|one_generated": 0.743,
+   "relation|both_generated": 0.761,
+   "relation|one_generated": 0.585,
+   "label|both_generated": 0.846,
+   "label|one_generated": 0.692
+  }
+ }
+}

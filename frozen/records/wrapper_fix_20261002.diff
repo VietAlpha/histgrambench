@@ -1,0 +1,27 @@
+diff --git a/hmb/submission/wrapper.py b/hmb/submission/wrapper.py
+index d1e813c..ccccc10 100644
+--- a/hmb/submission/wrapper.py
++++ b/hmb/submission/wrapper.py
+@@ -279,6 +279,22 @@ def invariant_span(text: str, wclass: WrapperClass, *, body: str | None = None)
+ 
+ def assert_byte_identity(span_raw: str, normalized: str, wclass: WrapperClass) -> str:
+     """§9.4; returns body_sha256. Raises HarnessInvariantError on any mismatch."""
++    if (wclass == WrapperClass.D and first_picture_span(span_raw) is None
++            and not (find_begin_document(span_raw) >= 0 and _END_DOC_RX.search(span_raw))):
++        # A class-D document with no picture and no document body (e.g. a lone `\documentclass` line; EC2 MS5
++        # 2026-10-02, owner-instructed fix). There is no span to protect, and the whole-text comparison below
++        # always failed because of the font block inserted after the class line, which §9.4 allows ("may add
++        # bytes before \begin{document}"). The check is instead that every raw byte survives in order around
++        # exactly that one insertion. This branch only replaces a path that raised for every input.
++        d = find_uncommented(span_raw, DOCCLASS)
++        j = _brace(span_raw, _opt(span_raw, d + len(DOCCLASS)))[1] if d >= 0 else -1
++        font_block, _ = _wrapper_parts()
++        rebuilt = span_raw[:j] + "\n" + font_block + span_raw[j:]
++        if j >= 0 and not rebuilt.endswith("\n"):          # normalize() ends the file with a newline
++            rebuilt += "\n"
++        if j < 0 or normalized != rebuilt:
++            raise HarnessInvariantError(f"§9.4 byte-identity violated (class {wclass.value})")
++        return sha256_bytes(span_raw.encode("utf-8"))
+     if wclass == WrapperClass.B:
+         a = normalized.find(BEGIN + "\n")
+         z = normalized.rfind("\n\\end{tikzpicture}")

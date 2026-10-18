@@ -1,0 +1,989 @@
+{
+ "frozen_at": "2026-09-28T02:53:34+00:00",
+ "params": {
+  "F_bar_min": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "F_bar_min",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 8
+   },
+   "status": "frozen",
+   "value": 8
+  },
+  "G_min": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 6
+  },
+  "G_star": {
+   "provenance": {
+    "calibration_artifact_id": "reports/dev/ms3_level_decision_20260927.json",
+    "date": "2026-09-28T02:53:04+00:00",
+    "parameter": "G_star",
+    "rule": "corpus/corpus_output: 297 sources done (127 pdf, 170 single-image); 220 non-development works after merging scans by title; 47 works with >= 25 raw crops, i.e. >= 10 expected eligible items at the development yield 148/357 = 0.41 (Smith's 0 included); 1 of 6 development books yielded 0, so 47 x 0.83 = 39 expected productive groups; G* = 30 leaves margin for split-graph merges and the book-share cap",
+    "sha256": "ca13201c0341aa404e7fa3ecc452776b932e967b5d69e23e4bd6ea318b6af0fb",
+    "value": 30
+   },
+   "status": "frozen",
+   "value": 30
+  },
+  "N_star": {
+   "provenance": {
+    "calibration_artifact_id": "reports/dev/ms3_level_decision_20260927.json",
+    "date": "2026-09-28T02:53:04+00:00",
+    "parameter": "N_star",
+    "rule": "smallest grid N with MDD(N, G*=30, rho_plan) <= delta* (analytic 0.140) and simulated power >= 0.80 (0.8135, sensitivity run); the \u00a713.7 default pilot size",
+    "sha256": "ca13201c0341aa404e7fa3ecc452776b932e967b5d69e23e4bd6ea318b6af0fb",
+    "value": 250
+   },
+   "status": "frozen",
+   "value": 250
+  },
+  "align_delta_margin": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.15
+  },
+  "align_sigma": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.05
+  },
+  "align_theta_match": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.9
+  },
+  "align_w_G": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 1.0
+  },
+  "align_w_L": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 1.0
+  },
+  "align_w_R": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.5
+  },
+  "alpha": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.05
+  },
+  "alpha_min": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.8
+  },
+  "axis_min_length_frac": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.5
+  },
+  "bh_q": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.1
+  },
+  "book_max_share": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.25
+  },
+  "canvas_px": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 1024
+  },
+  "caption_band_frac": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "caption_band_frac",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.25
+   },
+   "status": "frozen",
+   "value": 0.25
+  },
+  "caption_min_chars": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "caption_min_chars",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 8
+   },
+   "status": "frozen",
+   "value": 8
+  },
+  "card_builder_max_tokens": {
+   "provenance": {
+    "calibration_artifact_id": "reports/dev/ms3_level_decision_20260927.json",
+    "date": "2026-09-28T02:53:04+00:00",
+    "parameter": "card_builder_max_tokens",
+    "rule": "frozen at the pre-freeze values under which the development set, probe and drift triples were produced; judge_max_tokens is in the judge protocol hash, so changing it would detach the drift triples",
+    "sha256": "ca13201c0341aa404e7fa3ecc452776b932e967b5d69e23e4bd6ea318b6af0fb",
+    "value": 8096
+   },
+   "status": "frozen",
+   "value": 8096
+  },
+  "card_max_entities": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 40
+  },
+  "card_max_facts": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 60
+  },
+  "card_verify_chunk_size": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 20
+  },
+  "ceiling_flag_H": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.9
+  },
+  "ceiling_flag_sd": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.1
+  },
+  "cgx_max_primitives": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 60
+  },
+  "circle_fit_resid_rel": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "circle_fit_resid_rel",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.01
+   },
+   "status": "frozen",
+   "value": 0.01
+  },
+  "collapse_frac": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.5
+  },
+  "common_output_cap_tokens": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 8192
+  },
+  "contestant_max_tokens": {
+   "provenance": {
+    "calibration_artifact_id": "reports/dev/ms3_level_decision_20260927.json",
+    "date": "2026-09-28T02:53:04+00:00",
+    "parameter": "contestant_max_tokens",
+    "rule": "frozen at the pre-freeze values under which the development set, probe and drift triples were produced; judge_max_tokens is in the judge protocol hash, so changing it would detach the drift triples",
+    "sha256": "ca13201c0341aa404e7fa3ecc452776b932e967b5d69e23e4bd6ea318b6af0fb",
+    "value": 8192
+   },
+   "status": "frozen",
+   "value": 8192
+  },
+  "cpu_seconds": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "cpu_seconds",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 20
+   },
+   "status": "frozen",
+   "value": 20
+  },
+  "ctx_cap_chars": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 1200
+  },
+  "ctx_window_heights": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 1.5
+  },
+  "dedup_jaccard": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.9
+  },
+  "delta_star": {
+   "provenance": {
+    "calibration_artifact_id": "reports/dev/ms3_level_decision_20260927.json",
+    "date": "2026-09-28T02:53:04+00:00",
+    "parameter": "delta_star",
+    "rule": "\u00a714.3 analytic MDD with rho_plan: 1.1 x MDD_floor(G=30) = 0.124; MDD(N=250, G=30) = 0.140; delta* = 0.14 >= both. \u00a713.7 simulation at delta*=0.05 (dev_sizing seed0) is G_binding everywhere; its group effects resample raw book means, and the 2-item Coffin group (mean -0.70, SE ~0.35) inflates them. Sensitivity without that group: power 0.8135 at N=250, G=30, delta*=0.14 (seed 0, 2000 reps)",
+    "sha256": "ca13201c0341aa404e7fa3ecc452776b932e967b5d69e23e4bd6ea318b6af0fb",
+    "value": 0.14
+   },
+   "status": "frozen",
+   "value": 0.14
+  },
+  "determinism_sample_frac": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.05
+  },
+  "dev_groups": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 3
+  },
+  "drift_probe_n_triples": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 100
+  },
+  "eps_ink": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "eps_ink",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.001
+   },
+   "status": "frozen",
+   "value": 0.001
+  },
+  "eps_on_frac": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "eps_on_frac",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.01
+   },
+   "status": "frozen",
+   "value": 0.01
+  },
+  "frag_area_frac": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.005
+  },
+  "g0b_min_xheight_px": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g0b_min_xheight_px",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 12
+   },
+   "status": "frozen",
+   "value": 12
+  },
+  "g0c_min_page_ink": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g0c_min_page_ink",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.002
+   },
+   "status": "frozen",
+   "value": 0.002
+  },
+  "g2_aspect_max": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g2_aspect_max",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 6.0
+   },
+   "status": "frozen",
+   "value": 6.0
+  },
+  "g2_aspect_min": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g2_aspect_min",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.16666666666666666
+   },
+   "status": "frozen",
+   "value": 0.16666666666666666
+  },
+  "g2_max_area_frac": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g2_max_area_frac",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.6
+   },
+   "status": "frozen",
+   "value": 0.6
+  },
+  "g2_min_short_side_cm": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g2_min_short_side_cm",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.7
+   },
+   "status": "frozen",
+   "value": 0.7
+  },
+  "g3_ink_max": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g3_ink_max",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.45
+   },
+   "status": "frozen",
+   "value": 0.45
+  },
+  "g3_ink_min": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g3_ink_min",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.005
+   },
+   "status": "frozen",
+   "value": 0.005
+  },
+  "g4_min_components": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g4_min_components",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 5
+   },
+   "status": "frozen",
+   "value": 5
+  },
+  "g4_solid_frac": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g4_solid_frac",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.9
+   },
+   "status": "frozen",
+   "value": 0.9
+  },
+  "g5_bimodality_min": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g5_bimodality_min",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.75
+   },
+   "status": "frozen",
+   "value": 0.75
+  },
+  "g5_mode_band": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g5_mode_band",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.1
+   },
+   "status": "frozen",
+   "value": 0.1
+  },
+  "g6_multi_count": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g6_multi_count",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 3
+   },
+   "status": "frozen",
+   "value": 3
+  },
+  "g6_multi_frac": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g6_multi_frac",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.15
+   },
+   "status": "frozen",
+   "value": 0.15
+  },
+  "g6_skel_frac": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g6_skel_frac",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.35
+   },
+   "status": "frozen",
+   "value": 0.35
+  },
+  "g7a_border_ink_max": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g7a_border_ink_max",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.02
+   },
+   "status": "frozen",
+   "value": 0.02
+  },
+  "g7a_strip_px": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g7a_strip_px",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 2
+   },
+   "status": "frozen",
+   "value": 2
+  },
+  "g7a_touch_area_frac": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g7a_touch_area_frac",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.01
+   },
+   "status": "frozen",
+   "value": 0.01
+  },
+  "g7b_gap_frac": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g7b_gap_frac",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.04
+   },
+   "status": "frozen",
+   "value": 0.04
+  },
+  "g7b_max_depth": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g7b_max_depth",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 2
+   },
+   "status": "frozen",
+   "value": 2
+  },
+  "g7b_max_panels": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g7b_max_panels",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 4
+   },
+   "status": "frozen",
+   "value": 4
+  },
+  "g7b_side_ink_min": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g7b_side_ink_min",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.2
+   },
+   "status": "frozen",
+   "value": 0.2
+  },
+  "g7c_median_word_len": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g7c_median_word_len",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 4
+   },
+   "status": "frozen",
+   "value": 4
+  },
+  "g7c_word_cover": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "g7c_word_cover",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.35
+   },
+   "status": "frozen",
+   "value": 0.35
+  },
+  "g8_max_tokens": {
+   "provenance": {
+    "calibration_artifact_id": "reports/dev/ms3_level_decision_20260927.json",
+    "date": "2026-09-28T02:53:04+00:00",
+    "parameter": "g8_max_tokens",
+    "rule": "frozen at the pre-freeze values under which the development set, probe and drift triples were produced; judge_max_tokens is in the judge protocol hash, so changing it would detach the drift triples",
+    "sha256": "ca13201c0341aa404e7fa3ecc452776b932e967b5d69e23e4bd6ea318b6af0fb",
+    "value": 4096
+   },
+   "status": "frozen",
+   "value": 4096
+  },
+  "item_max_ambiguous_frac": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "item_max_ambiguous_frac",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.2
+   },
+   "status": "frozen",
+   "value": 0.2
+  },
+  "item_max_contradiction": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "item_max_contradiction",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.1
+   },
+   "status": "frozen",
+   "value": 0.1
+  },
+  "item_min_entity_facts": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "item_min_entity_facts",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 3
+   },
+   "status": "frozen",
+   "value": 3
+  },
+  "item_min_strict_relation_facts": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "item_min_strict_relation_facts",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 3
+   },
+   "status": "frozen",
+   "value": 3
+  },
+  "judge_chunk_size": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 25
+  },
+  "judge_max_tokens": {
+   "provenance": {
+    "calibration_artifact_id": "reports/dev/ms3_level_decision_20260927.json",
+    "date": "2026-09-28T02:53:04+00:00",
+    "parameter": "judge_max_tokens",
+    "rule": "frozen at the pre-freeze values under which the development set, probe and drift triples were produced; judge_max_tokens is in the judge protocol hash, so changing it would detach the drift triples",
+    "sha256": "ca13201c0341aa404e7fa3ecc452776b932e967b5d69e23e4bd6ea318b6af0fb",
+    "value": 8192
+   },
+   "status": "frozen",
+   "value": 8192
+  },
+  "kappa_min": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.8
+  },
+  "label_bind_frac": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "label_bind_frac",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.06
+   },
+   "status": "frozen",
+   "value": 0.06
+  },
+  "log_bytes": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "log_bytes",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 4194304
+   },
+   "status": "frozen",
+   "value": 4194304
+  },
+  "m_E": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 3
+  },
+  "m_L": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 1
+  },
+  "m_R": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 2
+  },
+  "max_upscale": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 4.0
+  },
+  "memory_bytes": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "memory_bytes",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 1073741824
+   },
+   "status": "frozen",
+   "value": 1073741824
+  },
+  "min_items_per_group": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 10
+  },
+  "output_bytes": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "output_bytes",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 33554432
+   },
+   "status": "frozen",
+   "value": 33554432
+  },
+  "page_cap": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "page_cap",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 4
+   },
+   "status": "frozen",
+   "value": 4
+  },
+  "page_dim_cap_cm": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "page_dim_cap_cm",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 200
+   },
+   "status": "frozen",
+   "value": 200
+  },
+  "parallel_deg": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "parallel_deg",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 1.5
+   },
+   "status": "frozen",
+   "value": 1.5
+  },
+  "perpendicular_deg": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "perpendicular_deg",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 1.5
+   },
+   "status": "frozen",
+   "value": 1.5
+  },
+  "phash_near_hamming": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "phash_near_hamming",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 6
+   },
+   "status": "frozen",
+   "value": 6
+  },
+  "pool_safety_factor": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 1.25
+  },
+  "power_target": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.8
+  },
+  "prose_run_chars": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "prose_run_chars",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 12
+   },
+   "status": "frozen",
+   "value": 12
+  },
+  "q5_tau_E": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.8
+  },
+  "raster_cpu_seconds": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "raster_cpu_seconds",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 20
+   },
+   "status": "frozen",
+   "value": 20
+  },
+  "render_dpi": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "render_dpi",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 400
+   },
+   "status": "frozen",
+   "value": 400
+  },
+  "render_dpi_candidate": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 300
+  },
+  "render_pixel_cap": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "render_pixel_cap",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 100000000
+   },
+   "status": "frozen",
+   "value": 100000000
+  },
+  "sandbox_pids_limit": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "sandbox_pids_limit",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 64
+   },
+   "status": "frozen",
+   "value": 64
+  },
+  "sauvola_k": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "sauvola_k",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.2
+   },
+   "status": "frozen",
+   "value": 0.2
+  },
+  "sauvola_window_px": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "sauvola_window_px",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 25
+   },
+   "status": "frozen",
+   "value": 25
+  },
+  "sizing_grid": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": [
+    150,
+    250,
+    350,
+    450
+   ]
+  },
+  "sizing_reps": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 2000
+  },
+  "slice_min_facts": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 150
+  },
+  "slice_min_groups": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 3
+  },
+  "slice_min_items": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 30
+  },
+  "soft_edge_series_years": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 10
+  },
+  "subgraph_max_unmatched": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 15
+  },
+  "tangency_rel": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "tangency_rel",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.015
+   },
+   "status": "frozen",
+   "value": 0.015
+  },
+  "tau_b_min": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 0.8
+  },
+  "text_height_tol": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "text_height_tol",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 0.25
+   },
+   "status": "frozen",
+   "value": 0.25
+  },
+  "transport_retry_max": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 3
+  },
+  "wall_seconds": {
+   "provenance": {
+    "calibration_artifact_id": "registry:b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "date": "2026-09-28T02:53:34+00:00",
+    "parameter": "wall_seconds",
+    "rule": "plan starting value confirmed at the level freeze",
+    "sha256": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb",
+    "value": 60
+   },
+   "status": "frozen",
+   "value": 60
+  },
+  "wl_rounds": {
+   "provenance": null,
+   "status": "form_constant",
+   "value": 2
+  }
+ },
+ "profile": "production",
+ "registry_hash": "b876bb605313609802d30a4d99b03d67592d6e27a0efc7d12f913ac6c7a7d2fb"
+}

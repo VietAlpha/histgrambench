@@ -1,0 +1,58 @@
+{
+ "access_date": "2026-10-01",
+ "attempts": [
+  {
+   "index": 1,
+   "transport_error": null,
+   "utc": "2026-10-01T17:21:25+00:00"
+  }
+ ],
+ "body_sha256": "940d6c416191613fa3664e323c61e88449851e4f8b1b787458d4338ce00329e9",
+ "cgx_record": "cgx/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_6439ca0e2875ef67.json",
+ "cgx_sha256": "b43802ffd5875fe7b69883a019be291e385b6d813a71768b0f6dd06046991ac5",
+ "cpu_seconds": 2.34,
+ "dataset_version": "v1.0",
+ "decoding_params": {
+  "effort": null,
+  "max_tokens": 8192,
+  "seed": null,
+  "temperature": 0.0,
+  "top_p": 1.0
+ },
+ "extraction_path": "fenced",
+ "harness_version": "93e9e015e087dd9cc959471d85fc156303da275f6d605f60e6f5f4dfa26c66f1",
+ "image_encoding": {
+  "crop_sha256": "07355242119205f778a34b27587bb44c23effd1a8e6fdd0873a8a0dca0c8962a",
+  "format": "png",
+  "height": 1024,
+  "width": 1024
+ },
+ "ink_fraction": 0.02365208,
+ "item_id": "hmb_6439ca0e2875ef67",
+ "judge_config_id": "c06fd35a645b1a3d2b635bbd8860fd80826c015c86daff55039074b3f8cd4ea9",
+ "model_family": "meta",
+ "model_id": "us.meta.llama4-maverick-17b-instruct-v1:0",
+ "model_version_string": "us.meta.llama4-maverick-17b-instruct-v1:0",
+ "n_blocks": 2,
+ "normalized_tex": "submissions/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_6439ca0e2875ef67.tex",
+ "normalized_tex_sha256": "5025b0a1bc90ce26de2311a5e53e3758801fb96de41abe5bba80545a23f932a3",
+ "outcome_code": "OK",
+ "output_release": "public",
+ "page_count": 1,
+ "pdf_sha256": "fae9d67b634ae7b7fec1b0506d5c7ae23a5757c6af28e433cf0608703cb025f1",
+ "prompt_id": "reconstruction-A-v2",
+ "prompt_sha256": "e7cb418068c4f1d860325273a3125ca584107dac6e7db8b108c2b3ac3501cea7",
+ "provider_terms_version": "aws-bedrock-service-terms-2026-09-30",
+ "raw_output": "submissions/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_6439ca0e2875ef67.txt",
+ "raw_output_sha256": "7f10bb017f06e69bba849c9fafbea5bafd4ee8cbb6ba49308fdf98a3579ba365",
+ "release_hash": "sha256:a1bfbd4f1938236aa657dc10fc4e3f51f168b4324197d59d128087021e20283e",
+ "render_sha256": "281b86e6be7ee9dcbf1ed744ea425a5c1f7b7cf95fda3f104546f94d2394f432",
+ "sandbox_image_digest": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "scores": "scores/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_6439ca0e2875ef67.json",
+ "scores_sha256": "1bad5c52b500b3cf6049c1397ebe17726fd3483c269113fb6325a019da03e16f",
+ "stop_reason": "end_turn",
+ "track": "A",
+ "verdicts": "verdicts/us.meta.llama4-maverick-17b-instruct-v1_0/A/hmb_6439ca0e2875ef67.json",
+ "verdicts_sha256": "e7fea3e2079078057f3ec0acc9ddc824b911d9c319fba8f5ed9523b7e6450c59",
+ "wrapper_class": "P"
+}

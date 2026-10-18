@@ -1,0 +1,46 @@
+{
+ "canon": {
+  "H": 356,
+  "W": 411,
+  "canon_version": "canon-9.7-v1",
+  "canvas": 1024,
+  "h": 887,
+  "offset": [
+   0,
+   68
+  ],
+  "pillow": "12.0.0",
+  "png_compress_level": 9,
+  "render_sha256": "6186b02865189a2b3cc82bdad919e08bf173140a05f7ed7799d1d43ee18e1034",
+  "resample": "LANCZOS",
+  "s": 2.491484184914842,
+  "w": 1024
+ },
+ "cpu_seconds": 3.11,
+ "exit_code": 0,
+ "image_id": "sha256:e902dd5aae0a9e2480c8b5f37cf2e4cf29eea9ffd8b7ef8be2efced90cdc830b",
+ "image_xobjects": 0,
+ "ink_fraction": 0.03492165,
+ "log_bytes": 31810,
+ "log_path": "compiled/mistral.ministral-3-14b-instruct/A/hmb_2977d5089c7659f9/cand.log",
+ "log_sha256": "b7879aea8453c2b5cf4051c2f24a1016489cf6c64dc3f84faa5bc90ccc0cd5fb",
+ "log_truncated": false,
+ "max_rss_kb": 719868,
+ "missing_glyphs": [],
+ "notes": [],
+ "outcome": "OK",
+ "page_count": 1,
+ "page_size_cm": [
+  3.478,
+  3.0141
+ ],
+ "path_op_count": 3,
+ "pdf_path": "compiled/mistral.ministral-3-14b-instruct/A/hmb_2977d5089c7659f9/cand.pdf",
+ "pdf_sha256": "77553b0cab7beda9b295973e59fc19836ca5fa94632b37336e7c38dfc8ada69c",
+ "render_path": "compiled/mistral.ministral-3-14b-instruct/A/hmb_2977d5089c7659f9/render.png",
+ "render_sha256": "6186b02865189a2b3cc82bdad919e08bf173140a05f7ed7799d1d43ee18e1034",
+ "signal": null,
+ "violations": [],
+ "wall_seconds": 3.822,
+ "wallclock_reruns": 0
+}
