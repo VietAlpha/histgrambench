@@ -12,7 +12,7 @@ fact on its own compiled geometry.
 The Python package and command are named `hmb` (from the project's working name, HistMathBench). The names are kept
 because the frozen protocol hashes the code byte for byte.
 
-## The task in one paragraph
+## The task
 
 A model receives a figure crop (Track A) or the crop plus up to 1,200 characters of page text (Track B) and must
 answer with one TikZ picture. The answer is extracted, normalised, policy-checked and compiled once with LuaLaTeX in a
@@ -21,7 +21,7 @@ by two AI models under an agreement rule) is aligned to it, and each fact is dec
 bind, otherwise by a panel of judge models from other families. The item score is the share of checkable key facts
 found present; the benchmark score averages within and then across 87 source groups.
 
-## Two repositories
+## Repositories
 
 | | GitHub (this repository) | Hugging Face dataset |
 |---|---|---|
@@ -52,7 +52,7 @@ Do not clone with line-ending conversion: some source files have CRLF line endin
 (`code_hash`, `form_freeze_sha256`) are computed over the exact bytes. The repository's `.gitattributes` disables
 conversion. `python scripts/check_hashes.py` recomputes the hashes and compares them with the run's values.
 
-## Quick start (offline, no model calls)
+## Quick start
 
 ```bash
 # get the dataset (gated: request access on the Hub, then `hf auth login`)
